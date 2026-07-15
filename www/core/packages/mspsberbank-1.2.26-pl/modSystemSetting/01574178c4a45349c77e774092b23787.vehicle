@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspsberbank',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a12c8b8564e240e2e4a8759f45c57d54',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '01574178c4a45349c77e774092b23787',
+  'native_key' => 'ms2_payment_sbrbnk_return_host',
+  'object' => '{"key":"ms2_payment_sbrbnk_return_host","value":"","xtype":"textfield","namespace":"mspsberbank","area":"","editedon":null}',
+);

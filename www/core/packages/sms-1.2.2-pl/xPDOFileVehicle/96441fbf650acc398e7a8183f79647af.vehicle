@@ -1,0 +1,23 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'sms-1.2.2-pl/xPDOFileVehicle/96441fbf650acc398e7a8183f79647af/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'sms',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"sms-1.2.2-pl\\/xPDOFileVehicle\\/96441fbf650acc398e7a8183f79647af.resolve.encryption.resolver","name":"resolve.encryption"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => 'f10a0f62ccbc7d77666941c9bf187650',
+  'package' => '',
+  'signature' => '96441fbf650acc398e7a8183f79647af',
+  'native_key' => 'f10a0f62ccbc7d77666941c9bf187650',
+);

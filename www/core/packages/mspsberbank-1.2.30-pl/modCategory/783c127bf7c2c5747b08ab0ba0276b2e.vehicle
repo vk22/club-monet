@@ -1,0 +1,59 @@
+<?php return array (
+  'vehicle_class' => 'encryptedVehicle',
+  'abort_install_on_vehicle_fail' => true,
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_object_attributes' => 
+  array (
+  ),
+  'namespace' => 'mspsberbank',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspsberbank-1.2.30-pl\\/modCategory\\/783c127bf7c2c5747b08ab0ba0276b2e\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"mspsberbank"}',
+    ),
+    1 => NULL,
+    2 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspsberbank-1.2.30-pl\\/modCategory\\/783c127bf7c2c5747b08ab0ba0276b2e\\/2\\/","target":"return MODX_ASSETS_PATH . \'components\\/minishop2\\/payment\\/\';","name":"sberbank.php"}',
+    ),
+    3 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspsberbank-1.2.30-pl\\/modCategory\\/783c127bf7c2c5747b08ab0ba0276b2e\\/3\\/","target":"return MODX_CORE_PATH . \'components\\/minishop2\\/custom\\/payment\\/\';","name":"sberbank.class.php"}',
+    ),
+    4 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspsberbank-1.2.30-pl\\/modCategory\\/783c127bf7c2c5747b08ab0ba0276b2e\\/4\\/","target":"return MODX_CORE_PATH . \'components\\/minishop2\\/lexicon\\/en\\/\';","name":"msp.sberbank.inc.php"}',
+    ),
+    5 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspsberbank-1.2.30-pl\\/modCategory\\/783c127bf7c2c5747b08ab0ba0276b2e\\/5\\/","target":"return MODX_CORE_PATH . \'components\\/minishop2\\/lexicon\\/ru\\/\';","name":"msp.sberbank.inc.php"}',
+    ),
+    6 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mspsberbank-1.2.30-pl\\/modCategory\\/783c127bf7c2c5747b08ab0ba0276b2e.payment.resolver","type":"php","name":"payment"}',
+    ),
+    7 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mspsberbank-1.2.30-pl\\/modCategory\\/783c127bf7c2c5747b08ab0ba0276b2e.tables.resolver","type":"php","name":"tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '00570a7fb3476253b8c3e8a7e8ccda88',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '783c127bf7c2c5747b08ab0ba0276b2e',
+  'native_key' => NULL,
+  'object_encrypted' => '2584JTUPp+G0mdRaSW2j+QhYgh70KNqmjzxhZg64HbxNnSb3SozZyB3Lr90qXj7W+yBWyQiWdcp0UfvwlQw9+VSZt4FNzuRiqVJ0G/gS56RByoR0NxR6XPlhOwQUDucs',
+  'related_objects_encrypted' => 'DzsDzN943I5XHBwteYsFWstlTc3QyAVK6OQf8rxhBP0=',
+);

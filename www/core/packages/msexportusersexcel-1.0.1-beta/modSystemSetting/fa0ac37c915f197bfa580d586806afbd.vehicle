@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'related_objects' => false,
+  'namespace' => 'msexportusersexcel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cab34db0e8a05836fd9f1032e7d347c1',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fa0ac37c915f197bfa580d586806afbd',
+  'native_key' => 'msexportusersexcel_date_format',
+  'object' => '{"key":"msexportusersexcel_date_format","value":"d.m.Y H:i:s","xtype":"textfield","namespace":"msexportusersexcel","area":"msexportusersexcel_excel","editedon":null}',
+);

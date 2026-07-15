@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspsberbank',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '09788b49e26be6bda1bcca68d601d4bb',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e323de14ca28373943282cdfa50ba15b',
+  'native_key' => 'ms2_payment_sbrbnk_timeout',
+  'object' => '{"key":"ms2_payment_sbrbnk_timeout","value":0,"xtype":"numberfield","namespace":"mspsberbank","area":"","editedon":null}',
+);

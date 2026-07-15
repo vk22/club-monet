@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'msfavorites-3.0.5-beta/xPDOScriptVehicle/923e7d230fffe140609945ec4e81a665.resolve.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'msfavorites',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => 'c70bc123f0cfbc6bef483857e1b6aa32',
+  'package' => '',
+  'signature' => '923e7d230fffe140609945ec4e81a665',
+  'native_key' => 'c70bc123f0cfbc6bef483857e1b6aa32',
+);

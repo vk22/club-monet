@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msfavorites',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1c34b7d77e794d8b43daf034d4bf387c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '20c25d9f9fdfe27f5616f3177753393b',
+  'native_key' => 'msfavorites_limit_anon',
+  'object' => '{"key":"msfavorites_limit_anon","value":"30","xtype":"textfield","namespace":"msfavorites","area":"msfavorites_main","editedon":null}',
+);

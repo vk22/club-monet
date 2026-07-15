@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f6e44114fd19a3d8b30da948fee5f6cd',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '561370a1a1c767ac777f3fa44670eedb',
+  'native_key' => 'office_frontend_css',
+  'object' => '{"key":"office_frontend_css","value":"[[++assets_url]]components\\/office\\/css\\/main\\/default.css","xtype":"textfield","namespace":"office","area":"office_main","editedon":null}',
+);

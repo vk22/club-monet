@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '038485466c78edebe927444b428f677e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '2c1d16d74198fdb022670dbb89c78b15',
+  'native_key' => 'sms_charset',
+  'object' => '{"key":"sms_charset","value":"utf-8","xtype":"textfield","namespace":"sms","area":"sms_main","editedon":null}',
+);

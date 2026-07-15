@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'sms-1.2.2-pl/xPDOScriptVehicle/2fa3b8e75e1af943ffb83e0689480b96.resolve.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => 'e374d8bb326a220bddbe7720bf9ef291',
+  'package' => '',
+  'signature' => '2fa3b8e75e1af943ffb83e0689480b96',
+  'native_key' => 'e374d8bb326a220bddbe7720bf9ef291',
+);

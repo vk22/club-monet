@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8a2279fa799e0d1e866e7c34c6371660',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3e15e57045b53fc28aed62c16e284ab1',
+  'native_key' => 'office_sms_provider',
+  'object' => '{"key":"office_sms_provider","value":"SmsRu","xtype":"textfield","namespace":"office","area":"office_main","editedon":null}',
+);

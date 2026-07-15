@@ -1,0 +1,278 @@
+
+.carouselIndexWrap {
+    width: 100%;
+    padding: 0 15px;
+    height: 400px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    animation-duration: .5s;
+    animation-name: initCarousel;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes initCarousel {
+  from {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.carouselIndexWrap .textContent {
+  width: 600px;
+  height: 350px;
+}
+
+.carouselIndexWrap .textContent a {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+
+.carouselIndexWrap .textContent.left a {
+  justify-content: flex-start;
+}
+.carouselIndexWrap .textContent.center a {
+  justify-content: center;
+}
+
+.carouselIndexWrap .textContent img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 2;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.carouselIndexWrap .textContent div {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  line-height: 1.15;
+}
+
+.carouselIndexWrap .textContent.left div {
+  padding-left: 30px;
+  width: 60%;
+}
+
+.carouselIndexWrap .textContent.left div h1{
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.carouselIndexWrap .textContent.left div p{
+  font-size: 16px;
+}
+
+.carouselIndexWrap .textContent.center div h1{
+  font-size: 54px;
+  margin-bottom: 10px;
+}
+
+.carouselIndexWrap .textContent.center div p{
+  font-size: 24px;
+}
+
+.carouselIndexWrap .cat-item-prev {
+  width: 600px;
+  height: 350px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  position: relative;
+  background: #fff;
+  text-align: center;
+  letter-spacing: 1px;
+  border: 3px solid #fff;
+  box-shadow: 0 1px 1px rgba(0,0,0,.05);
+}
+
+.carouselIndexWrap .cat-item-prev  .item-prev-img {
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.carouselIndexWrap .cat-item-prev  .item-prev-img img{
+  width: 150px;
+}
+
+.carouselIndexWrap .cat-item-prev .item-prev-info {
+  display: inline-block;
+  width: 100%;
+  vertical-align: bottom;
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  padding: 0 10px;
+}
+
+.carouselIndexWrap .cat-item-prev .item-prev-info .item-prev-title {
+  font-family: futurabookc,Verdana,sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0;
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+
+.carouselIndexWrap .cat-item-prev .item-prev-info .item-prev-price {
+  font-family: futurademic,Verdana,sans-serif;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.carouselIndexWrap .cat-item-prev .item-prev-info .item-prev-go {
+  display: inline-block;
+  color: #fff;
+  background: #b5985a;
+  padding: 10px 40px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1px;
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease;
+  border: none;
+}
+
+/* line 3, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] [data-prev-button] {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  top: 0px;
+  left: 0px;
+  cursor: pointer;
+}
+/* line 10, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] [data-next-button] {
+  position: absolute;
+  height: 100%;
+  width: 15%;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+
+/* line 22, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] {
+  position: relative;
+  overflow: hidden;
+}
+/* line 26, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] {
+  perspective: 750px;
+  -ms-perspective: 750px;
+  -moz-perspective: 750px;
+  -webkit-perspective: 750px;
+}
+/* line 32, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] > [data-child] {
+  transition: 1s;
+  -ms-transition: 1s;
+  -moz-transition: 1s;
+  -webkit-transition: 1s;
+}
+
+/* line 43, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+/* line 50, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] > [data-child] {
+  position: absolute;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+}
+/* line 59, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] > [data-children-wrapper] > [data-child] > [data-child-frame] > [data-content-wrapper] {
+  box-sizing: border-box;
+  transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  -moz-transform-origin: 0px 0px;
+  -webkit-transform-origin: 0px 0px;
+  /* transform: scale(1)!important; */
+}
+
+/* line 75, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d]:before {
+  padding-top: 40%;
+  display: block;
+  content: '';
+}
+/* line 82, ../../styles/common/jquery.carousel-3d.scss */
+[data-carousel-3d] [data-children-wrapper] {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 26%;
+  left: 26%;
+}
+
+/* line 9, ../../styles/theme/jquery.carousel-3d.default.scss */
+[data-carousel-3d] {
+  /* background: #fff; */
+
+  /* background: linear-gradient(0deg, #c8c8c8, white, #c8c8c8);
+  background: -ms-linear-gradient(0deg, #c8c8c8, white, #c8c8c8);
+  background: -moz-linear-gradient(0deg, #c8c8c8, white, #c8c8c8);
+  background: -webkit-linear-gradient(0deg, #c8c8c8, white, #c8c8c8);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 );
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#ffffff',GradientType=0 ); */
+}
+
+/* line 19, ../../styles/theme/jquery.carousel-3d.default.scss */
+[data-carousel-3d] {
+  /* box-shadow: 0 1px 1px rgba(0,0,0,.05); */
+}
+
+/* line 26, ../../styles/theme/jquery.carousel-3d.default.scss */
+[data-carousel-3d] [data-prev-button]:before {
+  content: url("./images/default/prev.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 43px;
+  height: 49px;
+  margin: auto;
+}
+/* line 39, ../../styles/theme/jquery.carousel-3d.default.scss */
+[data-carousel-3d] [data-next-button]:before {
+  content: url("./images/default/next.png");
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 43px;
+  height: 49px;
+  margin: auto;
+}
+
+/* line 53, ../../styles/theme/jquery.carousel-3d.default.scss */
+[data-child-frame] {
+  /* border: 5px solid #ffffff; */
+}
+
+/*# sourceMappingURL=jquery.carousel-3d.default.css.map */

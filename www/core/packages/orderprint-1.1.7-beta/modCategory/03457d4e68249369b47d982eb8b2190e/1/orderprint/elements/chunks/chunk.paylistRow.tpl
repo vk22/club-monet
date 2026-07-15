@@ -1,0 +1,35 @@
+<tr>
+    <td>
+        [[+pagetitle]]
+    </td>
+    <td>
+        шт.
+    </td>
+    <td>
+        [[+count]]
+    </td>
+    <td>
+        [[+price]]
+    </td>
+    <td>
+        [[+cost]]
+    </td>
+    <td>
+        -
+    </td>
+    <td>
+        -
+    </td>
+    <td>
+        -
+    </td>
+    <td>
+        [[+cost]]
+    </td>
+    <td>
+        -
+    </td>
+    <td>
+        -
+    </td>
+</tr>

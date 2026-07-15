@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspyookassa',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5ff1304a5bfd1fa7c326ffe30f30b2e9',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1d0819671acd144be126d37d8479d74e',
+  'native_key' => 'mspyookassa_payment_vat',
+  'object' => '{"key":"mspyookassa_payment_vat","value":"1","xtype":"numberfield","namespace":"mspyookassa","area":"mspyookassa_main","editedon":null}',
+);

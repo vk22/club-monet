@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspsberbank',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '861dc79f7a5ecb917788fa13107b3531',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ea44ed096c81e3748889d06b69898000',
+  'native_key' => 'ms2_payment_sbrbnk_url',
+  'object' => '{"key":"ms2_payment_sbrbnk_url","value":"https:\\/\\/3dsec.sberbank.ru\\/payment\\/rest\\/","xtype":"textfield","namespace":"mspsberbank","area":"","editedon":null}',
+);

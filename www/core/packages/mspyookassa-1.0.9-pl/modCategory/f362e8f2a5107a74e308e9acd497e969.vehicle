@@ -1,0 +1,126 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'cb8dfd0dfcf8389c36284b62b30299d7' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'cc32ffc2f2576f1fcf375a979d9efa1e' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"msOnManagerCustomCssJs","priority":150,"propertyset":0}',
+              'guid' => 'd7c28bd49507ce2e126efc68455fdaaf',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'msOnManagerCustomCssJs',
+              ),
+              'signature' => 'a9b478eb4f433231f45f221c1c0fc081',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => true,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"mspYooKassa","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/** @var array $scriptProperties *\\/\\r\\n\\/** @var mspYooKassa $mspYooKassa *\\/\\r\\n$fqn = $modx->getOption(\'mspyookassa_class\', null, \'mspyookassa.mspYooKassa\', true);\\r\\n$path = $modx->getOption(\'mspyookassa_core_path\', null, $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components\\/mspyookassa\\/\');\\r\\nif ($mspYooKassa = $modx->getService($fqn, \'\', $path . \'model\\/\', [\'core_path\' => $path])) {\\r\\n    if (method_exists($mspYooKassa, \'processEvent\')) {\\r\\n        return $mspYooKassa->processEvent($modx->event, $scriptProperties);\\r\\n    }\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/mspyookassa\\/elements\\/plugins\\/mspyookassa.php","content":"\\/** @var array $scriptProperties *\\/\\r\\n\\/** @var mspYooKassa $mspYooKassa *\\/\\r\\n$fqn = $modx->getOption(\'mspyookassa_class\', null, \'mspyookassa.mspYooKassa\', true);\\r\\n$path = $modx->getOption(\'mspyookassa_core_path\', null, $modx->getOption(\'core_path\', null, MODX_CORE_PATH) . \'components\\/mspyookassa\\/\');\\r\\nif ($mspYooKassa = $modx->getService($fqn, \'\', $path . \'model\\/\', [\'core_path\' => $path])) {\\r\\n    if (method_exists($mspYooKassa, \'processEvent\')) {\\r\\n        return $mspYooKassa->processEvent($modx->event, $scriptProperties);\\r\\n    }\\r\\n}","file":"mspyookassa","events":{"msOnManagerCustomCssJs":{"priority":150}}}',
+        'guid' => '6094e0584f06fbeb193d845088e2e4c1',
+        'native_key' => NULL,
+        'signature' => 'c1dc247d2a986c6a9b5632ecf2fbd219',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => true,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'mspyookassa',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspyookassa-1.0.9-pl\\/modCategory\\/f362e8f2a5107a74e308e9acd497e969\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"mspyookassa"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"mspyookassa-1.0.9-pl\\/modCategory\\/f362e8f2a5107a74e308e9acd497e969\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"mspyookassa"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mspyookassa-1.0.9-pl\\/modCategory\\/f362e8f2a5107a74e308e9acd497e969.encryption.resolver","type":"php","name":"encryption"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mspyookassa-1.0.9-pl\\/modCategory\\/f362e8f2a5107a74e308e9acd497e969.integration.resolver","type":"php","name":"integration"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mspyookassa-1.0.9-pl\\/modCategory\\/f362e8f2a5107a74e308e9acd497e969.status.resolver","type":"php","name":"status"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"mspyookassa-1.0.9-pl\\/modCategory\\/f362e8f2a5107a74e308e9acd497e969.tables.resolver","type":"php","name":"tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '082fb8b8f2ee45ed71c205de0afdf06b',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'f362e8f2a5107a74e308e9acd497e969',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"mspYooKassa","rank":0}',
+);

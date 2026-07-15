@@ -1,0 +1,30 @@
+<?php
+/** @var xPDOTransport $transport */
+/** @var array $options */
+/** @var modX $modx */
+if ($transport->xpdo) {
+    $modx =& $transport->xpdo;
+
+    switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_INSTALL:
+        case xPDOTransport::ACTION_UPGRADE:
+            /* @var miniShop2 $miniShop2 */
+            /* @var msPayment $payment */
+            $miniShop2 = $modx->getService('minishop2');
+            if (!$payment = $modx->getObject('msPayment', array('class' => 'Sberbank'))) {
+                $payment = $modx->newObject('msPayment');
+                $payment->fromArray(array(
+                	'name' => 'Sberbank'
+                	,'active' => 0
+                	,'class' => 'Sberbank'
+                ));
+                $payment->save();
+            }
+            break;
+
+        case xPDOTransport::ACTION_UNINSTALL:
+            break;
+    }
+}
+
+return true;

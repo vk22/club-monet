@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'orderprint',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '67c11c8d33109be90f794c624add3040',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a4298a58a5d8259f7c3c6e6268361afe',
+  'native_key' => 'opr_type',
+  'object' => '{"key":"opr_type","value":"ms2","xtype":"textfield","namespace":"orderprint","area":"\\u041c\\u0430\\u0433\\u0430\\u0437\\u0438\\u043d (\\u0441\\u0438\\u043f\\u043e\\u043b\\u044c\\u0437\\u0443\\u0435\\u043c\\u044b\\u0439 \\u043a\\u043e\\u043c\\u043f\\u043e\\u043d\\u0435\\u043d\\u0442)","editedon":null}',
+);

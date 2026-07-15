@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '5d17068a52cf7c1d35a39d2d7ddb6d05' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"fileattach","controller":"index","haslayout":1,"lang_topics":"fileattach:default","assets":"","help_url":"","parent":0}',
+        'guid' => '94cc89bded4e76a636509be59075aaa0',
+        'native_key' => 0,
+        'signature' => '63c7bb7e1dc476bab2f4c8594ca9aee1',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'fileattach',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9958c410e7bae63b1043e4c86f5f4c60',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '67d091ca200391c1eab1255939cad308',
+  'native_key' => 'fileattach',
+  'object' => '{"text":"fileattach","parent":"components","action":0,"description":"fileattach.menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"fileattach.totallist","namespace":"core"}',
+);

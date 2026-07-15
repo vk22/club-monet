@@ -1,0 +1,126 @@
+<?php
+
+
+/** @var xPDOTransport $transport */
+/** @var array $options */
+/** @var modX $modx */
+if ($transport->xpdo) {
+    $modx =& $transport->xpdo;
+
+    /** @var miniShop2 $miniShop2 */
+    if (!$miniShop2 = $modx->getService('miniShop2')) {
+        $message = '[mspYooKassa] Could not load miniShop2 class!';
+    } else {
+        switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+            case xPDOTransport::ACTION_INSTALL:
+            case xPDOTransport::ACTION_UPGRADE:
+
+                /** @var miniShop2 $miniShop2 */
+                if (!$miniShop2 = $modx->getService('miniShop2')) {
+                    $modx->log(modX::LOG_LEVEL_ERROR, '[mspYaCassa] Could not load miniShop2 class!');
+
+                    return false;
+                }
+
+                /* msOrderStatus */
+                $statuses = [
+                    'status_hold' => [
+                        'name' => 'Ожидает подтверждения',
+                        'description' => '',
+                        'color' => 'FF00FF',
+                        'email_user' => 0,
+                        'email_manager' => 0,
+                        'subject_user' => '',
+                        'subject_manager' => '',
+                        'body_user' => '',
+                        'body_manager' => '',
+                        'final' => 0,
+                    ],
+                ];
+
+                foreach ($statuses as $key => $v) {
+                    if ($setting = $modx->getOption('mspyookassa_' . $key, null)) {
+                        continue;
+                    }
+
+                    if (!$status = $modx->getObject('msOrderStatus', ['name' => $v['name']])) {
+                        $status = $modx->newObject('msOrderStatus', array_merge([
+                            'editable' => 1,
+                            'active' => 1,
+                            'fixed' => 1,
+                            'rank' => $modx->getCount('msOrderStatus') - 1,
+                        ], $v)
+                        );
+                        /* @var modChunk $chunk */
+                        if (!empty($v['body_user'])) {
+                            if ($chunk = $modx->getObject('modChunk', ['name' => $v['body_user']])) {
+                                $status->set('body_user', $chunk->get('id'));
+                            }
+                        }
+                        if (!empty($v['body_manager'])) {
+                            if ($chunk = $modx->getObject('modChunk', ['name' => $v['body_manager']])) {
+                                $status->set('body_manager', $chunk->get('id'));
+                            }
+                        }
+                        if ($status->save()) {
+                            if ($setting = $modx->getObject('modSystemSetting', ['key' => 'mspyookassa_' . $key])) {
+                                $value = $setting->get('value');
+                                if (empty($value)) {
+                                    $setting->set('value', $status->get('id'));
+                                    $setting->save();
+                                }
+                            }
+
+                            $statuses[$key]['id'] = $status->get('id');
+                        }
+                    }
+                    /*else {
+                        $status->set('editable', 1);
+                        $status->save();
+                    }*/
+                }
+
+                $ids = [];
+                foreach ($statuses as $key => $v) {
+                    if ($id = isset($v['id']) ? $v['id'] : 0) {
+                        $ids[] = $id;
+                    }
+                }
+
+                if ($ids) {
+                    array_unshift($ids, 1);
+
+                    $table = $modx->getTableName('msOrderStatus');
+                    $sql = "SELECT id FROM {$table} ORDER BY rank ASC ";
+                    if ($stmt = $modx->prepare($sql) and $stmt->execute()) {
+                        if (!$tmp = $stmt->fetchAll(PDO::FETCH_COLUMN)) {
+                            $tmp = [];
+                        }
+                        $ids = array_merge($ids, $tmp);
+                        $ids = array_keys(array_flip($ids));  // Remove duplicate fields
+
+                        $sql = '';
+                        foreach ($ids as $k => $id) {
+                            $sql .= "UPDATE {$table} SET `rank` = '{$k}' WHERE (`id` = {$id});";
+                        }
+                        $sql .= "ALTER TABLE {$table} ORDER BY `rank` ASC;";
+                        $modx->exec($sql);
+                    }
+                }
+
+
+                break;
+            default:
+                $message = '';
+                break;
+        }
+    }
+
+    if (!empty($message)) {
+        $modx->log(modX::LOG_LEVEL_INFO, $message);
+    }
+
+}
+
+
+return true;

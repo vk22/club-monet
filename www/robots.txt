@@ -1,0 +1,50 @@
+
+User-agent: Yandex
+# Наиболее часто встречаемые расширения документов
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Disallow: /*?
+Disallow: /search.html?*
+Disallow: /newin.html
+# Требуется для правильно обработки ПС
+Allow: /assets/monety/css/*.css
+Allow: /assets/monety/js/*.js
+# Наиболее часто встречаемые метки для отслеживания рекламы
+Clean-param: utm_source&utm_medium&utm_term&utm_content&utm_campaign&yclid&gclid&_openstat&from /
+# При наличии фильтров и параметров добавляем и их в Clean-param
+
+User-agent: Googlebot
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Allow: /assets/monety/css/*.css
+Allow: /assets/monety/js/*.js
+# У google метки, фильтры и параметры закрываются в GSC-Сканирование-Параметры URL
+ 
+User-agent: *
+
+Disallow: /core/
+Disallow: /connectors/
+Disallow: /manager/
+Disallow: /assets/components/
+Disallow: /index.php
+Host: https://club-monet.ru
+
+# Метки, фильтры и параметры для других ПС закрываем по классическому стандарту
+Disallow: /*utm
+Disallow: /*clid=
+Disallow: /*openstat
+Disallow: /*from
+Disallow: /*.pdf
+Disallow: /*.xls
+Disallow: /*.doc
+Disallow: /*.ppt
+Disallow: /*.txt
+Allow: /assets/monety/css/*.css
+Allow: /assets/monety/js/*.js
+Sitemap: https://club-monet.ru/sitemap.xml

@@ -1,0 +1,191 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '46cd8564c0a1a22086cb7803fe634e1d' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.crList.row","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<option value=\\"[[+charcode]]\\" [[+selected]]>[[+charcode]]<\\/option>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/currencyrate\\/elements\\/chunks\\/chunk.list_row.tpl","content":"<option value=\\"[[+charcode]]\\" [[+selected]]>[[+charcode]]<\\/option>"}',
+        'guid' => 'cfbc7abb6704188e29a781554229f2fa',
+        'native_key' => 0,
+        'signature' => '3af5f02d5bea07e2129339a400bbb51e',
+      ),
+      'd28d22182a3052c723a230e243e87a75' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.crList.outer","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"form-group\\">\\n    <div class=\\"col-sm-1\\">\\n        <select name=\\"currency_rate\\" class=\\"form-control\\">[[+rows]]<\\/select>\\n    <\\/div>\\n<\\/div>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/currencyrate\\/elements\\/chunks\\/chunk.list_outer.tpl","content":"<div class=\\"form-group\\">\\n    <div class=\\"col-sm-1\\">\\n        <select name=\\"currency_rate\\" class=\\"form-control\\">[[+rows]]<\\/select>\\n    <\\/div>\\n<\\/div>"}',
+        'guid' => '71b47420615db5b9ba7b3ae72a52eff9',
+        'native_key' => 0,
+        'signature' => 'e34e9764275f3f677c5d693bfec1744f',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '7f31ac455d0ce48bcc64930725fef8bc' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"CRcalc","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var array $scriptProperties *\\/\\n\\/** @var currencyrate $currencyrate *\\/\\nif (!$currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\', $modx->getOption(\'currencyrate_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties)\\n) {\\n    return \'Could not load currencyrate class!\';\\n}\\nif (empty($input)) {\\n    return \'\';\\n}\\n$list = $currencyrate->getList();\\nif (!empty($multiplier)) {\\n    $multiplier = $list[$multiplier];\\n    $output = $currencyrate->formatPrice(($input * $multiplier), $format, $noZeros);\\n}\\nif (!empty($divider)) {\\n    $divider = !empty($list[$divider]) ? $list[$divider] : 1;\\n    $output = $currencyrate->formatPrice(($input \\/ $divider), $format, $noZeros);\\n}\\nif (!empty($toPlaceholder)) {\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n} else {\\n    return $output;\\n}","locked":0,"properties":"a:6:{s:5:\\"input\\";a:7:{s:4:\\"name\\";s:5:\\"input\\";s:4:\\"desc\\";s:23:\\"currencyrate_prop_input\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"multiplier\\";a:7:{s:4:\\"name\\";s:10:\\"multiplier\\";s:4:\\"desc\\";s:28:\\"currencyrate_prop_multiplier\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"divider\\";a:7:{s:4:\\"name\\";s:7:\\"divider\\";s:4:\\"desc\\";s:25:\\"currencyrate_prop_divider\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"format\\";a:7:{s:4:\\"name\\";s:6:\\"format\\";s:4:\\"desc\\";s:24:\\"currencyrate_prop_format\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:13:\\"[2, \\".\\", \\" \\"]\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"noZeros\\";a:7:{s:4:\\"name\\";s:7:\\"noZeros\\";s:4:\\"desc\\";s:25:\\"currencyrate_prop_noZeros\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:1;s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:31:\\"currencyrate_prop_toPlaceholder\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/currencyrate\\/elements\\/snippets\\/snippet.calc.php","content":"\\/** @var array $scriptProperties *\\/\\n\\/** @var currencyrate $currencyrate *\\/\\nif (!$currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\', $modx->getOption(\'currencyrate_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties)\\n) {\\n    return \'Could not load currencyrate class!\';\\n}\\nif (empty($input)) {\\n    return \'\';\\n}\\n$list = $currencyrate->getList();\\nif (!empty($multiplier)) {\\n    $multiplier = $list[$multiplier];\\n    $output = $currencyrate->formatPrice(($input * $multiplier), $format, $noZeros);\\n}\\nif (!empty($divider)) {\\n    $divider = !empty($list[$divider]) ? $list[$divider] : 1;\\n    $output = $currencyrate->formatPrice(($input \\/ $divider), $format, $noZeros);\\n}\\nif (!empty($toPlaceholder)) {\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n} else {\\n    return $output;\\n}"}',
+        'guid' => '18bace78c6bb01dbf481071380677650',
+        'native_key' => 0,
+        'signature' => '95d699132a6df05526dc7bcdec62abc3',
+      ),
+      'f581a64b6a53dfce7ea299f8da909ea7' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"CRlist","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var array $scriptProperties *\\/\\n\\/** @var currencyrate $currencyrate *\\/\\nif (!$currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\', $modx->getOption(\'currencyrate_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties)\\n) {\\n    return \'Could not load currencyrate class!\';\\n}\\n$currencyrate->initialize($modx->context->key, $scriptProperties);\\nif (empty($selected)) {\\n    $selected = \'\';\\n}\\nif (empty($outputSeparator)) {\\n    $outputSeparator = \\"\\\\n\\";\\n}\\nif (!empty($currencyrate->currency)) {\\n    $selected = $currencyrate->currency;\\n}\\n$class = \'CRlist\';\\n\\/\\/ Start building \\"Where\\" expression\\n$where = array();\\nif (empty($showInactive)) {\\n    $where[$class . \'.active\'] = 1;\\n}\\n\\/\\/ Add\\n$innerJoin = array();\\n\\/\\/ Fields to select\\n$select = array(\\n    $class => implode(\',\', array_keys($modx->getFieldMeta($class)))\\n);\\n\\/\\/ Add custom parameters\\nforeach (array(\'where\', \'innerJoin\', \'select\') as $v) {\\n    if (!empty($scriptProperties[$v])) {\\n        $tmp = $modx->fromJSON($scriptProperties[$v]);\\n        if (is_array($tmp)) {\\n            $$v = array_merge($$v, $tmp);\\n        }\\n    }\\n    unset($scriptProperties[$v]);\\n}\\n$currencyrate->pdoTools->addTime(\'Conditions prepared\');\\n$default = array(\\n    \'class\'             => $class,\\n    \'innerJoin\'         => $modx->toJSON($innerJoin),\\n    \'where\'             => $modx->toJSON($where),\\n    \'select\'            => $modx->toJSON($select),\\n    \'groupby\'           => $class . \'.id\',\\n    \'sortby\'            => $class . \'.rank\',\\n    \'sortdir\'           => \'ASC\',\\n    \'fastMode\'          => false,\\n    \'return\'            => !empty($returnIds) ? \'ids\' : \'data\',\\n    \'nestedChunkPrefix\' => \'cr_\',\\n    \'disableConditions\' => true\\n);\\n\\/\\/ Merge all properties and run!\\n$currencyrate->pdoTools->addTime(\'Query parameters ready\');\\n$currencyrate->pdoTools->setConfig(array_merge($default, $scriptProperties), false);\\n$data = $currencyrate->pdoTools->run();\\n\\/\\/ Processing rows\\n$rows = array();\\nif (!empty($data) && is_array($data)) {\\n    foreach ($data as $k => $row) {\\n        $row[\'idx\'] = $currencyrate->pdoTools->idx++;\\n        $row[\'selected\'] = $row[\'charcode\'] == $selected ? \'selected\' : \'\';\\n        $rows[] = empty($tplRow) ? $row : $currencyrate->pdoTools->getChunk($tplRow, $row);\\n    }\\n}\\n$rows = implode($outputSeparator, $rows);\\n$output = empty($tplOuter)\\n    ? $currencyrate->pdoTools->getChunk(\'\', array(\'rows\' => $rows))\\n    : $currencyrate->pdoTools->getChunk($tplOuter, array_merge($scriptProperties, array(\'rows\' => $rows)));\\n$currencyrate->pdoTools->addTime(\'Returning processed chunks\');\\n$log = \'\';\\nif ($modx->user->hasSessionContext(\'mgr\') && !empty($showLog)) {\\n    $log .= \'<pre class=\\"crLog\\">\' . print_r($currencyrate->pdoTools->getTime(), 1) . \'<\\/pre>\';\\n}\\n$output .= $log;\\nif (!empty($toPlaceholder)) {\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n} else {\\n    return $output;\\n}","locked":0,"properties":"a:7:{s:6:\\"tplRow\\";a:7:{s:4:\\"name\\";s:6:\\"tplRow\\";s:4:\\"desc\\";s:24:\\"currencyrate_prop_tplRow\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:14:\\"tpl.crList.row\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"tplOuter\\";a:7:{s:4:\\"name\\";s:8:\\"tplOuter\\";s:4:\\"desc\\";s:26:\\"currencyrate_prop_tplOuter\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:16:\\"tpl.crList.outer\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"tplEmpty\\";a:7:{s:4:\\"name\\";s:8:\\"tplEmpty\\";s:4:\\"desc\\";s:26:\\"currencyrate_prop_tplEmpty\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"selected\\";a:7:{s:4:\\"name\\";s:8:\\"selected\\";s:4:\\"desc\\";s:26:\\"currencyrate_prop_selected\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"showInactive\\";a:7:{s:4:\\"name\\";s:12:\\"showInactive\\";s:4:\\"desc\\";s:30:\\"currencyrate_prop_showInactive\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:33:\\"currencyrate_prop_outputSeparator\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"\\n\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:31:\\"currencyrate_prop_toPlaceholder\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:23:\\"currencyrate:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/currencyrate\\/elements\\/snippets\\/snippet.list.php","content":"\\/** @var array $scriptProperties *\\/\\n\\/** @var currencyrate $currencyrate *\\/\\nif (!$currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\', $modx->getOption(\'currencyrate_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties)\\n) {\\n    return \'Could not load currencyrate class!\';\\n}\\n$currencyrate->initialize($modx->context->key, $scriptProperties);\\nif (empty($selected)) {\\n    $selected = \'\';\\n}\\nif (empty($outputSeparator)) {\\n    $outputSeparator = \\"\\\\n\\";\\n}\\nif (!empty($currencyrate->currency)) {\\n    $selected = $currencyrate->currency;\\n}\\n$class = \'CRlist\';\\n\\/\\/ Start building \\"Where\\" expression\\n$where = array();\\nif (empty($showInactive)) {\\n    $where[$class . \'.active\'] = 1;\\n}\\n\\/\\/ Add\\n$innerJoin = array();\\n\\/\\/ Fields to select\\n$select = array(\\n    $class => implode(\',\', array_keys($modx->getFieldMeta($class)))\\n);\\n\\/\\/ Add custom parameters\\nforeach (array(\'where\', \'innerJoin\', \'select\') as $v) {\\n    if (!empty($scriptProperties[$v])) {\\n        $tmp = $modx->fromJSON($scriptProperties[$v]);\\n        if (is_array($tmp)) {\\n            $$v = array_merge($$v, $tmp);\\n        }\\n    }\\n    unset($scriptProperties[$v]);\\n}\\n$currencyrate->pdoTools->addTime(\'Conditions prepared\');\\n$default = array(\\n    \'class\'             => $class,\\n    \'innerJoin\'         => $modx->toJSON($innerJoin),\\n    \'where\'             => $modx->toJSON($where),\\n    \'select\'            => $modx->toJSON($select),\\n    \'groupby\'           => $class . \'.id\',\\n    \'sortby\'            => $class . \'.rank\',\\n    \'sortdir\'           => \'ASC\',\\n    \'fastMode\'          => false,\\n    \'return\'            => !empty($returnIds) ? \'ids\' : \'data\',\\n    \'nestedChunkPrefix\' => \'cr_\',\\n    \'disableConditions\' => true\\n);\\n\\/\\/ Merge all properties and run!\\n$currencyrate->pdoTools->addTime(\'Query parameters ready\');\\n$currencyrate->pdoTools->setConfig(array_merge($default, $scriptProperties), false);\\n$data = $currencyrate->pdoTools->run();\\n\\/\\/ Processing rows\\n$rows = array();\\nif (!empty($data) && is_array($data)) {\\n    foreach ($data as $k => $row) {\\n        $row[\'idx\'] = $currencyrate->pdoTools->idx++;\\n        $row[\'selected\'] = $row[\'charcode\'] == $selected ? \'selected\' : \'\';\\n        $rows[] = empty($tplRow) ? $row : $currencyrate->pdoTools->getChunk($tplRow, $row);\\n    }\\n}\\n$rows = implode($outputSeparator, $rows);\\n$output = empty($tplOuter)\\n    ? $currencyrate->pdoTools->getChunk(\'\', array(\'rows\' => $rows))\\n    : $currencyrate->pdoTools->getChunk($tplOuter, array_merge($scriptProperties, array(\'rows\' => $rows)));\\n$currencyrate->pdoTools->addTime(\'Returning processed chunks\');\\n$log = \'\';\\nif ($modx->user->hasSessionContext(\'mgr\') && !empty($showLog)) {\\n    $log .= \'<pre class=\\"crLog\\">\' . print_r($currencyrate->pdoTools->getTime(), 1) . \'<\\/pre>\';\\n}\\n$output .= $log;\\nif (!empty($toPlaceholder)) {\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n} else {\\n    return $output;\\n}"}',
+        'guid' => '270ced9eb4452499b3ac175a3542842f',
+        'native_key' => 0,
+        'signature' => '97a1116076137932314647f30fde88b6',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '85309d4ecc84f78b6db75cf32f810e95' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"currencyrate","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"$currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\', $modx->getOption(\'currencyrate_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties);\\nif (!($currencyrate instanceof currencyrate)) {\\n    return \'\';\\n}\\n\\n$eventName = $modx->event->name;\\nif (method_exists($currencyrate, $eventName) && $currencyrate->active) {\\n    $currencyrate->$eventName($scriptProperties);\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/currencyrate\\/elements\\/plugins\\/plugin.currencyrate.php","content":"$currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\', $modx->getOption(\'currencyrate_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties);\\nif (!($currencyrate instanceof currencyrate)) {\\n    return \'\';\\n}\\n\\n$eventName = $modx->event->name;\\nif (method_exists($currencyrate, $eventName) && $currencyrate->active) {\\n    $currencyrate->$eventName($scriptProperties);\\n}"}',
+        'guid' => '904e774ebfcc4e1c1d58b008437791b9',
+        'native_key' => NULL,
+        'signature' => 'bc183bf60a8fe6ccd1c6f58bd4072ac5',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '25c98a8717a1ebbe87699301d65f9964' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnHandleRequest","priority":0,"propertyset":0}',
+              'guid' => '6cd62c3f444367f3411f4d71bc4efac4',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnHandleRequest',
+              ),
+              'signature' => 'ad48af2337360244fc5b94eff2e7e21d',
+            ),
+            '9e8e8d4478be76b7080bc54d3043e380' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnBeforeCacheUpdate","priority":0,"propertyset":0}',
+              'guid' => 'fb3d04c62e3cafde825c8ffe26e73d7b',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnBeforeCacheUpdate',
+              ),
+              'signature' => 'c41ef90819e94ce5ea1cd563fd104f6a',
+            ),
+          ),
+        ),
+      ),
+      'e7dac4f3ada7226f97edbf8d36b0faaf' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"crMSprice","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"switch ($modx->event->name) {\\n    case \'msOnGetProductPrice\':\\n        if ($modx->context->key == \'mgr\') {\\n            return \'\';\\n        }\\n        $currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\',\\n            $modx->getOption(\'currencyrate_core_path\', null,\\n                $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties);\\n        if (!($currencyrate instanceof currencyrate)) {\\n            return \'\';\\n        }\\n        $currency = $currencyrate->currency;\\n        if ($currency == $modx->getOption(\'currencyrate_currency\')) {\\n            return \'\';\\n        }\\n        $list = $currencyrate->getList();\\n        if (!isset($modx->event->returnedValues[\'price\'])) {\\n            $modx->event->returnedValues[\'price\'] = $price;\\n        }\\n        $price = &$modx->event->returnedValues[\'price\'];\\n        $new_price = $price \\/ $list[$currency];\\n        if ($new_price !== false) {\\n            $price = $new_price;\\n        }\\n\\n        break;\\n\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/currencyrate\\/elements\\/plugins\\/plugin.ms_price.php","content":"switch ($modx->event->name) {\\n    case \'msOnGetProductPrice\':\\n        if ($modx->context->key == \'mgr\') {\\n            return \'\';\\n        }\\n        $currencyrate = $modx->getService(\'currencyrate\', \'currencyrate\',\\n            $modx->getOption(\'currencyrate_core_path\', null,\\n                $modx->getOption(\'core_path\') . \'components\\/currencyrate\\/\') . \'model\\/currencyrate\\/\', $scriptProperties);\\n        if (!($currencyrate instanceof currencyrate)) {\\n            return \'\';\\n        }\\n        $currency = $currencyrate->currency;\\n        if ($currency == $modx->getOption(\'currencyrate_currency\')) {\\n            return \'\';\\n        }\\n        $list = $currencyrate->getList();\\n        if (!isset($modx->event->returnedValues[\'price\'])) {\\n            $modx->event->returnedValues[\'price\'] = $price;\\n        }\\n        $price = &$modx->event->returnedValues[\'price\'];\\n        $new_price = $price \\/ $list[$currency];\\n        if ($new_price !== false) {\\n            $price = $new_price;\\n        }\\n\\n        break;\\n\\n}"}',
+        'guid' => '695ab2a9b3f77c70fd94634caa5b8907',
+        'native_key' => NULL,
+        'signature' => '2454505f5a870676549a14a042e5bee6',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'currencyrate',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"currencyrate-1.0.8-beta\\/modCategory\\/03d3f542e0232bd94308bae773fe8d12\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"currencyrate"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"currencyrate-1.0.8-beta\\/modCategory\\/03d3f542e0232bd94308bae773fe8d12\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"currencyrate"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"currencyrate-1.0.8-beta\\/modCategory\\/03d3f542e0232bd94308bae773fe8d12.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"currencyrate-1.0.8-beta\\/modCategory\\/03d3f542e0232bd94308bae773fe8d12.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '198802805b9254d449cb6cc0497d7491',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '03d3f542e0232bd94308bae773fe8d12',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"currencyrate","rank":0}',
+);

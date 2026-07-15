@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '82a2c8f936f44f60a79e39059767b783',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'ca2f1db42714252432346f1fba20a046',
+  'native_key' => 'sms_send_fields',
+  'object' => '{"key":"sms_send_fields","value":"id,phone,message,status,count,service,ip,createdon","xtype":"textfield","namespace":"sms","area":"sms_main","editedon":null}',
+);

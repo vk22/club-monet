@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'smsc',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9c9b49d17b29b2721361912c1a289a98',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '56e9727da285c03bb64dda72f9ce486c',
+  'native_key' => 'smsc_password',
+  'object' => '{"key":"smsc_password","value":"","xtype":"textarea","namespace":"smsc","area":"smsc_main","editedon":null}',
+);

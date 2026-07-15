@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'cronmanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9a1fb961917cecbd068874fb91c6547a',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '62d18b363a24b7c28ad9462a89e1fb64',
+  'native_key' => 'cronmanager.cronjob_id',
+  'object' => '{"key":"cronmanager.cronjob_id","value":"","xtype":"textfield","namespace":"cronmanager","area":"system","editedon":null}',
+);

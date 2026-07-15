@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '556fea0206dc6aee4de1a0223f70fc26' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"orderprint","controller":"index","haslayout":1,"lang_topics":"orderprint:default","assets":"","help_url":"","parent":0}',
+        'guid' => '4a296a88412eb6888eba255a640ac4b5',
+        'native_key' => 0,
+        'signature' => 'a0eea2effb837ca9f249107453b936d9',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'orderprint',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5e398aed6ceb1d0ad922a1b7f242283d',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => 'a88e6ee1d9129319759d48c04dda4e21',
+  'native_key' => 'orderprint_caption',
+  'object' => '{"text":"orderprint_caption","parent":"components","action":0,"description":"orderprint_menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

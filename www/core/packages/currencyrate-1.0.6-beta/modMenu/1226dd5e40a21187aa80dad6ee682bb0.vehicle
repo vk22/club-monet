@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      'e2f8d72beb0e1f266683f0ee09304c96' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"currencyrate","controller":"index","haslayout":1,"lang_topics":"currencyrate:default","assets":"","help_url":"","parent":0}',
+        'guid' => '4bfd290b9aab212580f77f5da38fe9d2',
+        'native_key' => 0,
+        'signature' => 'd4646b58bfb081c9a0a54551dbd5ad13',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'currencyrate',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '292352dfcecf2f17e38f2b8279976133',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '1226dd5e40a21187aa80dad6ee682bb0',
+  'native_key' => 'currencyrate',
+  'object' => '{"text":"currencyrate","parent":"components","action":0,"description":"currencyrate_menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

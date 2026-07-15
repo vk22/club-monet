@@ -1,0 +1,34 @@
+<?php
+/** @var xPDOTransport $transport */
+/** @var array $options */
+/** @var modX $modx */
+if ($transport->xpdo) {
+    $modx =& $transport->xpdo;
+
+    $dev = MODX_BASE_PATH . 'Extras/msExportUsersExcel/';
+    /** @var xPDOCacheManager $cache */
+    $cache = $modx->getCacheManager();
+    if (file_exists($dev) && $cache) {
+        if (!is_link($dev . 'assets/components/msexportusersexcel')) {
+            $cache->deleteTree(
+                $dev . 'assets/components/msexportusersexcel/',
+                ['deleteTop' => true, 'skipDirs' => false, 'extensions' => []]
+            );
+
+
+            //mklink /j "C:\OSPanel\domains\exportuser.ru\Extras\msExportUsersExcel\assets\components\msexportusersexcel" "C:\OSPanel\domains\exportuser.ru\assets\components\msexportusersexcel"
+            symlink(MODX_ASSETS_PATH . 'components/msexportusersexcel/', $dev . 'assets/components/msexportusersexcel');
+        }
+        if (!is_link($dev . 'core/components/msexportusersexcel')) {
+            $cache->deleteTree(
+                $dev . 'core/components/msexportusersexcel/',
+                ['deleteTop' => true, 'skipDirs' => false, 'extensions' => []]
+            );
+
+            //mklink /j "C:\OSPanel\domains\exportuser.ru\Extras\msExportUsersExcel\core\components\msexportusersexcel" "C:\OSPanel\domains\exportuser.ru\core\components\msexportusersexcel"
+            symlink(MODX_CORE_PATH . 'components/msexportusersexcel/', $dev . 'core/components/msexportusersexcel');
+        }
+    }
+}
+
+return true;

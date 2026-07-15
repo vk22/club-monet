@@ -1,0 +1,149 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '6e75ae251150435ba1d716315f021ba3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"FileAttachTpl","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<p>[[+description:notempty=`<strong>[[+description]]<\\/strong><br\\/>`]]\\n<a href=\\"[[+url]]\\">[[+name]]<\\/a> <span class=\\"badge\\">[[+download]]<\\/span>\\n[[+size:notempty=`<br\\/><small>Size: [[+size]] bytes<\\/small>`]]\\n[[+ext:notempty=`<br\\/><small>Type: <img src=\\"\\/img\\/[[+ext]].png\\" \\/><\\/small>`]]\\n[[+hash:notempty=`<br\\/><small>SHA1: [[+hash]]<\\/small>`]]<\\/p>","locked":0,"properties":null,"static":1,"static_file":"core\\/components\\/fileattach\\/elements\\/chunks\\/chunk.item.tpl","content":"<p>[[+description:notempty=`<strong>[[+description]]<\\/strong><br\\/>`]]\\n<a href=\\"[[+url]]\\">[[+name]]<\\/a> <span class=\\"badge\\">[[+download]]<\\/span>\\n[[+size:notempty=`<br\\/><small>Size: [[+size]] bytes<\\/small>`]]\\n[[+ext:notempty=`<br\\/><small>Type: <img src=\\"\\/img\\/[[+ext]].png\\" \\/><\\/small>`]]\\n[[+hash:notempty=`<br\\/><small>SHA1: [[+hash]]<\\/small>`]]<\\/p>"}',
+        'guid' => '403ec0379be2225658a5a5c361550235',
+        'native_key' => 0,
+        'signature' => '05d2171cd31bc434cf838524bc0aa69e',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '147790686f64b419eaf9bfd3bcbbd2bd' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"FileAttach","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/**\\n * FileAttach\\n *\\n * Copyright 2015-2016 by Vitaly Checkryzhev <13hakta@gmail.com>\\n *\\n * This file is part of FileAttach, tool to attach files to resources with\\n * MODX Revolution\'s Manager.\\n *\\n * FileAttach is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation version 3,\\n *\\n * FileAttach is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * FileAttach; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package FileAttach\\n*\\/\\n\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var FileAttach $FileAttach *\\/\\nif (!$FileAttach = $modx->getService(\'fileattach\', \'FileAttach\', $modx->getOption(\'fileattach.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/fileattach\\/\') . \'model\\/fileattach\\/\', $scriptProperties)) {\\n    return \'Could not load FileAttach class!\';\\n}\\n\\n\\/\\/ Do your snippet code here.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'FileItemTpl\');\\n$sortby = $modx->getOption(\'sortBy\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortDir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 0);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n$resource = $modx->getOption(\'resource\', $scriptProperties, 0);\\n$makeUrl = $modx->getOption(\'makeUrl\', $scriptProperties, true);\\n$privateUrl = $modx->getOption(\'privateUrl\', $scriptProperties, false);\\n$showHASH = $modx->getOption(\'showHASH\', $scriptProperties, false);\\n$showSize = $modx->getOption(\'showSize\', $scriptProperties, false);\\n$showExt = $modx->getOption(\'showExt\', $scriptProperties, false);\\n\\nif ($makeUrl) {\\n    if (!$privateUrl || $showSize) {\\n\\t\\/\\/ Get base URLs\\n\\t$mediaSource = $modx->getOption(\'fileattach.mediasource\',null,1);\\n\\n\\t$ms = $modx->getObject(\'sources.modMediaSource\', array(\'id\' => $mediaSource));\\n\\t$ms->initialize();\\n\\n\\t$files_path = $modx->getOption(\'fileattach.files_path\');\\n\\t$public_url = $ms->getBaseUrl() . $files_path;\\n\\t$docs_path  = $ms->getBasePath() . $files_path;\\n    }\\n\\n    $private_url = $modx->getOption(\'fileattach.assets_url\', null, $modx->getOption(\'assets_url\')) . \'components\\/fileattach\\/\';\\n    $private_url .= \'connector.php?action=web\\/download&ctx=web&id=\';\\n}\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'FileItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->limit($limit);\\n\\nif ($showHASH)\\n    $c->select($modx->getSelectColumns(\'FileItem\', \'FileItem\'));\\nelse\\n    $c->select($modx->getSelectColumns(\'FileItem\', \'FileItem\', \'\', array(\'hash\'), true));\\n\\n$c->where(array(\'docid\' => ($resource > 0)? $resource : $modx->resource->get(\'id\')));\\n\\n$items = $modx->getIterator(\'FileItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = array();\\n\\/** @var FileItem $item *\\/\\nforeach ($items as $item) {\\n    $item->source = $ms;\\n    $item->files_path = $files_path;\\n\\n    $itemArr = $item->toArray();\\n\\n    if ($makeUrl) {\\n\\tif ($itemArr[\'private\'] || $privateUrl)\\n\\t    $itemArr[\'url\'] = $private_url . $itemArr[\'id\'];\\n\\telse\\n\\t    $itemArr[\'url\'] = $public_url . $itemArr[\'path\'] . $itemArr[\'name\'];\\n    }\\n\\n    if ($showSize)\\n\\t$itemArr[\'size\'] = $item->getSize();\\n\\n    if ($showExt) {\\n\\t$itemArr[\'ext\'] = strtolower(\\n\\t    pathinfo($itemArr[\'name\'], PATHINFO_EXTENSION));\\n    }\\n\\n    $list[] = $modx->getChunk($tpl, $itemArr);\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\nreturn $output;","locked":0,"properties":"a:12:{s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:19:\\"fileattach.prop_tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:13:\\"FileAttachTpl\\";s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"sortBy\\";a:7:{s:4:\\"name\\";s:6:\\"sortBy\\";s:4:\\"desc\\";s:22:\\"fileattach.prop_sortBy\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:4:\\"name\\";s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"sortDir\\";a:7:{s:4:\\"name\\";s:7:\\"sortDir\\";s:4:\\"desc\\";s:23:\\"fileattach.prop_sortDir\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:3:\\"ASC\\";s:5:\\"value\\";s:3:\\"ASC\\";}i:1;a:2:{s:4:\\"text\\";s:4:\\"DESC\\";s:5:\\"value\\";s:4:\\"DESC\\";}}s:5:\\"value\\";s:3:\\"ASC\\";s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:21:\\"fileattach.prop_limit\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:0;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:31:\\"fileattach.prop_outputSeparator\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"\\n\\";s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:29:\\"fileattach.prop_toPlaceholder\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"resource\\";a:7:{s:4:\\"name\\";s:8:\\"resource\\";s:4:\\"desc\\";s:24:\\"fileattach.prop_resource\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:0;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"makeUrl\\";a:7:{s:4:\\"name\\";s:7:\\"makeUrl\\";s:4:\\"desc\\";s:23:\\"fileattach.prop_makeUrl\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:1;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:10:\\"privateUrl\\";a:7:{s:4:\\"name\\";s:10:\\"privateUrl\\";s:4:\\"desc\\";s:26:\\"fileattach.prop_privateUrl\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"showHASH\\";a:7:{s:4:\\"name\\";s:8:\\"showHASH\\";s:4:\\"desc\\";s:24:\\"fileattach.prop_showHASH\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:8:\\"showSize\\";a:7:{s:4:\\"name\\";s:8:\\"showSize\\";s:4:\\"desc\\";s:24:\\"fileattach.prop_showSize\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"showExt\\";a:7:{s:4:\\"name\\";s:7:\\"showExt\\";s:4:\\"desc\\";s:23:\\"fileattach.prop_showExt\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"fileattach:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":1,"static_file":"core\\/components\\/fileattach\\/elements\\/snippets\\/snippet.fileattach.php","content":"\\/**\\n * FileAttach\\n *\\n * Copyright 2015-2016 by Vitaly Checkryzhev <13hakta@gmail.com>\\n *\\n * This file is part of FileAttach, tool to attach files to resources with\\n * MODX Revolution\'s Manager.\\n *\\n * FileAttach is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation version 3,\\n *\\n * FileAttach is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * FileAttach; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package FileAttach\\n*\\/\\n\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var FileAttach $FileAttach *\\/\\nif (!$FileAttach = $modx->getService(\'fileattach\', \'FileAttach\', $modx->getOption(\'fileattach.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/fileattach\\/\') . \'model\\/fileattach\\/\', $scriptProperties)) {\\n    return \'Could not load FileAttach class!\';\\n}\\n\\n\\/\\/ Do your snippet code here.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'FileItemTpl\');\\n$sortby = $modx->getOption(\'sortBy\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortDir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 0);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n$resource = $modx->getOption(\'resource\', $scriptProperties, 0);\\n$makeUrl = $modx->getOption(\'makeUrl\', $scriptProperties, true);\\n$privateUrl = $modx->getOption(\'privateUrl\', $scriptProperties, false);\\n$showHASH = $modx->getOption(\'showHASH\', $scriptProperties, false);\\n$showSize = $modx->getOption(\'showSize\', $scriptProperties, false);\\n$showExt = $modx->getOption(\'showExt\', $scriptProperties, false);\\n\\nif ($makeUrl) {\\n    if (!$privateUrl || $showSize) {\\n\\t\\/\\/ Get base URLs\\n\\t$mediaSource = $modx->getOption(\'fileattach.mediasource\',null,1);\\n\\n\\t$ms = $modx->getObject(\'sources.modMediaSource\', array(\'id\' => $mediaSource));\\n\\t$ms->initialize();\\n\\n\\t$files_path = $modx->getOption(\'fileattach.files_path\');\\n\\t$public_url = $ms->getBaseUrl() . $files_path;\\n\\t$docs_path  = $ms->getBasePath() . $files_path;\\n    }\\n\\n    $private_url = $modx->getOption(\'fileattach.assets_url\', null, $modx->getOption(\'assets_url\')) . \'components\\/fileattach\\/\';\\n    $private_url .= \'connector.php?action=web\\/download&ctx=web&id=\';\\n}\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'FileItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->limit($limit);\\n\\nif ($showHASH)\\n    $c->select($modx->getSelectColumns(\'FileItem\', \'FileItem\'));\\nelse\\n    $c->select($modx->getSelectColumns(\'FileItem\', \'FileItem\', \'\', array(\'hash\'), true));\\n\\n$c->where(array(\'docid\' => ($resource > 0)? $resource : $modx->resource->get(\'id\')));\\n\\n$items = $modx->getIterator(\'FileItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = array();\\n\\/** @var FileItem $item *\\/\\nforeach ($items as $item) {\\n    $item->source = $ms;\\n    $item->files_path = $files_path;\\n\\n    $itemArr = $item->toArray();\\n\\n    if ($makeUrl) {\\n\\tif ($itemArr[\'private\'] || $privateUrl)\\n\\t    $itemArr[\'url\'] = $private_url . $itemArr[\'id\'];\\n\\telse\\n\\t    $itemArr[\'url\'] = $public_url . $itemArr[\'path\'] . $itemArr[\'name\'];\\n    }\\n\\n    if ($showSize)\\n\\t$itemArr[\'size\'] = $item->getSize();\\n\\n    if ($showExt) {\\n\\t$itemArr[\'ext\'] = strtolower(\\n\\t    pathinfo($itemArr[\'name\'], PATHINFO_EXTENSION));\\n    }\\n\\n    $list[] = $modx->getChunk($tpl, $itemArr);\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\nreturn $output;"}',
+        'guid' => '9f9231db33396c1dccec5bf04f68699d',
+        'native_key' => 0,
+        'signature' => '3eb3da7659d7fb25dc2c91cf69849132',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      'cbf933c9f9a3d274eb6a91a37fc4b3c4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"FileAttach","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/**\\n * FileAttach\\n *\\n * Copyright 2015-2016 by Vitaly Checkryzhev <13hakta@gmail.com>\\n *\\n * This file is part of FileAttach, tool to attach files to resources with\\n * MODX Revolution\'s Manager.\\n *\\n * FileAttach is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation version 3,\\n *\\n * FileAttach is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * FileAttach; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package FileAttach\\n*\\/\\n\\nswitch ($modx->event->name) {\\n    \\/\\/ Add a custom tab to the MODX create\\/edit resource pages\\n    case \'OnDocFormPrerender\':\\n\\n\\t\\/\\/ Check access\\n\\tif (!$modx->hasPermission(\'fileattach.doclist\')) return;\\n\\n\\t\\/\\/ Skip form building when resource template is not in permitted list\\n\\t$templates = $modx->getOption(\'fileattach.templates\');\\n\\n\\tif ($templates != \'\') {\\n\\t    $templatelist = explode(\',\', $templates);\\n\\t    $template = is_object($resource)? $resource->get(\'template\') : 0;\\n\\t    if (!in_array($template, $templatelist)) return;\\n\\t}\\n\\n\\t$modx->controller->addLexiconTopic(\'fileattach:default\');\\n\\n\\t$corePath = $modx->getOption(\'fileattach.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/fileattach\\/\');\\n\\trequire_once $corePath . \'model\\/fileattach\\/fileattach.class.php\';\\n\\n\\t$modx->FileAttach = new FileAttach($modx);\\n\\t$modx->regClientStartupScript($modx->FileAttach->config[\'jsUrl\'] . \'mgr\\/fileattach.js\');\\n\\t$modx->regClientStartupScript($modx->FileAttach->config[\'jsUrl\'] . \'mgr\\/widgets\\/items.grid.js\');\\n\\t$modx->regClientStartupScript($modx->FileAttach->config[\'jsUrl\'] . \'mgr\\/filestab.js\');\\n\\n\\t$modx->regClientStartupHTMLBlock(\'<script type=\\"text\\/javascript\\">\\n\\t FileAttach.config = \' . $modx->toJSON($modx->FileAttach->config) . \';\\n\\t FileAttach.config.connector_url = \\"\' . $modx->FileAttach->config[\'connectorUrl\'] . \'\\";\\n\\t<\\/script>\');\\n\\tbreak;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":1,"static_file":"core\\/components\\/fileattach\\/elements\\/plugins\\/plugin.filestab.php","content":"\\/**\\n * FileAttach\\n *\\n * Copyright 2015-2016 by Vitaly Checkryzhev <13hakta@gmail.com>\\n *\\n * This file is part of FileAttach, tool to attach files to resources with\\n * MODX Revolution\'s Manager.\\n *\\n * FileAttach is free software; you can redistribute it and\\/or modify it under the\\n * terms of the GNU General Public License as published by the Free Software\\n * Foundation version 3,\\n *\\n * FileAttach is distributed in the hope that it will be useful, but WITHOUT ANY\\n * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR\\n * A PARTICULAR PURPOSE. See the GNU General Public License for more details.\\n *\\n * You should have received a copy of the GNU General Public License along with\\n * FileAttach; if not, write to the Free Software Foundation, Inc., 59 Temple Place,\\n * Suite 330, Boston, MA 02111-1307 USA\\n *\\n * @package FileAttach\\n*\\/\\n\\nswitch ($modx->event->name) {\\n    \\/\\/ Add a custom tab to the MODX create\\/edit resource pages\\n    case \'OnDocFormPrerender\':\\n\\n\\t\\/\\/ Check access\\n\\tif (!$modx->hasPermission(\'fileattach.doclist\')) return;\\n\\n\\t\\/\\/ Skip form building when resource template is not in permitted list\\n\\t$templates = $modx->getOption(\'fileattach.templates\');\\n\\n\\tif ($templates != \'\') {\\n\\t    $templatelist = explode(\',\', $templates);\\n\\t    $template = is_object($resource)? $resource->get(\'template\') : 0;\\n\\t    if (!in_array($template, $templatelist)) return;\\n\\t}\\n\\n\\t$modx->controller->addLexiconTopic(\'fileattach:default\');\\n\\n\\t$corePath = $modx->getOption(\'fileattach.core_path\', null, $modx->getOption(\'core_path\') . \'components\\/fileattach\\/\');\\n\\trequire_once $corePath . \'model\\/fileattach\\/fileattach.class.php\';\\n\\n\\t$modx->FileAttach = new FileAttach($modx);\\n\\t$modx->regClientStartupScript($modx->FileAttach->config[\'jsUrl\'] . \'mgr\\/fileattach.js\');\\n\\t$modx->regClientStartupScript($modx->FileAttach->config[\'jsUrl\'] . \'mgr\\/widgets\\/items.grid.js\');\\n\\t$modx->regClientStartupScript($modx->FileAttach->config[\'jsUrl\'] . \'mgr\\/filestab.js\');\\n\\n\\t$modx->regClientStartupHTMLBlock(\'<script type=\\"text\\/javascript\\">\\n\\t FileAttach.config = \' . $modx->toJSON($modx->FileAttach->config) . \';\\n\\t FileAttach.config.connector_url = \\"\' . $modx->FileAttach->config[\'connectorUrl\'] . \'\\";\\n\\t<\\/script>\');\\n\\tbreak;\\n}"}',
+        'guid' => '8af385f62cf88967177de9b1131e9b93',
+        'native_key' => NULL,
+        'signature' => '2e806dde4ae85fb1250ec5e892657f20',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'a27db52df9e3172bec72e2302e141c47' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnDocFormPrerender","priority":0,"propertyset":0}',
+              'guid' => 'bda3864e5d70e0b8477866f3cf4795f0',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnDocFormPrerender',
+              ),
+              'signature' => '9ec4ee8fc7aefbd3df1b211b982cfd60',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'fileattach',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fileattach-1.0.6-pl\\/modCategory\\/6815b4b392146b4aca2e129c53454067\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"fileattach"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fileattach-1.0.6-pl\\/modCategory\\/6815b4b392146b4aca2e129c53454067\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"fileattach"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fileattach-1.0.6-pl\\/modCategory\\/6815b4b392146b4aca2e129c53454067.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fileattach-1.0.6-pl\\/modCategory\\/6815b4b392146b4aca2e129c53454067.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fileattach-1.0.6-pl\\/modCategory\\/6815b4b392146b4aca2e129c53454067.resolve.policy.resolver","type":"php","name":"resolve.policy"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fileattach-1.0.6-pl\\/modCategory\\/6815b4b392146b4aca2e129c53454067.resolve.setup.resolver","type":"php","name":"resolve.setup"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '6c431920992e63ecfbe05a9f804fb9a7',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '6815b4b392146b4aca2e129c53454067',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"FileAttach","rank":0}',
+);

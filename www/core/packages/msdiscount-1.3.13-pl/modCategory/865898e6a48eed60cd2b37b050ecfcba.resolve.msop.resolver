@@ -1,0 +1,38 @@
+<?php
+/**
+ * @var xPDOObject $object
+ * @var array $options
+ * @var modX $modx
+  */
+if ($object->xpdo) {
+    $modx =& $object->xpdo;
+
+    switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_INSTALL:
+        case xPDOTransport::ACTION_UPGRADE:
+            if ($plugin = $modx->getObject('modPlugin', ['name' => 'msOptionsPrice'])) {
+                if ($event = $modx->getObject('modPluginEvent', [
+                    'pluginid' => $plugin->get('id'),
+                    'event' => 'msOnGetProductPrice'
+                ])) {
+                    $event->remove();
+                }
+            }
+            break;
+
+        case xPDOTransport::ACTION_UNINSTALL:
+            if ($plugin = $modx->getObject('modPlugin', ['name' => 'msOptionsPrice'])) {
+                if (!$event = $modx->getObject('modPluginEvent', [
+                    'pluginid' => $plugin->get('id'),
+                    'event' => 'msOnGetProductPrice'
+                ])) {
+                    $event = $modx->getObject('modPluginEvent');
+                    $event->set('pluginid', $plugin->get('id'));
+                    $event->set('event', 'msOnGetProductPrice');
+                    $event->save();
+                }
+            }
+            break;
+    }
+}
+return true;

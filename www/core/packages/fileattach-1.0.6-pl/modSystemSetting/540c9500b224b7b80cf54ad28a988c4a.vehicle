@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fileattach',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a63cccf0071565ad190c91211e6f7dba',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '540c9500b224b7b80cf54ad28a988c4a',
+  'native_key' => 'fileattach.user_folders',
+  'object' => '{"key":"fileattach.user_folders","value":false,"xtype":"combo-boolean","namespace":"fileattach","area":"","editedon":null,"name":"setting_fileattach.user_folders","description":"setting_fileattach.user_folders_desc","lexicon":"fileattach:setting"}',
+);

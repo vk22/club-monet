@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspyookassa',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c269df1c36fb9d3dd53f5b8f47994464',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '993f04063c7723948047528287cc3505',
+  'native_key' => 'mspyookassa_status_hold',
+  'object' => '{"key":"mspyookassa_status_hold","value":"","xtype":"textfield","namespace":"mspyookassa","area":"mspyookassa_main","editedon":null}',
+);

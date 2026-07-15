@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'currencyrate',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ed6f4b9ea9a7e5a24dcfe39587294f51',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6a7422f46cf2f416b88851991e96995a',
+  'native_key' => 'currencyrate_front_js',
+  'object' => '{"key":"currencyrate_front_js","value":"[[+assetsUrl]]js\\/web\\/default.js","xtype":"textfield","namespace":"currencyrate","area":"currencyrate_main","editedon":null}',
+);

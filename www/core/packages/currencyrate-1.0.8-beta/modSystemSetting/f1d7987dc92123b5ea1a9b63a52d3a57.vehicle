@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'currencyrate',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '55a357be18d366c55a8dd5f141a04f4c',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f1d7987dc92123b5ea1a9b63a52d3a57',
+  'native_key' => 'currencyrate_password',
+  'object' => '{"key":"currencyrate_password","value":"12345","xtype":"textfield","namespace":"currencyrate","area":"currencyrate_main","editedon":null}',
+);

@@ -1,0 +1,34 @@
+<?php return array (
+  'vehicle_class' => 'encryptedVehicle',
+  'abort_install_on_vehicle_fail' => true,
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '6b26b23b2265fa59c1fe88ea7ec76848',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => '547760a080131f012284656d026b5de4',
+  'native_key' => NULL,
+  'object_encrypted' => 'VYhi9uRbBrYOmZYRqYO8NBRct0aWFy/JgIlVxiIVR46CA3VMJwelB1muoG9Enb+ZXdjL6Zm9NWJTYDZUSga1F9yiuboAofhwoJtJI7UhIfa0nHflgu2QacsWio+kiTUdmXQjLmNJmdE6wlyT1tNTJsg5/7BLyZ3QAGH6RDwyIrYDx17HzA8Js2r/5xHbdWYkNR0pBp4cLKkUs9f9FHDVt8zthiOPixwBTlgxPUr3H3PVm5JMyUonDrucAcqI9SEzihS5DOAFI6KrQi8PzWoR2jwNa1O7hFqcb4WrpGptoBYtB0V6gkD33GKVTRcdnzPy',
+  'related_objects_encrypted' => 'Z/+jPAkBw8zC67uFATSWdgtgz5GAX4k40nTbNjVd919TRb52W6asJaB2L+wMv4trAJhhGgo+/YJDNeoLLp9HqVKgR+L5j/GKv1QgWTy4M269dazL6PtV+uiIezJpFbiu6ZBYdMwymKm7h8Pj+OhjJiOtkV9lRuS9STcfBpW24Gg2r+haSiOG1F4KBD4uTHThSDRToutpZq1rEcD2sGuS+BNkA7Zt+FyL50KPvxGKyUk+1Le1n6HIAwuI295LvhEXfJECqNzZoHSpnrozMV/swlVXcETlaR9dkxHhKXMUzK5GhIyCe+ZPP28qE/kUeUujaDLbOLUFzY0gv5a8phOGz2sHx/e1LjHHCMuYGVac6Hpb1FPXX5s2Ux5cpVOlk3g4mJ5ZyR+JnlUIzrbjofnbf82l7G6kwkV0ofGLrS1zWyl6g46mPepGaGIqvRxBFxwjVM+x7y6agTePARH/uxaSO3SFrpW+I6kMhbVCmJyzSJ6tUXBSyTISI3oYdnfsMYYKa7ZFX8RUBo5Y7ATUOzMZmyNijHL/4jua+FS6N/PU53ycDJb2ZXYY3eQYDhix273+0Pq+v6rZLwlEvZPc2MnTu+4qK9qv17iDvBNIphZmXq3SB1NbafS3X8qvRfwGU3jyq/1V5sRg+YIdjQNTiVsRV06Rao5wl9oRUqi9rkc9oKwIJjComofbU7zcawm4bWAHmecjB/MhIlLrNWqUWVZQ8wahxkRnn6sgluIMDK6y4s1lH1x+cXEuWgl5CnqJGbtLd0+WqvGPARgngW6ZXnxaVXZ6yt+YpAOK8W/+7I02JFDtm1oTSmpfMU/eBTjtTyyVQBze0Q/YMblWileK66N2azh4G7gMBiLhPO1fz4O09/zuUH99qBexQzHqNjQEfS0TqClKZzNYerx3nNQVEpx7MTSOmQbKt4Q0FirsfFF67XYDXjZleGK+z+dFozp52LZgtKw7KXUEwE/DFvZ0tsyxmjNT2mZHuZjE63u3LbxIH8MfwpuiOTFio1AjxVu2RGWolcqAbiKomP0L4POt29okfAIcUejg3pPvSrh9DW9aqmChPlbi6EXL39vUPPhSnvCuOf6cTrV9E9clpxSBMzTva3Cw9Uwjis2jraEq7RiCl/bOTOmN8RYNjZcfRIaxtKy5zt99Do1cXzq8Lv3sBtwpoJJlDPfsOBPUlzVsydbwet8HzD0wWMSVty8OHiOlTzGz',
+);

@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'related_objects' => false,
+  'namespace' => 'msexportusersexcel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2829aad41ccadb91028c739178caca4d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b724eef2e79283b223f9b2a81f039b88',
+  'native_key' => 'msexportusersexcel_source_default',
+  'object' => '{"key":"msexportusersexcel_source_default","value":0,"xtype":"modx-combo-source","namespace":"msexportusersexcel","area":"msexportusersexcel_file","editedon":null}',
+);

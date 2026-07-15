@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="359px" height="316px" viewBox="0 0 359 316" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="cart1" fill="#000000">
+            <g id="Group">
+                <path d="M10,20 C-3,20 -3,0 10,0 L52,0 C57,0 61,4 62,8 L69,42 L348,42 C355,42 360,48 358,55 L316,224 C315,228 311,232 306,232 L95,232 C90,232 86,228 85,224 L44,20 L10,20 Z M73,62 L103,212 L298,212 L336,62 L73,62 Z" id="Shape" fill-rule="nonzero"></path>
+                <path d="M137,115 C124,115 124,95 137,95 L264,95 C277,95 277,115 264,115 L137,115 Z" id="Path"></path>
+                <path d="M137,175 C124,175 124,155 137,155 L264,155 C277,155 277,175 264,175 L137,175 Z" id="Path"></path>
+                <path d="M129,254 C146,254 160,268 160,285 C160,302 146,316 129,316 C112,316 98,302 98,285 C98,268 112,254 129,254 Z M129,274 C123,274 118,279 118,285 C118,291 123,296 129,296 C135,296 140,291 140,285 C140,279 135,274 129,274 Z" id="Shape" fill-rule="nonzero"></path>
+                <path d="M271,254 C289,254 303,268 303,285 C303,302 289,316 271,316 C254,316 240,302 240,285 C240,268 254,254 271,254 Z M260,285 C260,291 265,296 271,296 C278,296 283,291 283,285 C283,271 260,270 260,285 Z" id="Shape" fill-rule="nonzero"></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,21 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'uninstall_object' => true,
+  'related_object_attributes' => 
+  array (
+  ),
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'a949eb336b46119604a9f016c6c72ab4',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => 'c4f922c9bd5a9a71020042bce4594a18',
+  'native_key' => 'sms_menu',
+  'object' => '{"text":"sms_menu","parent":"components","action":"controllers\\/main","description":"sms_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"sms_view","namespace":"sms"}',
+);

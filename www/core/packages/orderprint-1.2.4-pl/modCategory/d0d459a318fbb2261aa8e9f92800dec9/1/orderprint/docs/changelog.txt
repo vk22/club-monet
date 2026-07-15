@@ -1,0 +1,80 @@
+Changelog file for orderPrint component.
+
+orderPrint 1.0.0
+====================================
+Initial Version
+
+
+
+orderPrint 1.1.1
+====================================
+Fixed a bug with the display address fields (indicated by the buyer in the form of reservation)
+
+
+
+orderPrint 1.1.2
+====================================
+Add Shopkeeper's field address from order contacts. Placeholders [[+contacts.address]] from string or [[+contacts.address.address_field]] from array
+
+
+
+orderPrint 1.1.3
+====================================
+Fix display information about the products removed from the system in MiniShop2
+
+
+
+orderPrint 1.1.4
+====================================
+Added displaying the number of items in the cart and the order value in words
+
+
+
+orderPrint 1.1.5
+====================================
+Added policies for access rights settings to printing documents in different groups of users
+
+
+
+orderPrint 1.1.6
+====================================
+Fixed bug with rights to manage settings
+Added placeholder with timestamp of order created time for both stores
+
+
+
+orderPrint 1.1.7
+====================================
+Corrected conversion of the date of createdon order in miniShop2 to timestamp
+
+
+
+orderPrint 1.2.0
+====================================
+Added support shopkeeper 3. For use it, system setting "opr_type" must be have "shk3" value.
+
+
+
+orderPrint 1.2.1
+====================================
+Fixed bugs with API connection and processing of the tpl parameter in the orderPrint snippet
+Fixed error when printing documents for orders without delivery and/or payment methods
+
+
+
+orderPrint 1.2.2
+====================================
+Added support product options for MS2
+
+
+
+orderPrint 1.2.3
+====================================
+Fenom template engine support added
+
+
+
+orderPrint 1.2.4
+====================================
+Added placeholders from original products
+Added total_count placeholder, with count of products in order

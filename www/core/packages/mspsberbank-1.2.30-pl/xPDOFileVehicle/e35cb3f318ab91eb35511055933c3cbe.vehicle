@@ -1,0 +1,23 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'mspsberbank-1.2.30-pl/xPDOFileVehicle/e35cb3f318ab91eb35511055933c3cbe/',
+    'target' => 'return MODX_CORE_PATH . \'components/\';',
+    'name' => 'mspsberbank',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"type":"php","source":"mspsberbank-1.2.30-pl\\/xPDOFileVehicle\\/e35cb3f318ab91eb35511055933c3cbe._encryption.resolver","name":"_encryption"}',
+    ),
+  ),
+  'vehicle_package' => 'transport',
+  'guid' => '0a52611ee4efaf3664f704af46347b39',
+  'package' => '',
+  'signature' => 'e35cb3f318ab91eb35511055933c3cbe',
+  'native_key' => '0a52611ee4efaf3664f704af46347b39',
+);

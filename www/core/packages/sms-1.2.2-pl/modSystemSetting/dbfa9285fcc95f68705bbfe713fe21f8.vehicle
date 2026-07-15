@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cfc82c3ca2f2f90c0cd8b4ad00bb1cdf',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'dbfa9285fcc95f68705bbfe713fe21f8',
+  'native_key' => 'sms_sender',
+  'object' => '{"key":"sms_sender","value":"","xtype":"textfield","namespace":"sms","area":"sms_main","editedon":null}',
+);

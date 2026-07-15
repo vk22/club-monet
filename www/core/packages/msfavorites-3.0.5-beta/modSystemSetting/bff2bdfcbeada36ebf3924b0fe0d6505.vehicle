@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msfavorites',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '7b77169584da1ac8b31c15962a437939',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bff2bdfcbeada36ebf3924b0fe0d6505',
+  'native_key' => 'msfavorites_front_css',
+  'object' => '{"key":"msfavorites_front_css","value":"[[+assetsUrl]]css\\/default.min.css","xtype":"textfield","namespace":"msfavorites","area":"msfavorites_main","editedon":null}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'd03a90a8abf8b7e6e0255746e7811485',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3b5e14a32060d2875402832e46b13dca',
+  'native_key' => 'sms_pass',
+  'object' => '{"key":"sms_pass","value":"","xtype":"text-password","namespace":"sms","area":"sms_main","editedon":null}',
+);

@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '043cf9e1e5928f3164cb918f5874d0cb',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => '2bd1231aa6005d7062815050f6d82243',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"msDiscountManagerPolicy","description":"A policy for create and update msDiscount items.","parent":0,"template":0,"class":"","data":"{\\"msdiscount_save\\":true,\\"msdiscount_view\\":true}","lexicon":"msdiscount:permissions"}',
+);

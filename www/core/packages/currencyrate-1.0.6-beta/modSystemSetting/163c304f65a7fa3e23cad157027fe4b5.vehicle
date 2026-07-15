@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'currencyrate',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '28125623d3abba1d2473a42d6d136020',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '163c304f65a7fa3e23cad157027fe4b5',
+  'native_key' => 'currencyrate_last_date',
+  'object' => '{"key":"currencyrate_last_date","value":"","xtype":"textfield","namespace":"currencyrate","area":"currencyrate_main","editedon":null}',
+);

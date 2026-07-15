@@ -1,0 +1,121 @@
+<?php
+
+
+$classes = [
+    'mspYooKassaPaymentHandler' => '{core_path}components/mspyookassa/model/mspyookassa/mspyookassapaymenthandler.class.php',
+    // 'mspYaCassaPaymentHoldHandler' => '{core_path}components/mspyacassa/model/mspyacassa/mspyacassapaymentholdhandler.class.php',
+];
+$payments = [
+    [
+        'name' => 'Оплата через ЮKassa (двухстадийная)',
+        'description' => 'Оплата с подтверждением (двухстадийная)',
+        'properties' => [
+            'payment_method_data' => [],
+            'confirmation' => ['type' => 'redirect'],
+        ],
+        'class' => 'mspYooKassaPaymentHandler',
+        //  'active'      => 1,
+    ],
+    [
+        'name' => 'Оплата через ЮKassa',
+        'description' => 'Оплата без подтверждения (одностадийная)',
+        'properties' => [
+            'payment_method_data' => [],
+            'confirmation' => ['type' => 'redirect'],
+            'capture' => true,
+        ],
+        'class' => 'mspYooKassaPaymentHandler',
+        //  'active'      => 1,
+    ],
+    /*[
+        'name'       => 'Банковская карта',
+        'properties' => [
+            'payment_method_data' => ['type' => 'bank_card'],
+            'confirmation'        => ['type' => 'redirect'],
+        ],
+        'class'      => 'mspYooKassaPaymentHandler',
+    ],
+    [
+        'name'       => 'Оплата через ЮMoney',
+        'properties' => [
+            'payment_method_data' => ['type' => 'yandex_money'],
+            'confirmation'        => ['type' => 'redirect'],
+        ],
+        'class'      => 'mspYooKassaPaymentHandler',
+    ],
+    [
+        'name'       => 'Сбербанк Онлайн',
+        'properties' => [
+            'payment_method_data' => ['type' => 'sberbank'],
+            'confirmation'        => ['type' => 'redirect'],
+        ],
+        'class'      => 'mspYooKassaPaymentHandler',
+    ],
+    [
+        'name'       => 'QIWI Wallet',
+        'properties' => [
+            'payment_method_data' => ['type' => 'qiwi'],
+            'confirmation'        => ['type' => 'redirect'],
+        ],
+        'class'      => 'mspYooKassaPaymentHandler',
+    ],
+    [
+        'name'       => 'WebMoney',
+        'properties' => [
+            'payment_method_data' => ['type' => 'webmoney'],
+            'confirmation'        => ['type' => 'redirect'],
+        ],
+        'class'      => 'mspYooKassaPaymentHandler',
+    ],*/
+];
+
+
+/** @var xPDOTransport $transport */
+/** @var array $options */
+/** @var modX $modx */
+if ($transport->xpdo) {
+    $modx =& $transport->xpdo;
+
+    /** @var miniShop2 $miniShop2 */
+    if (!$miniShop2 = $modx->getService('miniShop2')) {
+        $message = '[mspYooKassa] Could not load miniShop2 class!';
+    } else {
+        switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+            case xPDOTransport::ACTION_INSTALL:
+            case xPDOTransport::ACTION_UPGRADE:
+                foreach ($classes as $class => $path) {
+                    $miniShop2->addService('payment', $class, $path);
+                }
+                foreach ($payments as $row) {
+                    /** @var xPDOObject|msPayment $payment */
+                    if (!$payment = $modx->getObject('msPayment', ['class' => $row['class'], 'name' => $row['name']])) {
+                        $payment = $modx->newObject('msPayment');
+                        $payment->fromArray(array_merge([
+                            'properties' => json_encode($row['properties'], JSON_UNESCAPED_UNICODE),
+                            'active' => 0,
+                            'rank' => $modx->getCount('msPayment') - 1,
+                        ], $row)
+                        );
+                        $payment->save();
+                    }
+                }
+                break;
+            case xPDOTransport::ACTION_UNINSTALL:
+                foreach ($classes as $class => $path) {
+                    $miniShop2->removeService('payment', $class);
+                    $modx->removeCollection('msPayment', ['class' => $class]);
+                }
+                break;
+            default:
+                $message = '';
+                break;
+        }
+    }
+
+    if (!empty($message)) {
+        $modx->log(modX::LOG_LEVEL_INFO, $message);
+    }
+}
+
+
+return true;

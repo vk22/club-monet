@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'mspsberbank-1.2.30-pl/xPDOScriptVehicle/e68670f78f3829fa5af4506c884c33e9._encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'mspsberbank',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '8724c641fd478f7d5013b7808d548338',
+  'package' => '',
+  'signature' => 'e68670f78f3829fa5af4506c884c33e9',
+  'native_key' => '8724c641fd478f7d5013b7808d548338',
+);

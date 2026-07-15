@@ -1,0 +1,20 @@
+<?php return array (
+  'vehicle_class' => 'encryptedVehicle',
+  'abort_install_on_vehicle_fail' => true,
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '68d3689c2ccc6bd7953aaf6b898e02bc',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => 'c42f7335c48044bd22f5d258ac724155',
+  'native_key' => NULL,
+  'object_encrypted' => 'j5W0mpuHz9tZmgeEEfAu9Ez5l5femtqEa3Dtz8KDDxa+Ez0g2eO0KH8I86fc3Cf6B++1bIqUPkTh5yyYIXuZQdwXxHnqMf/jmeSey6g2ceLWn1aN0M9jp7TEUTOYGU11+SgzEzTHwXK1/bhC1HbTuRoC8wQ6GlJrElbHNRU9+ueQSA3lpzfbHlhrTZLY1j60DcILzI/M5IFdw62Tz8iBgQ8Z4Va+5tT58d/0Zjz/5MbXDWn/UTbS0UmWQ/CRSpoKBDcOKO/CMj4s+0Fe+dFdnKqLeJOnvU6i45uFt7yWkpxqpwZld4fQ5RkBHtkWvZwJCsRjvXgd5rOjq22oj2flW4KIXopYtPyvmUIaJMxnoZY=',
+);

@@ -1,0 +1,3 @@
+Id,Name,Quantity,Measure,Price,Amount,ItemCode,PaymentObject,PaymentMethod
+1,"3 копейки, 1916 год (UNC)",1,шт.,332500,332500,115692,1,1
+2,"Доставка почтой РФ",1,шт.,15000,15000,2_2,1,1

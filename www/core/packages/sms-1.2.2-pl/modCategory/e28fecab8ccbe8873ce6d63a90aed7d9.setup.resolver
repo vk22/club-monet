@@ -1,0 +1,55 @@
+<?php
+
+function updateTables(&$modx)
+{
+    $manager = $modx->getManager();
+    $tables = ['extSms', 'extSmsCode'];
+    foreach ($tables as $table) {
+        $manager->createObjectContainer($table);
+
+        $exist = array();
+        $c = $modx->prepare("SHOW COLUMNS IN {$modx->getTableName($table)}");
+        $c->execute();
+        while ($cl = $c->fetch(PDO::FETCH_ASSOC)) {
+            $exist[$cl['Field']] = $cl['Field'];
+        }
+
+        $fieldMeta = $manager->xpdo->getFieldMeta($table, true);
+        while (list($key, $meta) = each($fieldMeta)) {
+            if (array_key_exists($key, $exist)) {
+                unset($exist[$key]);
+                $manager->alterField($table, $key);
+            } else {
+                $manager->addField($table, $key);
+            }
+        }
+//        foreach ($exist as $key) {
+//            $manager->removeField($table, $key);
+//        }
+    }
+}
+
+if ($object->xpdo) {
+    switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_INSTALL:
+            $modx =& $object->xpdo;
+            $modelPath = $modx->getOption('core_path') . 'components/sms/model/';
+            $modx->addPackage('sms', $modelPath);
+            updateTables($modx);
+
+            break;
+        case xPDOTransport::ACTION_UPGRADE:
+            $modx =& $object->xpdo;
+            $modelPath = $modx->getOption('core_path') . 'components/sms/model/';
+            $modx->addPackage('sms', $modelPath);
+            updateTables($modx);
+            break;
+        case xPDOTransport::ACTION_UNINSTALL:
+            $modx =& $object->xpdo;
+
+            $manager = $modx->getManager();
+            $modx->runProcessor('system/clearcache');
+            break;
+    }
+}
+return true;

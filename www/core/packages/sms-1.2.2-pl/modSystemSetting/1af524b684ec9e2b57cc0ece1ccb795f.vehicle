@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '5045d1952b61dc2d182fba0b0f6eda0f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '1af524b684ec9e2b57cc0ece1ccb795f',
+  'native_key' => 'sms_code_attempt',
+  'object' => '{"key":"sms_code_attempt","value":"5","xtype":"textfield","namespace":"sms","area":"sms_main","editedon":null}',
+);

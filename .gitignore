@@ -1,0 +1,32 @@
+# macOS and editor files
+.DS_Store
+**/.DS_Store
+.idea/
+.vscode/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+www/core/config/config.inc.php
+
+# Database dumps and backups
+*.sql
+backups/
+
+# MODX generated/runtime data
+www/core/cache/
+www/core/export/
+www/core/import/
+www/core/packages/*.transport.zip
+www/core/packages/core.transport.zip
+www/assets/components/*/cache/
+
+# Uploaded/generated site content
+www/assets/images/products/
+
+# Logs and temporary files
+*.log
+*.lock
+*.tmp
+*.swp

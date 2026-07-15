@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fileattach',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '19c56065adcbe32c35006eeafd08a901',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3ab5953c776c8e8a1ad788476d854a51',
+  'native_key' => 'fileattach.calchash',
+  'object' => '{"key":"fileattach.calchash","value":false,"xtype":"combo-boolean","namespace":"fileattach","area":"","editedon":null,"name":"setting_fileattach.calchash","description":"setting_fileattach.calchash_desc","lexicon":"fileattach:setting"}',
+);

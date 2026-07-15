@@ -1,0 +1,30 @@
+Changelog for mspYooKassa.
+
+1.0.9-pl 09.12.2023
+==============
+- Add "payment_receipt_with_delivery" setting
+
+1.0.8-pl
+==============
+- Update "yookassa-sdk-php" v2.7.5
+
+1.0.7-pl
+==============
+- Fix "mspYooKassaPaymentHandler"
+
+1.0.3-pl
+==============
+- Add "mspYooKassaOnPreparePaymentReceiptItem" event
+- Add "mspYooKassaOnCreatePayment" event
+
+1.0.2-pl
+==============
+- Change "mspYooKassaPaymentHandler" add "payment_subject"
+
+1.0.1-pl
+==============
+- Change "mspYooKassaPaymentHandler" add "payment_mode"
+
+1.0.0-pl
+==============
+- Initial

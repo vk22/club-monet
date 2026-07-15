@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mspyookassa',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '97777b66807835902b5cf1d8ea15f710',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '8d0cdd41fde7bf4c4a29d94a7ef71c16',
+  'native_key' => 'mspYooKassaOnPreparePaymentReceiptItem',
+  'object' => '{"name":"mspYooKassaOnPreparePaymentReceiptItem","service":6,"groupname":"mspYooKassa"}',
+);

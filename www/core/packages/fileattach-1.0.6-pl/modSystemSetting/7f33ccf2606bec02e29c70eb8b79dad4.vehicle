@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'fileattach',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '90d5295460bcc61615eb143fde60b7b7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '7f33ccf2606bec02e29c70eb8b79dad4',
+  'native_key' => 'fileattach.templates',
+  'object' => '{"key":"fileattach.templates","value":"","xtype":"textfield","namespace":"fileattach","area":"","editedon":null,"name":"setting_fileattach.templates","description":"setting_fileattach.templates_desc","lexicon":"fileattach:setting"}',
+);

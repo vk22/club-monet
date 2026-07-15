@@ -1,0 +1,116 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      'e22f705a513162f6311140fa837ee6b2' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.modExtra.item","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<p>\\n    <strong>[[+name]]<\\/strong> -\\n    <small>[[+description]]<\\/small>\\n<\\/p>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/modextra\\/elements\\/chunks\\/chunk.item.tpl","content":"<p>\\n    <strong>[[+name]]<\\/strong> -\\n    <small>[[+description]]<\\/small>\\n<\\/p>"}',
+        'guid' => 'c8dbc69df15fc71dbea928835154f2d2',
+        'native_key' => 0,
+        'signature' => 'd8e9ae7e88b491f213be93927ab5a5cd',
+      ),
+      'bd5adeba8811b4e3feccec9a840e6856' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.modExtra.office","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"office-modextra-wrapper\\">\\n    <div id=\\"office-preloader\\"><\\/div>\\n<\\/div>\\n","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/modextra\\/elements\\/chunks\\/chunk.office.tpl","content":"<div id=\\"office-modextra-wrapper\\">\\n    <div id=\\"office-preloader\\"><\\/div>\\n<\\/div>\\n"}',
+        'guid' => 'c8b25ccbb908b7b4954009614e15c6ad',
+        'native_key' => 0,
+        'signature' => '62094fd4f083b45a3746138997589aea',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'c0e147ba966e8794562231c9dbe9c9c4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"modExtra","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var modX $modx *\\/\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var modExtra $modExtra *\\/\\nif (!$modExtra = $modx->getService(\'modextra\', \'modExtra\', $modx->getOption(\'modextra_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/modextra\\/\') . \'model\\/modextra\\/\', $scriptProperties)\\n) {\\n    return \'Could not load modExtra class!\';\\n}\\n\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'modExtraItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->limit($limit);\\n$items = $modx->getIterator(\'modExtraItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = array();\\n\\/** @var modExtraItem $item *\\/\\nforeach ($items as $item) {\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\/\\/ By default just return output\\nreturn $output;","locked":0,"properties":"a:6:{s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:17:\\"modextra_prop_tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:17:\\"tpl.modExtra.item\\";s:7:\\"lexicon\\";s:19:\\"modextra:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"sortby\\";a:7:{s:4:\\"name\\";s:6:\\"sortby\\";s:4:\\"desc\\";s:20:\\"modextra_prop_sortby\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:4:\\"name\\";s:7:\\"lexicon\\";s:19:\\"modextra:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"sortdir\\";a:7:{s:4:\\"name\\";s:7:\\"sortdir\\";s:4:\\"desc\\";s:21:\\"modextra_prop_sortdir\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:3:\\"ASC\\";s:5:\\"value\\";s:3:\\"ASC\\";}i:1;a:2:{s:4:\\"text\\";s:4:\\"DESC\\";s:5:\\"value\\";s:4:\\"DESC\\";}}s:5:\\"value\\";s:3:\\"ASC\\";s:7:\\"lexicon\\";s:19:\\"modextra:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:19:\\"modextra_prop_limit\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:10;s:7:\\"lexicon\\";s:19:\\"modextra:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:29:\\"modextra_prop_outputSeparator\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"\\n\\";s:7:\\"lexicon\\";s:19:\\"modextra:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:27:\\"modextra_prop_toPlaceholder\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:19:\\"modextra:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/modextra\\/elements\\/snippets\\/snippet.modextra.php","content":"\\/** @var modX $modx *\\/\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var modExtra $modExtra *\\/\\nif (!$modExtra = $modx->getService(\'modextra\', \'modExtra\', $modx->getOption(\'modextra_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/modextra\\/\') . \'model\\/modextra\\/\', $scriptProperties)\\n) {\\n    return \'Could not load modExtra class!\';\\n}\\n\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'modExtraItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->limit($limit);\\n$items = $modx->getIterator(\'modExtraItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = array();\\n\\/** @var modExtraItem $item *\\/\\nforeach ($items as $item) {\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\/\\/ By default just return output\\nreturn $output;"}',
+        'guid' => '438f461d24878eedcc2338ab9bd65ed3',
+        'native_key' => 0,
+        'signature' => 'a86f47f0f07fdc071d5ef4adf137db73',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'modextra',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modextra-1.0.1-beta\\/modCategory\\/cfc7247c1c64186fb9e0b938a9bf51fe\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"modextra"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"modextra-1.0.1-beta\\/modCategory\\/cfc7247c1c64186fb9e0b938a9bf51fe\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"modextra"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modextra-1.0.1-beta\\/modCategory\\/cfc7247c1c64186fb9e0b938a9bf51fe.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modextra-1.0.1-beta\\/modCategory\\/cfc7247c1c64186fb9e0b938a9bf51fe.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"modextra-1.0.1-beta\\/modCategory\\/cfc7247c1c64186fb9e0b938a9bf51fe.resolve.office.resolver","type":"php","name":"resolve.office"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f22af3443f27706b22e3ac1dfc48779a',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'cfc7247c1c64186fb9e0b938a9bf51fe',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"modExtra"}',
+);

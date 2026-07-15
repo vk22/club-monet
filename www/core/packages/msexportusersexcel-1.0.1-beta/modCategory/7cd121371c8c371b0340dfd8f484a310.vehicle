@@ -1,0 +1,131 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Plugins' => 
+    array (
+      'f43fee3cf07bbc8bf4332214ba658eda' => 
+      array (
+        'unique_key' => 'name',
+        'preserve_keys' => false,
+        'update_object' => true,
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'eea6f01914c173d021c9e3e2e26c88fe' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnMODXInit","priority":0,"propertyset":0}',
+              'guid' => '45cf67183f88d10d90c8ecec43f9c81c',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnMODXInit',
+              ),
+              'signature' => 'a36ecafa4d00e3453320512432b2ef0c',
+            ),
+            'e3c98ad842b61566f097a083abdbb4f9' => 
+            array (
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnManagerPageBeforeRender","priority":0,"propertyset":0}',
+              'guid' => '47a43157fab0e79a5e363b6201a1b0a7',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnManagerPageBeforeRender',
+              ),
+              'signature' => '34481151a49f4d0167e9372b74ffd170',
+            ),
+          ),
+        ),
+        'related_object_attributes' => 
+        array (
+          'PluginEvents' => 
+          array (
+            'preserve_keys' => true,
+            'update_object' => true,
+            'unique_key' => 
+            array (
+              0 => 'pluginid',
+              1 => 'event',
+            ),
+          ),
+        ),
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"msExportUsersExcel","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/** @var modX $modx *\\/\\r\\n\\/* @var msExportUsersExcel $msExportUsersExcel *\\/\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnManagerPageBeforeRender\':\\r\\n\\r\\n        $namespace = $controller->config[\'namespace\'];\\r\\n        $cnr = $controller->config[\'controller\'];\\r\\n\\r\\n        \\/\\/ \\u044d\\u043a\\u0441\\u043f\\u043e\\u0440\\u0442 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u0435\\u0439\\r\\n        if ($namespace == \\"core\\" & $cnr == \\"security\\/user\\") {\\r\\n            $msExportUsersExcel = $modx->getService(\'msExportUsersExcel\', \'msExportUsersExcel\', MODX_CORE_PATH . \'components\\/msexportusersexcel\\/model\\/\');\\r\\n            $msExportUsersExcel->ButtonRegistration(\'modx-form-users\', $namespace, $cnr);\\r\\n            $controller->addHTML(\'\\r\\n                <script>\\r\\n                    Ext.ComponentMgr.onAvailable(\\"modx-panel-users\\", function () {\\r\\n                        this.items[1].items[1].id = \\"modx-form-users\\"\\r\\n                        this.items[1].items[1].baseParams = {\\r\\n                            action: \\"security\\/user\\/getList\\",\\r\\n                            usergroup: MODx.request[\\"usergroup\\"] ? MODx.request[\\"usergroup\\"] : \\"\\",\\r\\n                \\t        sort: \\"id\\",\\r\\n                            dir: \\"DESC\\"\\r\\n                        };\\r\\n                    });\\r\\n                <\\/script>\\r\\n            \');\\r\\n\\r\\n        }\\r\\n\\r\\n        break;\\r\\n    case \'OnMODXInit\':\\r\\n        $modx->lexicon->load(\'msexportusersexcel:export\');\\r\\n        break;\\r\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/msexportusersexcel\\/elements\\/plugins\\/msexportusersexcel.php","content":"\\/** @var modX $modx *\\/\\r\\n\\/* @var msExportUsersExcel $msExportUsersExcel *\\/\\r\\nswitch ($modx->event->name) {\\r\\n    case \'OnManagerPageBeforeRender\':\\r\\n\\r\\n        $namespace = $controller->config[\'namespace\'];\\r\\n        $cnr = $controller->config[\'controller\'];\\r\\n\\r\\n        \\/\\/ \\u044d\\u043a\\u0441\\u043f\\u043e\\u0440\\u0442 \\u043f\\u043e\\u043b\\u044c\\u0437\\u043e\\u0432\\u0430\\u0442\\u0435\\u043b\\u0435\\u0439\\r\\n        if ($namespace == \\"core\\" & $cnr == \\"security\\/user\\") {\\r\\n            $msExportUsersExcel = $modx->getService(\'msExportUsersExcel\', \'msExportUsersExcel\', MODX_CORE_PATH . \'components\\/msexportusersexcel\\/model\\/\');\\r\\n            $msExportUsersExcel->ButtonRegistration(\'modx-form-users\', $namespace, $cnr);\\r\\n            $controller->addHTML(\'\\r\\n                <script>\\r\\n                    Ext.ComponentMgr.onAvailable(\\"modx-panel-users\\", function () {\\r\\n                        this.items[1].items[1].id = \\"modx-form-users\\"\\r\\n                        this.items[1].items[1].baseParams = {\\r\\n                            action: \\"security\\/user\\/getList\\",\\r\\n                            usergroup: MODx.request[\\"usergroup\\"] ? MODx.request[\\"usergroup\\"] : \\"\\",\\r\\n                \\t        sort: \\"id\\",\\r\\n                            dir: \\"DESC\\"\\r\\n                        };\\r\\n                    });\\r\\n                <\\/script>\\r\\n            \');\\r\\n\\r\\n        }\\r\\n\\r\\n        break;\\r\\n    case \'OnMODXInit\':\\r\\n        $modx->lexicon->load(\'msexportusersexcel:export\');\\r\\n        break;\\r\\n}","file":"msexportusersexcel","events":{"OnMODXInit":[],"OnManagerPageBeforeRender":[]}}',
+        'guid' => '28b8cecb0877fd36c518ddce290cfee3',
+        'native_key' => NULL,
+        'signature' => 'd0c48e611fb061f237fe46ba5d38403e',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Plugins' => 
+    array (
+      'unique_key' => 'name',
+      'preserve_keys' => false,
+      'update_object' => true,
+      'related_objects' => true,
+      'related_object_attributes' => 
+      array (
+        'PluginEvents' => 
+        array (
+          'preserve_keys' => true,
+          'update_object' => true,
+          'unique_key' => 
+          array (
+            0 => 'pluginid',
+            1 => 'event',
+          ),
+        ),
+      ),
+    ),
+  ),
+  'namespace' => 'msexportusersexcel',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msexportusersexcel-1.0.1-beta\\/modCategory\\/7cd121371c8c371b0340dfd8f484a310\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"msexportusersexcel"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msexportusersexcel-1.0.1-beta\\/modCategory\\/7cd121371c8c371b0340dfd8f484a310\\/1\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"msexportusersexcel"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msexportusersexcel-1.0.1-beta\\/modCategory\\/7cd121371c8c371b0340dfd8f484a310.setup.resolver","type":"php","name":"setup"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msexportusersexcel-1.0.1-beta\\/modCategory\\/7cd121371c8c371b0340dfd8f484a310.sources.resolver","type":"php","name":"sources"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msexportusersexcel-1.0.1-beta\\/modCategory\\/7cd121371c8c371b0340dfd8f484a310.symlinks.resolver","type":"php","name":"symlinks"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msexportusersexcel-1.0.1-beta\\/modCategory\\/7cd121371c8c371b0340dfd8f484a310.tables.resolver","type":"php","name":"tables"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8dd24ce4f845c1e634b1410b1d6cabd9',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '7cd121371c8c371b0340dfd8f484a310',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"msExportUsersExcel","rank":0}',
+);

@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'currencyrate',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '211d5005afe1ca9b43c23f2fc217e5b3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'f48106fb6943470f0b4e2059e7d4effa',
+  'native_key' => 'currencyrate_url',
+  'object' => '{"key":"currencyrate_url","value":"http:\\/\\/www.cbr.ru\\/scripts\\/XML_daily.asp?date_req=","xtype":"textfield","namespace":"currencyrate","area":"currencyrate_main","editedon":null}',
+);

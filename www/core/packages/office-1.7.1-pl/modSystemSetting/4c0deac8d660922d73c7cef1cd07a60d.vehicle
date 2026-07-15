@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bd25affac8133fe6c64dfcc563622ee6',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4c0deac8d660922d73c7cef1cd07a60d',
+  'native_key' => 'office_auth_page_id',
+  'object' => '{"key":"office_auth_page_id","value":0,"xtype":"numberfield","namespace":"office","area":"office_auth","editedon":null}',
+);

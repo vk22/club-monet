@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspyookassa',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'e6c737d7e20749ee0f6b86962e78b04f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'd71fc11c07c90acf35d5a5a91309827c',
+  'native_key' => 'mspyookassa_payment_show_log',
+  'object' => '{"key":"mspyookassa_payment_show_log","value":false,"xtype":"combo-boolean","namespace":"mspyookassa","area":"mspyookassa_main","editedon":null}',
+);

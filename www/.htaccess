@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{HTTP_HOST} .
+RewriteCond %{HTTP_HOST} !^localhost(:[0-9]+)?$ [NC]
+RewriteCond %{HTTP_HOST} !^127\.0\.0\.1(:[0-9]+)?$ [NC]
+RewriteRule ^(.*)$ http://localhost:8080/$1 [R=302,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?q=$1 [L,QSA]

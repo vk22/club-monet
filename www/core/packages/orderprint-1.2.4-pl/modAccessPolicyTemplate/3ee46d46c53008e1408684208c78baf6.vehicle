@@ -1,0 +1,53 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Permissions' => 
+    array (
+      '2040851727e7091f222aa3d93a244fe2' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'template',
+          1 => 'name',
+        ),
+        'class' => 'modAccessPermission',
+        'object' => '{"id":null,"template":0,"name":"orderprint_manage","description":"orderprint_manage","value":1}',
+        'guid' => '27ca49d8be8f6486300e1c181a2de1de',
+        'native_key' => NULL,
+        'signature' => 'd425e834331b37ddbc42647fca5db91f',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Permissions' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'template',
+        1 => 'name',
+      ),
+    ),
+  ),
+  'namespace' => 'orderprint',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '58c80788bd2e56de5b0ec75dea9098dc',
+  'package' => 'modx',
+  'class' => 'modAccessPolicyTemplate',
+  'signature' => '3ee46d46c53008e1408684208c78baf6',
+  'native_key' => NULL,
+  'object' => '{"id":null,"template_group":1,"name":"orderPrintPolicyTemplate","description":"A policy for orderPrint managers.","lexicon":"orderprint:permissions","permissions":{"orderprint_manage":[]}}',
+);

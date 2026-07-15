@@ -1,0 +1,116 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '3b67f444b33fc5ef78e584877902ddbd' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.counterPro.item","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<p>\\n    <strong>[[+name]]<\\/strong> -\\n    <small>[[+description]]<\\/small>\\n<\\/p>","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/counterpro\\/elements\\/chunks\\/chunk.item.tpl","content":"<p>\\n    <strong>[[+name]]<\\/strong> -\\n    <small>[[+description]]<\\/small>\\n<\\/p>"}',
+        'guid' => '7432ed07cb9cf0d32847aeb628ca37aa',
+        'native_key' => 0,
+        'signature' => '6439b24a8117fdef9ac04dbcab281fa8',
+      ),
+      'd90ad643bc9fe7f3ff5a0f000fc4d165' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.counterPro.office","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div id=\\"office-counterpro-wrapper\\">\\n    <div id=\\"office-preloader\\"><\\/div>\\n<\\/div>\\n","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/counterpro\\/elements\\/chunks\\/chunk.office.tpl","content":"<div id=\\"office-counterpro-wrapper\\">\\n    <div id=\\"office-preloader\\"><\\/div>\\n<\\/div>\\n"}',
+        'guid' => 'ec1c06ce5e8dae2fad6f3868d4f0612c',
+        'native_key' => 0,
+        'signature' => '0a673a2f8ccbff2e7be31bd9b78e2f75',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      'febc2a9dc6f2d716d2419a065d580def' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"counterPro","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var modX $modx *\\/\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var counterPro $counterPro *\\/\\nif (!$counterPro = $modx->getService(\'counterpro\', \'counterPro\', $modx->getOption(\'counterpro_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/counterpro\\/\') . \'model\\/counterpro\\/\', $scriptProperties)\\n) {\\n    return \'Could not load counterPro class!\';\\n}\\n\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'counterProItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->limit($limit);\\n$items = $modx->getIterator(\'counterProItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = array();\\n\\/** @var counterProItem $item *\\/\\nforeach ($items as $item) {\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\/\\/ By default just return output\\nreturn $output;","locked":0,"properties":"a:6:{s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:19:\\"counterpro_prop_tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:19:\\"tpl.counterPro.item\\";s:7:\\"lexicon\\";s:21:\\"counterpro:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:6:\\"sortby\\";a:7:{s:4:\\"name\\";s:6:\\"sortby\\";s:4:\\"desc\\";s:22:\\"counterpro_prop_sortby\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:4:\\"name\\";s:7:\\"lexicon\\";s:21:\\"counterpro:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:7:\\"sortdir\\";a:7:{s:4:\\"name\\";s:7:\\"sortdir\\";s:4:\\"desc\\";s:23:\\"counterpro_prop_sortdir\\";s:4:\\"type\\";s:4:\\"list\\";s:7:\\"options\\";a:2:{i:0;a:2:{s:4:\\"text\\";s:3:\\"ASC\\";s:5:\\"value\\";s:3:\\"ASC\\";}i:1;a:2:{s:4:\\"text\\";s:4:\\"DESC\\";s:5:\\"value\\";s:4:\\"DESC\\";}}s:5:\\"value\\";s:3:\\"ASC\\";s:7:\\"lexicon\\";s:21:\\"counterpro:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:5:\\"limit\\";a:7:{s:4:\\"name\\";s:5:\\"limit\\";s:4:\\"desc\\";s:21:\\"counterpro_prop_limit\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";i:10;s:7:\\"lexicon\\";s:21:\\"counterpro:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:15:\\"outputSeparator\\";a:7:{s:4:\\"name\\";s:15:\\"outputSeparator\\";s:4:\\"desc\\";s:31:\\"counterpro_prop_outputSeparator\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:1:\\"\\n\\";s:7:\\"lexicon\\";s:21:\\"counterpro:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:13:\\"toPlaceholder\\";a:7:{s:4:\\"name\\";s:13:\\"toPlaceholder\\";s:4:\\"desc\\";s:29:\\"counterpro_prop_toPlaceholder\\";s:4:\\"type\\";s:13:\\"combo-boolean\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";b:0;s:7:\\"lexicon\\";s:21:\\"counterpro:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/counterpro\\/elements\\/snippets\\/snippet.counterpro.php","content":"\\/** @var modX $modx *\\/\\n\\/** @var array $scriptProperties *\\/\\n\\/** @var counterPro $counterPro *\\/\\nif (!$counterPro = $modx->getService(\'counterpro\', \'counterPro\', $modx->getOption(\'counterpro_core_path\', null,\\n        $modx->getOption(\'core_path\') . \'components\\/counterpro\\/\') . \'model\\/counterpro\\/\', $scriptProperties)\\n) {\\n    return \'Could not load counterPro class!\';\\n}\\n\\n\\/\\/ Do your snippet code here. This demo grabs 5 items from our custom table.\\n$tpl = $modx->getOption(\'tpl\', $scriptProperties, \'Item\');\\n$sortby = $modx->getOption(\'sortby\', $scriptProperties, \'name\');\\n$sortdir = $modx->getOption(\'sortbir\', $scriptProperties, \'ASC\');\\n$limit = $modx->getOption(\'limit\', $scriptProperties, 5);\\n$outputSeparator = $modx->getOption(\'outputSeparator\', $scriptProperties, \\"\\\\n\\");\\n$toPlaceholder = $modx->getOption(\'toPlaceholder\', $scriptProperties, false);\\n\\n\\/\\/ Build query\\n$c = $modx->newQuery(\'counterProItem\');\\n$c->sortby($sortby, $sortdir);\\n$c->limit($limit);\\n$items = $modx->getIterator(\'counterProItem\', $c);\\n\\n\\/\\/ Iterate through items\\n$list = array();\\n\\/** @var counterProItem $item *\\/\\nforeach ($items as $item) {\\n    $list[] = $modx->getChunk($tpl, $item->toArray());\\n}\\n\\n\\/\\/ Output\\n$output = implode($outputSeparator, $list);\\nif (!empty($toPlaceholder)) {\\n    \\/\\/ If using a placeholder, output nothing and set output to specified placeholder\\n    $modx->setPlaceholder($toPlaceholder, $output);\\n\\n    return \'\';\\n}\\n\\/\\/ By default just return output\\nreturn $output;"}',
+        'guid' => '8c20597cf0d5322897140abd9f12b018',
+        'native_key' => 0,
+        'signature' => '0c2e52d67349b8794f316376a20becdd',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'counterpro',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"counterpro-1.0.1-beta\\/modCategory\\/2628073e2ee01f2493b7b0ea11aa1cd8\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"counterpro"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"counterpro-1.0.1-beta\\/modCategory\\/2628073e2ee01f2493b7b0ea11aa1cd8\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"counterpro"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"counterpro-1.0.1-beta\\/modCategory\\/2628073e2ee01f2493b7b0ea11aa1cd8.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"counterpro-1.0.1-beta\\/modCategory\\/2628073e2ee01f2493b7b0ea11aa1cd8.resolve.chunks.resolver","type":"php","name":"resolve.chunks"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"counterpro-1.0.1-beta\\/modCategory\\/2628073e2ee01f2493b7b0ea11aa1cd8.resolve.office.resolver","type":"php","name":"resolve.office"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '10da442d0c3f74a78eb6f4446f8b9568',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '2628073e2ee01f2493b7b0ea11aa1cd8',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"counterPro"}',
+);

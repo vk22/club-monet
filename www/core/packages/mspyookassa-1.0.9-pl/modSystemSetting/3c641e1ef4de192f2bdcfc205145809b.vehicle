@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspyookassa',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '17870236e5dc5fdbd6b164e048c8f657',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '3c641e1ef4de192f2bdcfc205145809b',
+  'native_key' => 'mspyookassa_payment_tax_system',
+  'object' => '{"key":"mspyookassa_payment_tax_system","value":"1","xtype":"numberfield","namespace":"mspyookassa","area":"mspyookassa_main","editedon":null}',
+);

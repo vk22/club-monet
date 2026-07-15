@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'minishop2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'de479618563bdea759a59d72d89ceceb',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '88fcd1dedbf9ab9fd47aabe5e1c680cd',
+  'native_key' => 'msOnGetProductWeight',
+  'object' => '{"name":"msOnGetProductWeight","service":6,"groupname":"miniShop2"}',
+);

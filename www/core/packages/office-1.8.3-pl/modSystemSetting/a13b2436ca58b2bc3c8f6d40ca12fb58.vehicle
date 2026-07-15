@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '276abf4994df1d491ae1b5847de632c2',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a13b2436ca58b2bc3c8f6d40ca12fb58',
+  'native_key' => 'office_ms2_order_form_fields',
+  'object' => '{"key":"office_ms2_order_form_fields","value":"num,cart_cost,delivery_cost,weight,payment,delivery","xtype":"textarea","namespace":"office","area":"office_ms2","editedon":null}',
+);

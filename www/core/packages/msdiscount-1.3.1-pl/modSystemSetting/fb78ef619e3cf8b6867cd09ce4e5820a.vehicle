@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'c924af5b303f5962aadf88fe9e6c797b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'fb78ef619e3cf8b6867cd09ce4e5820a',
+  'native_key' => 'msd_coupon_only_products',
+  'object' => '{"key":"msd_coupon_only_products","value":true,"xtype":"combo-boolean","namespace":"msdiscount","area":"msd_main","editedon":null}',
+);

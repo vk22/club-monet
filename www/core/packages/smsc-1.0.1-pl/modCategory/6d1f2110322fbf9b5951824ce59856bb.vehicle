@@ -1,0 +1,33 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+  ),
+  'namespace' => 'smsc',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"smsc-1.0.1-pl\\/modCategory\\/6d1f2110322fbf9b5951824ce59856bb\\/0\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"smsc"}',
+    ),
+    1 => NULL,
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"smsc-1.0.1-pl\\/modCategory\\/6d1f2110322fbf9b5951824ce59856bb.office.resolver","type":"php","name":"office"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '1cbbfb746c7659a0a6365e9a310e040b',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => '6d1f2110322fbf9b5951824ce59856bb',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"Smsc","rank":0}',
+);

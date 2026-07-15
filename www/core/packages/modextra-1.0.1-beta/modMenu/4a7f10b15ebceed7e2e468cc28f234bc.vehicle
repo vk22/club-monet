@@ -1,0 +1,17 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'namespace' => 'modextra',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4499ed05ff11d04fe382eeb7fe6ab7ae',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '4a7f10b15ebceed7e2e468cc28f234bc',
+  'native_key' => 'modextra',
+  'object' => '{"text":"modextra","parent":"components","action":"home","description":"modextra_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"modextra"}',
+);

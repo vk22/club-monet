@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'orderprint',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'bfa13d9017062f6d6ceaf5689251c8af',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => '754d022aa18f021a5c93027d65579b48',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"orderPrintPolicy","description":"A policy for print all documents for all orders.","parent":0,"template":0,"class":"","data":"{\\"orderprint_manage\\":true}","lexicon":"orderprint:permissions"}',
+);

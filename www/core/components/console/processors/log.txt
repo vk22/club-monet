@@ -1,0 +1,3042 @@
+2021-02-15 14:42:33 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 4
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:42:33 diff:  -1829.25
+2021-02-15 14:42:33 orderBundleFinal Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 924153
+                            [itemAmount] => 924153
+                            [itemCode] => 60306
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 38364
+                            [itemAmount] => 38364
+                            [itemCode] => 60307
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 38364
+                            [itemAmount] => 38364
+                            [itemCode] => 60308
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 21313
+                            [itemAmount] => 21313
+                            [itemCode] => 60309
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 14493
+                            [itemAmount] => 14493
+                            [itemCode] => 60310
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 2984
+                            [itemAmount] => 2984
+                            [itemCode] => 60311
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 17903
+                            [itemAmount] => 17904
+                            [itemCode] => 7_2
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 4
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+///////////////////////////////////////
+2021-02-15 14:43:27 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 4
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:43:27 diff:  -1829.25
+2021-02-15 14:43:27 orderBundleFinal Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 924153
+                            [itemAmount] => 924153
+                            [itemCode] => 60306
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 38364
+                            [itemAmount] => 38364
+                            [itemCode] => 60307
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 38364
+                            [itemAmount] => 38364
+                            [itemCode] => 60308
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 21313
+                            [itemAmount] => 21313
+                            [itemCode] => 60309
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 14493
+                            [itemAmount] => 14493
+                            [itemCode] => 60310
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 2984
+                            [itemAmount] => 2984
+                            [itemCode] => 60311
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 17903
+                            [itemAmount] => 17904
+                            [itemCode] => 7_2
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 4
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+///////////////////////////////////////
+2021-02-15 14:44:00 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 4
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:44:00 diff:  -1829.25
+2021-02-15 14:44:00 orderBundleFinal Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 924153
+                            [itemAmount] => 924153
+                            [itemCode] => 60306
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 38364
+                            [itemAmount] => 38364
+                            [itemCode] => 60307
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 38364
+                            [itemAmount] => 38364
+                            [itemCode] => 60308
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 21313
+                            [itemAmount] => 21313
+                            [itemCode] => 60309
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 14493
+                            [itemAmount] => 14493
+                            [itemCode] => 60310
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 2984
+                            [itemAmount] => 2984
+                            [itemCode] => 60311
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [quantity] => Array
+                                (
+                                    [value] => 1
+                                    [measure] => ms2_frontend_count_unit
+                                )
+
+                            [itemPrice] => 17903
+                            [itemAmount] => 17904
+                            [itemCode] => 7_2
+                            [tax] => Array
+                                (
+                                    [taxType] => 0
+                                    [taxSum] => 0
+                                )
+
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 4
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+///////////////////////////////////////
+2021-02-15 14:46:40 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:47:12 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:47:26 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:48:20 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:48:52 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+
+2021-02-15 14:49:06 orderBundle Array
+(
+    [cartItems] => Array
+        (
+            [items] => Array
+                (
+                    [0] => Array
+                        (
+                            [positionId] => 1
+                            [name] => Япония, 1 иена 1888 год
+                            [itemPrice] => 1084000
+                            [itemAmount] => 1084000
+                            [itemCode] => 60306
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [1] => Array
+                        (
+                            [positionId] => 2
+                            [name] => Япония, 100 иен 1976 год (UNC)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60307
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [2] => Array
+                        (
+                            [positionId] => 3
+                            [name] => Великобритания, 2 фунта 1989 год (AU)
+                            [itemPrice] => 45000
+                            [itemAmount] => 45000
+                            [itemCode] => 60308
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [3] => Array
+                        (
+                            [positionId] => 4
+                            [name] => 10 копеек, 1915 год ВС
+                            [itemPrice] => 25000
+                            [itemAmount] => 25000
+                            [itemCode] => 60309
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [4] => Array
+                        (
+                            [positionId] => 5
+                            [name] => Япония, 5 сенов 1922 год
+                            [itemPrice] => 17000
+                            [itemAmount] => 17000
+                            [itemCode] => 60310
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [5] => Array
+                        (
+                            [positionId] => 6
+                            [name] => Россия, 5 рублей 2019 год (UNC)
+                            [itemPrice] => 3500
+                            [itemAmount] => 3500
+                            [itemCode] => 60311
+                            [itemAttributes] => Array
+                                (
+                                    [attributes] => Array
+                                        (
+                                            [0] => Array
+                                                (
+                                                    [name] => paymentMethod
+                                                    [value] => 1
+                                                )
+
+                                            [1] => Array
+                                                (
+                                                    [name] => paymentObject
+                                                    [value] => 1
+                                                )
+
+                                        )
+
+                                )
+
+                        )
+
+                    [6] => Array
+                        (
+                            [positionId] => 7
+                            [name] => Доставка почтой РФ
+                            [itemPrice] => 21000
+                            [itemAmount] => 21000
+                            [itemCode] => 7_2
+                        )
+
+                )
+
+        )
+
+    [customerDetails] => Array
+        (
+            [email] => v.kushnir22@gmail.com
+            [fullName] => Default Admin User
+        )
+
+)
+

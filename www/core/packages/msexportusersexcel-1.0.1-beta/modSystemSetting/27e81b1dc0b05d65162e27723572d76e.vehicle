@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'related_objects' => false,
+  'namespace' => 'msexportusersexcel',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '01b2f11d2ed1ab25c01587f0747eb7d8',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '27e81b1dc0b05d65162e27723572d76e',
+  'native_key' => 'msexportusersexcel_date_process',
+  'object' => '{"key":"msexportusersexcel_date_process","value":"1","xtype":"combo-boolean","namespace":"msexportusersexcel","area":"msexportusersexcel_excel","editedon":null}',
+);

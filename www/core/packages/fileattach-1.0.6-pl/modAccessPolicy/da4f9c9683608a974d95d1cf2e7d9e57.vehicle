@@ -1,0 +1,19 @@
+<?php return array (
+  'preserve_keys' => false,
+  'unique_key' => 
+  array (
+    0 => 'name',
+  ),
+  'update_object' => true,
+  'namespace' => 'fileattach',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8bdaf5d384a8806df75dd898e6409927',
+  'package' => 'modx',
+  'class' => 'modAccessPolicy',
+  'signature' => 'da4f9c9683608a974d95d1cf2e7d9e57',
+  'native_key' => NULL,
+  'object' => '{"id":null,"name":"File Attach","description":"A policy for editing attached files to resources.","parent":0,"template":0,"class":"","data":"{\\"fileattach.totallist\\":true,\\"fileattach.doclist\\":true,\\"fileattach.download\\":true,\\"fileattach.list\\":true,\\"fileattach.remove\\":true}","lexicon":"fileattach:permissions"}',
+);

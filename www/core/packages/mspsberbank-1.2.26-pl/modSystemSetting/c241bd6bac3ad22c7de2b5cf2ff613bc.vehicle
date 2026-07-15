@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspsberbank',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f49ca3bd83c600fc50bc8f6c41f57b6d',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'c241bd6bac3ad22c7de2b5cf2ff613bc',
+  'native_key' => 'ms2_payment_sbrbnk_login',
+  'object' => '{"key":"ms2_payment_sbrbnk_login","value":"test.dev","xtype":"textfield","namespace":"mspsberbank","area":"","editedon":null}',
+);

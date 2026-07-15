@@ -1,0 +1,15 @@
+<?php return array (
+  'class' => 'xPDOFileVehicle',
+  'object' => 
+  array (
+    'source' => 'msdiscount-1.3.13-pl/xPDOFileVehicle/b358c44bb0feb4c42f3b046d5b33eb6f/',
+    'target' => 'return MODX_CORE_PATH . \'components/msdiscount/\';',
+    'name' => 'vehicle',
+  ),
+  'vehicle_class' => 'xPDOFileVehicle',
+  'vehicle_package' => 'transport',
+  'guid' => '6ec9b332314b07e8342ec6e7e4dcb799',
+  'package' => '',
+  'signature' => 'b358c44bb0feb4c42f3b046d5b33eb6f',
+  'native_key' => '6ec9b332314b07e8342ec6e7e4dcb799',
+);

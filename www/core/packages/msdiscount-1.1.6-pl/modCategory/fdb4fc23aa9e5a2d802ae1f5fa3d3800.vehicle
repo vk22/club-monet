@@ -1,0 +1,304 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => 
+  array (
+    'Chunks' => 
+    array (
+      '2649fa33c7589795a6f4507333ff49c4' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.msProducts.discount.row","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"<div class=\\"row ms2_product\\">\\n\\t<div class=\\"span2 col-md-2\\"><img src=\\"[[+thumb:default=`[[++assets_url]]components\\/minishop2\\/img\\/web\\/ms2_small.png`]]\\" width=\\"120\\" height=\\"90\\" \\/><\\/div>\\n\\t<div class=\\"row span10 col-md-10\\">\\n\\t\\t<form method=\\"post\\" class=\\"ms2_form\\">\\n\\t\\t\\t<a href=\\"[[~[[+id]]]]\\">[[+pagetitle]]<\\/a>\\n\\t\\t\\t<span class=\\"flags\\">[[+new]] [[+popular]] [[+favorite]]<\\/span>\\n\\t\\t\\t<span class=\\"price\\">[[+price]] [[%ms2_frontend_currency]][[+remains]]<\\/span>\\n\\t\\t\\t[[+old_price]]\\n\\t\\t\\t<button class=\\"btn btn-default\\" type=\\"submit\\" name=\\"ms2_action\\" value=\\"cart\\/add\\"><i class=\\"glyphicon glyphicon-barcode\\"><\\/i> [[%ms2_frontend_add_to_cart]]<\\/button>\\n\\t\\t\\t<input type=\\"hidden\\" name=\\"id\\" value=\\"[[+id]]\\">\\n\\t\\t\\t<input type=\\"hidden\\" name=\\"count\\" value=\\"1\\">\\n\\t\\t\\t<input type=\\"hidden\\" name=\\"options\\" value=\\"[]\\">\\n\\t\\t<\\/form>\\n\\t\\t<p><small>[[+introtext]]<\\/small><\\/p>\\n\\t<\\/div>\\n<\\/div>\\n<br\\/><br\\/>\\n<!--minishop2_popular <i class=\\"glyphicon glyphicon-star\\" title=\\"[[%ms2_frontend_popular]]\\"><\\/i>-->\\n<!--minishop2_new <i class=\\"glyphicon glyphicon-flag\\" title=\\"[[%ms2_frontend_new]]\\"><\\/i>-->\\n<!--minishop2_favorite <i class=\\"glyphicon glyphicon-bookmark\\" title=\\"[[%ms2_frontend_favorite]]\\"><\\/i>-->\\n<!--minishop2_old_price <span class=\\"old_price\\">[[+old_price]] [[%ms2_frontend_currency]]<\\/span>-->\\n<!--minishop2_remains  (-[[+sale_discount]] \\u2014 <span class=\\"msd_remains\\">[[+remains]]<\\/span>)-->\\n<!--minishop2_!remains  (-[[+sale_discount]])-->","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/msdiscount\\/elements\\/chunks\\/chunk.msd_product_row.tpl","content":"<div class=\\"row ms2_product\\">\\n\\t<div class=\\"span2 col-md-2\\"><img src=\\"[[+thumb:default=`[[++assets_url]]components\\/minishop2\\/img\\/web\\/ms2_small.png`]]\\" width=\\"120\\" height=\\"90\\" \\/><\\/div>\\n\\t<div class=\\"row span10 col-md-10\\">\\n\\t\\t<form method=\\"post\\" class=\\"ms2_form\\">\\n\\t\\t\\t<a href=\\"[[~[[+id]]]]\\">[[+pagetitle]]<\\/a>\\n\\t\\t\\t<span class=\\"flags\\">[[+new]] [[+popular]] [[+favorite]]<\\/span>\\n\\t\\t\\t<span class=\\"price\\">[[+price]] [[%ms2_frontend_currency]][[+remains]]<\\/span>\\n\\t\\t\\t[[+old_price]]\\n\\t\\t\\t<button class=\\"btn btn-default\\" type=\\"submit\\" name=\\"ms2_action\\" value=\\"cart\\/add\\"><i class=\\"glyphicon glyphicon-barcode\\"><\\/i> [[%ms2_frontend_add_to_cart]]<\\/button>\\n\\t\\t\\t<input type=\\"hidden\\" name=\\"id\\" value=\\"[[+id]]\\">\\n\\t\\t\\t<input type=\\"hidden\\" name=\\"count\\" value=\\"1\\">\\n\\t\\t\\t<input type=\\"hidden\\" name=\\"options\\" value=\\"[]\\">\\n\\t\\t<\\/form>\\n\\t\\t<p><small>[[+introtext]]<\\/small><\\/p>\\n\\t<\\/div>\\n<\\/div>\\n<br\\/><br\\/>\\n<!--minishop2_popular <i class=\\"glyphicon glyphicon-star\\" title=\\"[[%ms2_frontend_popular]]\\"><\\/i>-->\\n<!--minishop2_new <i class=\\"glyphicon glyphicon-flag\\" title=\\"[[%ms2_frontend_new]]\\"><\\/i>-->\\n<!--minishop2_favorite <i class=\\"glyphicon glyphicon-bookmark\\" title=\\"[[%ms2_frontend_favorite]]\\"><\\/i>-->\\n<!--minishop2_old_price <span class=\\"old_price\\">[[+old_price]] [[%ms2_frontend_currency]]<\\/span>-->\\n<!--minishop2_remains  (-[[+sale_discount]] \\u2014 <span class=\\"msd_remains\\">[[+remains]]<\\/span>)-->\\n<!--minishop2_!remains  (-[[+sale_discount]])-->"}',
+        'guid' => 'c6afe9fcdbe33726812b5b2a1b0f1498',
+        'native_key' => 0,
+        'signature' => '89a61b35630f170a62e6fd562b91ce52',
+      ),
+      'b987557f9250aed7aedae1400f43b904' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => false,
+        'unique_key' => 'name',
+        'class' => 'modChunk',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"tpl.msProduct.discount","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"[[+remains]]\\n<!--minishop2_remains -[[+sale_discount]] \\u2014 <span class=\\"msd_remains\\">[[+remains]]<\\/span>-->\\n<!--minishop2_!remains -[[+sale_discount]]-->","locked":0,"properties":null,"static":0,"static_file":"core\\/components\\/msdiscount\\/elements\\/chunks\\/chunk.msd_discount.tpl","content":"[[+remains]]\\n<!--minishop2_remains -[[+sale_discount]] \\u2014 <span class=\\"msd_remains\\">[[+remains]]<\\/span>-->\\n<!--minishop2_!remains -[[+sale_discount]]-->"}',
+        'guid' => '6190f8a0d15f00a325253689c1230240',
+        'native_key' => 0,
+        'signature' => '4b3e16d63ed688627a4c496bc65a20ea',
+      ),
+    ),
+    'Snippets' => 
+    array (
+      '416ca276557725a862c090e0a4ff9be3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"msdBuyNow","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var array $scriptProperties *\\/\\n\\/** @var pdoTools $pdoTools *\\/\\n$pdoTools = $modx->getService(\'pdoTools\');\\n\\/** @var msDiscount $msDiscount *\\/\\n$msDiscount = $modx->getService(\'msDiscount\');\\nif (!empty($frontend_css)) {\\n\\t$frontend_css = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_css);\\n\\t$modx->regClientCSS($frontend_css);\\n}\\nif (!empty($frontend_js)) {\\n\\t$frontend_js = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_js);\\n\\t$modx->regClientScript($frontend_js);\\n}\\n\\n$date = date(\'Y-m-d H:i:s\');\\n$pdoTools->setStore(\'msd_date\', $date);\\n$usergroups = array_keys($msDiscount->getUserGroups($modx->user->id));\\n$sales = $msDiscount->getSales($date, true);\\nif (!empty($sale)) {\\n\\t$pdoTools->setStore(\'msd_sale\', $sale);\\n\\t$tmp = array_map(\'trim\', explode(\',\', $sale));\\n\\tforeach ($sales as $id => $sale) {\\n\\t\\tif (!in_array($id, $tmp)) {\\n\\t\\t\\tunset($sales[$id]);\\n\\t\\t}\\n\\t}\\n}\\nif (empty($sales)) {\\n\\treturn !empty($showLog) && $modx->user->hasSessionContext(\'mgr\')\\n\\t\\t? $modx->lexicon(\'msd_err_no_sales\')\\n\\t\\t: \'\';\\n}\\n$all = false;\\n$parents_in = array();\\n$parents_out = array();\\nforeach ($sales as $idx => $sale) {\\n\\t\\/\\/ Check user groups\\n\\tif (!empty($sale[\'users\'])) {\\n\\t\\t$required = array();\\n\\t\\tforeach ($sale[\'users\'] as $gid => $type) {\\n\\t\\t\\tif ($type == \'out\' && in_array($gid, $usergroups)) {\\n\\t\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\t\\tcontinue(2);\\n\\t\\t\\t}\\n\\t\\t\\tif ($type == \'in\') {\\n\\t\\t\\t\\t$required[] = $gid;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tif (!empty($required) && !array_intersect($required, $usergroups)) {\\n\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\tcontinue;\\n\\t\\t}\\n\\t}\\n\\t\\/\\/ Check product groups\\n\\tif (!empty($sale[\'products\'])) {\\n\\t\\tforeach ($sale[\'products\'] as $gid => $type) {\\n\\t\\t\\t$c = $modx->newQuery(\'modResourceGroupResource\', array(\'document_group\' => $gid));\\n\\t\\t\\t$c->select(\'document\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($c->prepare() && $c->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\tif ($ids = $c->stmt->fetchAll(PDO::FETCH_COLUMN)) {\\n\\t\\t\\t\\t\\tif ($type == \'in\') {\\n\\t\\t\\t\\t\\t\\t$parents_in = array_merge($parents_in, $ids);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\telse {\\n\\t\\t\\t\\t\\t\\t$parents_out = array_merge($parents_out, $ids);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\t}\\n\\t\\/\\/ All products\\n\\telse {\\n\\t\\t$all = true;\\n\\t\\tbreak;\\n\\t}\\n}\\n\\nif (!$parents_in && !$parents_out && !$all) {\\n\\treturn !empty($showLog) && $modx->user->hasSessionContext(\'mgr\')\\n\\t\\t? $modx->lexicon(\'msd_err_no_sales\')\\n\\t\\t: \'\';\\n}\\n\\nif (empty($scriptProperties[\'prepareSnippet\'])) {\\n\\t$scriptProperties[\'prepareSnippet\'] = \'msdGetDiscount\';\\n}\\n\\n$scriptProperties[\'parents\'] = 0;\\nif (!empty($scriptProperties[\'where\'])) {\\n\\t$where = !is_array($scriptProperties[\'where\'])\\n\\t\\t? $modx->fromJSON($scriptProperties[\'where\'])\\n\\t\\t: $scriptProperties[\'where\'];\\n}\\nelse {\\n\\t$where = array();\\n}\\nif (!$all) {\\n\\t$depth = (isset($config[\'depth\']) && $config[\'depth\'] !== \'\')\\n\\t\\t? (integer)$config[\'depth\']\\n\\t\\t: 10;\\n\\tif (!empty($depth) && $depth > 0) {\\n\\t\\t$pids = array();\\n\\t\\t$q = $modx->newQuery(\'modResource\', array(\'id:IN\' => array_merge($parents_in, $parents_out)));\\n\\t\\t$q->select(\'id,context_key\');\\n\\t\\t$tstart = microtime(true);\\n\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\twhile ($row = $q->stmt->fetch(PDO::FETCH_ASSOC)) {\\n\\t\\t\\t\\t$pids[$row[\'id\']] = $row[\'context_key\'];\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tforeach ($pids as $k => $v) {\\n\\t\\t\\tif (!is_numeric($k)) {\\n\\t\\t\\t\\tcontinue;\\n\\t\\t\\t}\\n\\t\\t\\telseif (in_array($k, $parents_in)) {\\n\\t\\t\\t\\t$parents_in = array_merge($parents_in, $modx->getChildIds($k, $depth, array(\'context\' => $v)));\\n\\t\\t\\t}\\n\\t\\t\\telse {\\n\\t\\t\\t\\t$parents_out = array_merge($parents_out, $modx->getChildIds($k, $depth, array(\'context\' => $v)));\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tif (empty($parents_in)) {\\n\\t\\t\\t$parents_in = $modx->getChildIds(0, $depth, array(\'context\' => $this->config[\'context\']));\\n\\t\\t}\\n\\t\\t\\/\\/ Support of miniShop2 categories\\n\\t\\t$members = array();\\n\\t\\tif (!empty($parents_in) || !empty($parents_out)) {\\n\\t\\t\\t$q = $modx->newQuery(\'msCategoryMember\');\\n\\t\\t\\tif (!empty($parents_in)) {\\n\\t\\t\\t\\t$q->where(array(\'category_id:IN\' => $parents_in));\\n\\t\\t\\t}\\n\\t\\t\\tif (!empty($parents_out)) {\\n\\t\\t\\t\\t$q->where(array(\'category_id:NOT IN\' => $parents_out));\\n\\t\\t\\t}\\n\\t\\t\\t$q->select(\'product_id\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\t$members = $q->stmt->fetchAll(PDO::FETCH_COLUMN);\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\t\\/\\/ Add parent to conditions\\n\\t\\tif (!empty($parents_in) && !empty($members)) {\\n\\t\\t\\t$members = array_merge($members, $parents_in);\\n\\t\\t\\t$where[] = array(\\n\\t\\t\\t\\t\'parent:IN\' => $parents_in,\\n\\t\\t\\t\\t\'OR:id:IN\' => $members,\\n\\t\\t\\t);\\n\\t\\t}\\n\\t\\telseif (!empty($parents_in)) {\\n\\t\\t\\t$where[] = array(\\n\\t\\t\\t\\t\'parent:IN\' => $parents_in,\\n\\t\\t\\t\\t\'OR:id:IN\' => $parents_in,\\n\\t\\t\\t);\\n\\t\\t}\\n\\t\\tif (!empty($parents_out)) {\\n\\t\\t\\t$where[] = array(\\n\\t\\t\\t\\t\'parent:NOT IN\' => $parents_out,\\n\\t\\t\\t\\t\'AND:id:NOT IN\' => $parents_out,\\n\\t\\t\\t);\\n\\t\\t}\\n\\t}\\n}\\n$scriptProperties[\'where\'] = $modx->toJSON($where);\\n\\nreturn $modx->runSnippet(\'msProducts\', $scriptProperties);","locked":0,"properties":"a:4:{s:4:\\"sale\\";a:7:{s:4:\\"name\\";s:4:\\"sale\\";s:4:\\"desc\\";s:20:\\"msdiscount_prop_sale\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:19:\\"msdiscount_prop_tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:27:\\"tpl.msProducts.discount.row\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"frontend_css\\";a:7:{s:4:\\"name\\";s:12:\\"frontend_css\\";s:4:\\"desc\\";s:28:\\"msdiscount_prop_frontend_css\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:30:\\"[[+assetsUrl]]css\\/web\\/main.css\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"frontend_js\\";a:7:{s:4:\\"name\\";s:11:\\"frontend_js\\";s:4:\\"desc\\";s:27:\\"msdiscount_prop_frontend_js\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:31:\\"[[+assetsUrl]]js\\/web\\/default.js\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/msdiscount\\/elements\\/snippets\\/snippet.msdbuynow.php","content":"\\/** @var array $scriptProperties *\\/\\n\\/** @var pdoTools $pdoTools *\\/\\n$pdoTools = $modx->getService(\'pdoTools\');\\n\\/** @var msDiscount $msDiscount *\\/\\n$msDiscount = $modx->getService(\'msDiscount\');\\nif (!empty($frontend_css)) {\\n\\t$frontend_css = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_css);\\n\\t$modx->regClientCSS($frontend_css);\\n}\\nif (!empty($frontend_js)) {\\n\\t$frontend_js = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_js);\\n\\t$modx->regClientScript($frontend_js);\\n}\\n\\n$date = date(\'Y-m-d H:i:s\');\\n$pdoTools->setStore(\'msd_date\', $date);\\n$usergroups = array_keys($msDiscount->getUserGroups($modx->user->id));\\n$sales = $msDiscount->getSales($date, true);\\nif (!empty($sale)) {\\n\\t$pdoTools->setStore(\'msd_sale\', $sale);\\n\\t$tmp = array_map(\'trim\', explode(\',\', $sale));\\n\\tforeach ($sales as $id => $sale) {\\n\\t\\tif (!in_array($id, $tmp)) {\\n\\t\\t\\tunset($sales[$id]);\\n\\t\\t}\\n\\t}\\n}\\nif (empty($sales)) {\\n\\treturn !empty($showLog) && $modx->user->hasSessionContext(\'mgr\')\\n\\t\\t? $modx->lexicon(\'msd_err_no_sales\')\\n\\t\\t: \'\';\\n}\\n$all = false;\\n$parents_in = array();\\n$parents_out = array();\\nforeach ($sales as $idx => $sale) {\\n\\t\\/\\/ Check user groups\\n\\tif (!empty($sale[\'users\'])) {\\n\\t\\t$required = array();\\n\\t\\tforeach ($sale[\'users\'] as $gid => $type) {\\n\\t\\t\\tif ($type == \'out\' && in_array($gid, $usergroups)) {\\n\\t\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\t\\tcontinue(2);\\n\\t\\t\\t}\\n\\t\\t\\tif ($type == \'in\') {\\n\\t\\t\\t\\t$required[] = $gid;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tif (!empty($required) && !array_intersect($required, $usergroups)) {\\n\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\tcontinue;\\n\\t\\t}\\n\\t}\\n\\t\\/\\/ Check product groups\\n\\tif (!empty($sale[\'products\'])) {\\n\\t\\tforeach ($sale[\'products\'] as $gid => $type) {\\n\\t\\t\\t$c = $modx->newQuery(\'modResourceGroupResource\', array(\'document_group\' => $gid));\\n\\t\\t\\t$c->select(\'document\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($c->prepare() && $c->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\tif ($ids = $c->stmt->fetchAll(PDO::FETCH_COLUMN)) {\\n\\t\\t\\t\\t\\tif ($type == \'in\') {\\n\\t\\t\\t\\t\\t\\t$parents_in = array_merge($parents_in, $ids);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\telse {\\n\\t\\t\\t\\t\\t\\t$parents_out = array_merge($parents_out, $ids);\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\t}\\n\\t\\/\\/ All products\\n\\telse {\\n\\t\\t$all = true;\\n\\t\\tbreak;\\n\\t}\\n}\\n\\nif (!$parents_in && !$parents_out && !$all) {\\n\\treturn !empty($showLog) && $modx->user->hasSessionContext(\'mgr\')\\n\\t\\t? $modx->lexicon(\'msd_err_no_sales\')\\n\\t\\t: \'\';\\n}\\n\\nif (empty($scriptProperties[\'prepareSnippet\'])) {\\n\\t$scriptProperties[\'prepareSnippet\'] = \'msdGetDiscount\';\\n}\\n\\n$scriptProperties[\'parents\'] = 0;\\nif (!empty($scriptProperties[\'where\'])) {\\n\\t$where = !is_array($scriptProperties[\'where\'])\\n\\t\\t? $modx->fromJSON($scriptProperties[\'where\'])\\n\\t\\t: $scriptProperties[\'where\'];\\n}\\nelse {\\n\\t$where = array();\\n}\\nif (!$all) {\\n\\t$depth = (isset($config[\'depth\']) && $config[\'depth\'] !== \'\')\\n\\t\\t? (integer)$config[\'depth\']\\n\\t\\t: 10;\\n\\tif (!empty($depth) && $depth > 0) {\\n\\t\\t$pids = array();\\n\\t\\t$q = $modx->newQuery(\'modResource\', array(\'id:IN\' => array_merge($parents_in, $parents_out)));\\n\\t\\t$q->select(\'id,context_key\');\\n\\t\\t$tstart = microtime(true);\\n\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\twhile ($row = $q->stmt->fetch(PDO::FETCH_ASSOC)) {\\n\\t\\t\\t\\t$pids[$row[\'id\']] = $row[\'context_key\'];\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tforeach ($pids as $k => $v) {\\n\\t\\t\\tif (!is_numeric($k)) {\\n\\t\\t\\t\\tcontinue;\\n\\t\\t\\t}\\n\\t\\t\\telseif (in_array($k, $parents_in)) {\\n\\t\\t\\t\\t$parents_in = array_merge($parents_in, $modx->getChildIds($k, $depth, array(\'context\' => $v)));\\n\\t\\t\\t}\\n\\t\\t\\telse {\\n\\t\\t\\t\\t$parents_out = array_merge($parents_out, $modx->getChildIds($k, $depth, array(\'context\' => $v)));\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tif (empty($parents_in)) {\\n\\t\\t\\t$parents_in = $modx->getChildIds(0, $depth, array(\'context\' => $this->config[\'context\']));\\n\\t\\t}\\n\\t\\t\\/\\/ Support of miniShop2 categories\\n\\t\\t$members = array();\\n\\t\\tif (!empty($parents_in) || !empty($parents_out)) {\\n\\t\\t\\t$q = $modx->newQuery(\'msCategoryMember\');\\n\\t\\t\\tif (!empty($parents_in)) {\\n\\t\\t\\t\\t$q->where(array(\'category_id:IN\' => $parents_in));\\n\\t\\t\\t}\\n\\t\\t\\tif (!empty($parents_out)) {\\n\\t\\t\\t\\t$q->where(array(\'category_id:NOT IN\' => $parents_out));\\n\\t\\t\\t}\\n\\t\\t\\t$q->select(\'product_id\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\t$members = $q->stmt->fetchAll(PDO::FETCH_COLUMN);\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\t\\/\\/ Add parent to conditions\\n\\t\\tif (!empty($parents_in) && !empty($members)) {\\n\\t\\t\\t$members = array_merge($members, $parents_in);\\n\\t\\t\\t$where[] = array(\\n\\t\\t\\t\\t\'parent:IN\' => $parents_in,\\n\\t\\t\\t\\t\'OR:id:IN\' => $members,\\n\\t\\t\\t);\\n\\t\\t}\\n\\t\\telseif (!empty($parents_in)) {\\n\\t\\t\\t$where[] = array(\\n\\t\\t\\t\\t\'parent:IN\' => $parents_in,\\n\\t\\t\\t\\t\'OR:id:IN\' => $parents_in,\\n\\t\\t\\t);\\n\\t\\t}\\n\\t\\tif (!empty($parents_out)) {\\n\\t\\t\\t$where[] = array(\\n\\t\\t\\t\\t\'parent:NOT IN\' => $parents_out,\\n\\t\\t\\t\\t\'AND:id:NOT IN\' => $parents_out,\\n\\t\\t\\t);\\n\\t\\t}\\n\\t}\\n}\\n$scriptProperties[\'where\'] = $modx->toJSON($where);\\n\\nreturn $modx->runSnippet(\'msProducts\', $scriptProperties);"}',
+        'guid' => '49e640ea1f9e0b6842c73c1f6f0ff557',
+        'native_key' => 0,
+        'signature' => '2899c44882e7ca70bb6c7ee97fe0b5ff',
+      ),
+      'f73eb71198792a0e8b4e76f01d883007' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modSnippet',
+        'object' => '{"id":0,"source":1,"property_preprocess":0,"name":"msdGetDiscount","description":"","editor_type":0,"category":0,"cache_type":0,"snippet":"\\/** @var msDiscount $msDiscount *\\/\\n\\/** @var pdoTools $pdoTools *\\/\\n$pdoTools = $modx->getService(\'pdoTools\');\\n$msDiscount = $modx->getService(\'msDiscount\');\\n$date = $pdoTools->getStore(\'msd_date\');\\n$usergroups = array_keys($msDiscount->getUserGroups($modx->user->id));\\n$sales = !empty($date)\\n\\t? $msDiscount->getSales($date, true)\\n\\t: $msDiscount->getSales();\\nif (empty($sale)) {\\n\\t$sale = $pdoTools->getStore(\'msd_sale\');\\n}\\nif (!empty($sale)) {\\n\\t$tmp = array_map(\'trim\', explode(\',\', $sale));\\n\\tforeach ($sales as $id => $sale) {\\n\\t\\tif (!in_array($id, $tmp)) {\\n\\t\\t\\tunset($sales[$id]);\\n\\t\\t}\\n\\t}\\n}\\nif (!empty($row) && is_array($row)) {\\n\\t$mode = \'prepare\';\\n\\tif (!empty($row[\'id\'])) {\\n\\t\\t$id = $row[\'id\'];\\n\\t}\\n}\\nelse {\\n\\t$mode = \'standalone\';\\n\\tif (!empty($frontend_css)) {\\n\\t\\t$frontend_css = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_css);\\n\\t\\t$modx->regClientCSS($frontend_css);\\n\\t}\\n\\tif (!empty($frontend_js)) {\\n\\t\\t$frontend_js = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_js);\\n\\t\\t$modx->regClientScript($frontend_js);\\n\\t}\\n\\tif (empty($id)) {\\n\\t\\t$id = $modx->resource->id;\\n\\t}\\n}\\n\\n$remains = $discount = 0;\\nif (!empty($id) && !empty($sales)) {\\n\\tforeach ($sales as $sale) {\\n\\t\\t\\/\\/ Check user groups\\n\\t\\tif (!empty($sale[\'users\'])) {\\n\\t\\t\\t$required = array();\\n\\t\\t\\tforeach ($sale[\'users\'] as $gid => $type) {\\n\\t\\t\\t\\tif ($type == \'out\' && in_array($gid, $usergroups)) {\\n\\t\\t\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\t\\t\\tcontinue(2);\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\tif ($type == \'in\') {\\n\\t\\t\\t\\t\\t$required[] = $gid;\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\tif (!empty($required) && !array_intersect($required, $usergroups)) {\\n\\t\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\t\\tcontinue;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\t\\/\\/ Check product groups\\n\\t\\tif (!empty($sale[\'products\'])) {\\n\\t\\t\\t$groups_in = $groups_out = array();\\n\\t\\t\\tforeach ($sale[\'products\'] as $gid => $type) {\\n\\t\\t\\t\\tif ($type == \'out\') {\\n\\t\\t\\t\\t\\t$groups_out[] = $gid;\\n\\t\\t\\t\\t\\tunset($sale[\'products\'][$gid]);\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\telse {\\n\\t\\t\\t\\t\\t$groups_in[] = $gid;\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\n\\t\\tif (!empty($groups_out) || !empty($groups_in)) {\\n\\t\\t\\t$ids = $modx->getParentIds($id);\\n\\t\\t\\t$ids[] = $id;\\n\\n\\t\\t\\t$q = $modx->newQuery(\'msCategoryMember\', array(\'product_id\' => $id));\\n\\t\\t\\t$q->select(\'category_id\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\tif ($tmp = $q->stmt->fetchAll(PDO::FETCH_COLUMN)) {\\n\\t\\t\\t\\t\\t$ids = array_merge($ids, $tmp);\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\t$ids = array_unique($ids);\\n\\t\\t\\t$where = count($ids) > 1\\n\\t\\t\\t\\t? array(\'document:IN\' => $ids)\\n\\t\\t\\t\\t: array(\'document\' => $ids[0]);\\n\\n\\t\\t\\t$q = $modx->newQuery(\'modResourceGroupResource\', $where);\\n\\t\\t\\t$q->select(\'document_group\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\t$groups = $q->stmt->fetchAll(PDO::FETCH_COLUMN);\\n\\t\\t\\t\\tif (!empty($groups_out) && array_intersect($groups_out, $groups)) {\\n\\t\\t\\t\\t\\tcontinue;\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\telseif (!empty($groups_in) && !array_intersect($groups_in, $groups)) {\\n\\t\\t\\t\\t\\tcontinue;\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\n\\t\\t\\/\\/ Product match\\n\\t\\t$tmp_remains = ($sale[\'ends\'] != \'0000-00-00 00:00:00\')\\n\\t\\t\\t? strtotime($sale[\'ends\']) - time()\\n\\t\\t\\t: 0;\\n\\t\\tif (strpos($sale[\'discount\'], \'%\') !== false && (empty($discount) || strpos($discount, \'%\') !== false)) {\\n\\t\\t\\tif ($sale[\'discount\'] > $discount) {\\n\\t\\t\\t\\t$discount = $sale[\'discount\'];\\n\\t\\t\\t\\t$remains = $tmp_remains;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\telseif (is_numeric($sale[\'discount\']) && is_numeric($discount)) {\\n\\t\\t\\tif ($sale[\'discount\'] > $discount) {\\n\\t\\t\\t\\t$discount = $sale[\'discount\'];\\n\\t\\t\\t\\t$remains = $tmp_remains;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\telse {\\n\\t\\t\\t$discount = $sale[\'discount\'];\\n\\t\\t\\t$remains = $tmp_remains;\\n\\t\\t}\\n\\t}\\n}\\n\\n$arr = array(\\n\\t\'sale_discount\' => $discount,\\n\\t\'remains\' => $remains,\\n);\\nif ($mode == \'standalone\') {\\n\\t$pdoTools->config[\'nestedChunkPrefix\'] = \'minishop2_\';\\n\\n\\treturn !empty($tpl)\\n\\t\\t? $pdoTools->getChunk($tpl, $arr)\\n\\t\\t: print_r($arr, true);\\n}\\nelse {\\n\\t$row = array_merge($row, $arr);\\n\\n\\treturn $modx->toJSON($row);\\n}","locked":0,"properties":"a:5:{s:2:\\"id\\";a:7:{s:4:\\"name\\";s:2:\\"id\\";s:4:\\"desc\\";s:18:\\"msdiscount_prop_id\\";s:4:\\"type\\";s:11:\\"numberfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:4:\\"sale\\";a:7:{s:4:\\"name\\";s:4:\\"sale\\";s:4:\\"desc\\";s:20:\\"msdiscount_prop_sale\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:0:\\"\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:3:\\"tpl\\";a:7:{s:4:\\"name\\";s:3:\\"tpl\\";s:4:\\"desc\\";s:19:\\"msdiscount_prop_tpl\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:22:\\"tpl.msProduct.discount\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:12:\\"frontend_css\\";a:7:{s:4:\\"name\\";s:12:\\"frontend_css\\";s:4:\\"desc\\";s:28:\\"msdiscount_prop_frontend_css\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:30:\\"[[+assetsUrl]]css\\/web\\/main.css\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}s:11:\\"frontend_js\\";a:7:{s:4:\\"name\\";s:11:\\"frontend_js\\";s:4:\\"desc\\";s:27:\\"msdiscount_prop_frontend_js\\";s:4:\\"type\\";s:9:\\"textfield\\";s:7:\\"options\\";a:0:{}s:5:\\"value\\";s:31:\\"[[+assetsUrl]]js\\/web\\/default.js\\";s:7:\\"lexicon\\";s:21:\\"msdiscount:properties\\";s:4:\\"area\\";s:0:\\"\\";}}","moduleguid":"","static":0,"static_file":"core\\/components\\/msdiscount\\/elements\\/snippets\\/snippet.msdgetdiscount.php","content":"\\/** @var msDiscount $msDiscount *\\/\\n\\/** @var pdoTools $pdoTools *\\/\\n$pdoTools = $modx->getService(\'pdoTools\');\\n$msDiscount = $modx->getService(\'msDiscount\');\\n$date = $pdoTools->getStore(\'msd_date\');\\n$usergroups = array_keys($msDiscount->getUserGroups($modx->user->id));\\n$sales = !empty($date)\\n\\t? $msDiscount->getSales($date, true)\\n\\t: $msDiscount->getSales();\\nif (empty($sale)) {\\n\\t$sale = $pdoTools->getStore(\'msd_sale\');\\n}\\nif (!empty($sale)) {\\n\\t$tmp = array_map(\'trim\', explode(\',\', $sale));\\n\\tforeach ($sales as $id => $sale) {\\n\\t\\tif (!in_array($id, $tmp)) {\\n\\t\\t\\tunset($sales[$id]);\\n\\t\\t}\\n\\t}\\n}\\nif (!empty($row) && is_array($row)) {\\n\\t$mode = \'prepare\';\\n\\tif (!empty($row[\'id\'])) {\\n\\t\\t$id = $row[\'id\'];\\n\\t}\\n}\\nelse {\\n\\t$mode = \'standalone\';\\n\\tif (!empty($frontend_css)) {\\n\\t\\t$frontend_css = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_css);\\n\\t\\t$modx->regClientCSS($frontend_css);\\n\\t}\\n\\tif (!empty($frontend_js)) {\\n\\t\\t$frontend_js = str_replace(\'[[+assetsUrl]]\', $msDiscount->config[\'assetsUrl\'], $frontend_js);\\n\\t\\t$modx->regClientScript($frontend_js);\\n\\t}\\n\\tif (empty($id)) {\\n\\t\\t$id = $modx->resource->id;\\n\\t}\\n}\\n\\n$remains = $discount = 0;\\nif (!empty($id) && !empty($sales)) {\\n\\tforeach ($sales as $sale) {\\n\\t\\t\\/\\/ Check user groups\\n\\t\\tif (!empty($sale[\'users\'])) {\\n\\t\\t\\t$required = array();\\n\\t\\t\\tforeach ($sale[\'users\'] as $gid => $type) {\\n\\t\\t\\t\\tif ($type == \'out\' && in_array($gid, $usergroups)) {\\n\\t\\t\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\t\\t\\tcontinue(2);\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\tif ($type == \'in\') {\\n\\t\\t\\t\\t\\t$required[] = $gid;\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\tif (!empty($required) && !array_intersect($required, $usergroups)) {\\n\\t\\t\\t\\tunset($sales[$idx]);\\n\\t\\t\\t\\tcontinue;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\t\\/\\/ Check product groups\\n\\t\\tif (!empty($sale[\'products\'])) {\\n\\t\\t\\t$groups_in = $groups_out = array();\\n\\t\\t\\tforeach ($sale[\'products\'] as $gid => $type) {\\n\\t\\t\\t\\tif ($type == \'out\') {\\n\\t\\t\\t\\t\\t$groups_out[] = $gid;\\n\\t\\t\\t\\t\\tunset($sale[\'products\'][$gid]);\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\telse {\\n\\t\\t\\t\\t\\t$groups_in[] = $gid;\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\n\\t\\tif (!empty($groups_out) || !empty($groups_in)) {\\n\\t\\t\\t$ids = $modx->getParentIds($id);\\n\\t\\t\\t$ids[] = $id;\\n\\n\\t\\t\\t$q = $modx->newQuery(\'msCategoryMember\', array(\'product_id\' => $id));\\n\\t\\t\\t$q->select(\'category_id\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\tif ($tmp = $q->stmt->fetchAll(PDO::FETCH_COLUMN)) {\\n\\t\\t\\t\\t\\t$ids = array_merge($ids, $tmp);\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\t$ids = array_unique($ids);\\n\\t\\t\\t$where = count($ids) > 1\\n\\t\\t\\t\\t? array(\'document:IN\' => $ids)\\n\\t\\t\\t\\t: array(\'document\' => $ids[0]);\\n\\n\\t\\t\\t$q = $modx->newQuery(\'modResourceGroupResource\', $where);\\n\\t\\t\\t$q->select(\'document_group\');\\n\\t\\t\\t$tstart = microtime(true);\\n\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t$modx->queryTime += microtime(true) - $tstart;\\n\\t\\t\\t\\t$modx->executedQueries++;\\n\\t\\t\\t\\t$groups = $q->stmt->fetchAll(PDO::FETCH_COLUMN);\\n\\t\\t\\t\\tif (!empty($groups_out) && array_intersect($groups_out, $groups)) {\\n\\t\\t\\t\\t\\tcontinue;\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\telseif (!empty($groups_in) && !array_intersect($groups_in, $groups)) {\\n\\t\\t\\t\\t\\tcontinue;\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\n\\t\\t\\/\\/ Product match\\n\\t\\t$tmp_remains = ($sale[\'ends\'] != \'0000-00-00 00:00:00\')\\n\\t\\t\\t? strtotime($sale[\'ends\']) - time()\\n\\t\\t\\t: 0;\\n\\t\\tif (strpos($sale[\'discount\'], \'%\') !== false && (empty($discount) || strpos($discount, \'%\') !== false)) {\\n\\t\\t\\tif ($sale[\'discount\'] > $discount) {\\n\\t\\t\\t\\t$discount = $sale[\'discount\'];\\n\\t\\t\\t\\t$remains = $tmp_remains;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\telseif (is_numeric($sale[\'discount\']) && is_numeric($discount)) {\\n\\t\\t\\tif ($sale[\'discount\'] > $discount) {\\n\\t\\t\\t\\t$discount = $sale[\'discount\'];\\n\\t\\t\\t\\t$remains = $tmp_remains;\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\telse {\\n\\t\\t\\t$discount = $sale[\'discount\'];\\n\\t\\t\\t$remains = $tmp_remains;\\n\\t\\t}\\n\\t}\\n}\\n\\n$arr = array(\\n\\t\'sale_discount\' => $discount,\\n\\t\'remains\' => $remains,\\n);\\nif ($mode == \'standalone\') {\\n\\t$pdoTools->config[\'nestedChunkPrefix\'] = \'minishop2_\';\\n\\n\\treturn !empty($tpl)\\n\\t\\t? $pdoTools->getChunk($tpl, $arr)\\n\\t\\t: print_r($arr, true);\\n}\\nelse {\\n\\t$row = array_merge($row, $arr);\\n\\n\\treturn $modx->toJSON($row);\\n}"}',
+        'guid' => 'bb5042d97083f13f991adb04f59f1dfc',
+        'native_key' => 0,
+        'signature' => '2a3df6c1e96a047f2647304ce3870486',
+      ),
+    ),
+    'Plugins' => 
+    array (
+      '9dbf60e950049277140d57194d95f531' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 'name',
+        'class' => 'modPlugin',
+        'object' => '{"id":null,"source":1,"property_preprocess":0,"name":"msDiscount","description":"","editor_type":0,"category":0,"cache_type":0,"plugincode":"\\/** @var msDiscount $msDiscount *\\/\\n$msDiscount = $modx->getService(\'msDiscount\');\\n\\nswitch ($modx->event->name) {\\n\\n\\tcase \'msOnGetProductPrice\':\\n\\t\\tif ($modx->context->key == \'mgr\') {return;}\\n\\t\\t\\/**\\n\\t\\t * Counts discount of current product for current user, based on rules in msDiscount component\\n\\t\\t * New price must be set in $modx->event->returnedValues[\'price\']\\n\\t\\t *\\n\\t\\t * @var msProductData $product Object with product properties\\n\\t\\t * @var array $data Array with product properties. Can be empty!\\n\\t\\t * @var float $price Current price of product\\n\\t\\t *\\/\\n\\t\\tif (!isset($modx->event->returnedValues[\'price\'])) {\\n\\t\\t\\t$modx->event->returnedValues[\'price\'] = $price;\\n\\t\\t}\\n\\t\\t\\/\\/ Get link to product price\\n\\t\\t$price = & $modx->event->returnedValues[\'price\'];\\n\\t\\t$new_price = $msDiscount->getNewPrice($product->id, $price);\\n\\t\\tif ($new_price !== false) {\\n\\t\\t\\t$price = $new_price;\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnChangeOrderStatus\':\\n\\t\\t\\/**\\n\\t\\t * Add user to discounts group if he spent required sum for join\\n\\t\\t *\\n\\t\\t * @var msOrder $order\\n\\t\\t * @var integer $status\\n\\t\\t *\\/\\n\\t\\tif ($status != 2) {return;}\\n\\n\\t\\t\\/** @var modUser $user *\\/\\n\\t\\tif ($user = $order->getOne(\'User\')) {\\n\\t\\t\\tif ($profile = $modx->getObject(\'msCustomerProfile\', $user->id)) {\\n\\t\\t\\t\\t$spent = $profile->spent;\\n\\t\\t\\t\\tif ($spent > 0) {\\n\\t\\t\\t\\t\\t$q = $modx->newQuery(\'msdUserGroup\');\\n\\t\\t\\t\\t\\t$q->where(\'joinsum > 0\');\\n\\t\\t\\t\\t\\t$q->select(\'id,joinsum\');\\n\\t\\t\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t\\t\\t$groups = $msDiscount->getUserGroups($user->id);\\n\\t\\t\\t\\t\\t\\twhile ($row = $q->stmt->fetch(PDO::FETCH_ASSOC)) {\\n\\t\\t\\t\\t\\t\\t\\tif ($spent > $row[\'joinsum\'] && !isset($groups[$row[\'id\']])) {\\n\\t\\t\\t\\t\\t\\t\\t\\t$user->joinGroup((integer) $row[\'id\'], 1);\\n\\t\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnBeforeAddToOrder\':\\n\\t\\t\\/** @var string $key *\\/\\n\\t\\tif ($key == \'coupon_code\' && !empty($value)) {\\n\\t\\t\\t$check = $msDiscount->checkCoupon($value);\\n\\t\\t\\tif ($check !== true) {\\n\\t\\t\\t\\t$modx->event->output($check);\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnGetOrderCost\':\\n\\t\\t\\/**@var msOrderInterface $order *\\/\\n\\t\\tif (!empty($with_cart) && !empty($cost)) {\\n\\t\\t\\tif ($data = $order->get()) {\\n\\t\\t\\t\\tif (!empty($data[\'coupon_code\']) && $msDiscount->checkCoupon($data[\'coupon_code\']) === true) {\\n\\t\\t\\t\\t\\tif ($discount = $msDiscount->getCouponDiscount($data[\'coupon_code\'], $cost)) {\\n\\t\\t\\t\\t\\t\\t$cost -= $discount;\\n\\t\\t\\t\\t\\t\\tif ($cost >= 0) {\\n\\t\\t\\t\\t\\t\\t\\t$modx->event->returnedValues[\'cost\'] = $cost;\\n\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnCreateOrder\':\\n\\t\\t\\/**@var msOrderInterface $order *\\/\\n\\t\\tif ($data = $order->get()) {\\n\\t\\t\\t\\/**@var msdCoupon $coupon *\\/\\n\\t\\t\\tif (!empty($data[\'coupon_code\']) && $coupon = $modx->getObject(\'msdCoupon\', array(\'code\' => $data[\'coupon_code\']))) {\\n\\t\\t\\t\\t\\/**@var msOrder $msOrder *\\/\\n\\t\\t\\t\\t$coupon->fromArray(array(\\n\\t\\t\\t\\t\\t\'active\' => false,\\n\\t\\t\\t\\t\\t\'activatedon\' => date(\'Y-m-d H:i:s\'),\\n\\t\\t\\t\\t\\t\'order_id\' => $msOrder->get(\'id\'),\\n\\t\\t\\t\\t));\\n\\t\\t\\t\\t$coupon->save();\\n\\t\\t\\t\\t$properties = $msOrder->get(\'properties\');\\n\\t\\t\\t\\tif (!is_array($properties)) {\\n\\t\\t\\t\\t\\t$properties = array();\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\t$properties[\'coupon_code\'] = $coupon->get(\'code\');\\n\\t\\t\\t\\tif ($group = $coupon->getOne(\'Group\')) {\\n\\t\\t\\t\\t\\t$properties[\'coupon_discount\'] = $group->get(\'discount\');\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\t$msOrder->set(\'properties\', $properties);\\n\\t\\t\\t\\t$msOrder->save();\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'OnWebLogin\':\\n\\tcase \'OnWebLogout\':\\n\\t\\t\\/** Set flag for cart reload *\\/\\n\\t\\t$_SESSION[\'minishop2\'][\'cart_reload\'] = true;\\n\\t\\tbreak;\\n\\n\\tcase \'OnLoadWebDocument\':\\n\\t\\t\\/**\\n\\t\\t * Recalculate cart of user if flag is set\\n\\t\\t * @var miniShop2 $miniShop2\\n\\t\\t *\\/\\n\\t\\tif (empty($_SESSION[\'minishop2\'][\'cart_reload\'])) {return;}\\n\\n\\t\\t$miniShop2 = $modx->getService(\'miniShop2\');\\n\\t\\t$miniShop2->initialize($modx->context->key);\\n\\n\\t\\t$cart = $miniShop2->cart->get();\\n\\t\\tif (!empty($cart)) {\\n\\t\\t\\tforeach ($cart as $key => $item) {\\n\\t\\t\\t\\t\\/** @var msProduct $product *\\/\\n\\t\\t\\t\\tif ($product = $modx->getObject(\'msProductData\', $item[\'id\'])) {\\n\\t\\t\\t\\t\\t$cart[$key][\'price\'] = $product->getPrice();\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\t$miniShop2->cart->set($cart);\\n\\t\\t}\\n\\t\\tunset($_SESSION[\'minishop2\'][\'cart_reload\']);\\n\\t\\tbreak;\\n}","locked":0,"properties":null,"disabled":0,"moduleguid":"","static":0,"static_file":"core\\/components\\/msdiscount\\/elements\\/plugins\\/plugin.msdiscount.php","content":"\\/** @var msDiscount $msDiscount *\\/\\n$msDiscount = $modx->getService(\'msDiscount\');\\n\\nswitch ($modx->event->name) {\\n\\n\\tcase \'msOnGetProductPrice\':\\n\\t\\tif ($modx->context->key == \'mgr\') {return;}\\n\\t\\t\\/**\\n\\t\\t * Counts discount of current product for current user, based on rules in msDiscount component\\n\\t\\t * New price must be set in $modx->event->returnedValues[\'price\']\\n\\t\\t *\\n\\t\\t * @var msProductData $product Object with product properties\\n\\t\\t * @var array $data Array with product properties. Can be empty!\\n\\t\\t * @var float $price Current price of product\\n\\t\\t *\\/\\n\\t\\tif (!isset($modx->event->returnedValues[\'price\'])) {\\n\\t\\t\\t$modx->event->returnedValues[\'price\'] = $price;\\n\\t\\t}\\n\\t\\t\\/\\/ Get link to product price\\n\\t\\t$price = & $modx->event->returnedValues[\'price\'];\\n\\t\\t$new_price = $msDiscount->getNewPrice($product->id, $price);\\n\\t\\tif ($new_price !== false) {\\n\\t\\t\\t$price = $new_price;\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnChangeOrderStatus\':\\n\\t\\t\\/**\\n\\t\\t * Add user to discounts group if he spent required sum for join\\n\\t\\t *\\n\\t\\t * @var msOrder $order\\n\\t\\t * @var integer $status\\n\\t\\t *\\/\\n\\t\\tif ($status != 2) {return;}\\n\\n\\t\\t\\/** @var modUser $user *\\/\\n\\t\\tif ($user = $order->getOne(\'User\')) {\\n\\t\\t\\tif ($profile = $modx->getObject(\'msCustomerProfile\', $user->id)) {\\n\\t\\t\\t\\t$spent = $profile->spent;\\n\\t\\t\\t\\tif ($spent > 0) {\\n\\t\\t\\t\\t\\t$q = $modx->newQuery(\'msdUserGroup\');\\n\\t\\t\\t\\t\\t$q->where(\'joinsum > 0\');\\n\\t\\t\\t\\t\\t$q->select(\'id,joinsum\');\\n\\t\\t\\t\\t\\tif ($q->prepare() && $q->stmt->execute()) {\\n\\t\\t\\t\\t\\t\\t$groups = $msDiscount->getUserGroups($user->id);\\n\\t\\t\\t\\t\\t\\twhile ($row = $q->stmt->fetch(PDO::FETCH_ASSOC)) {\\n\\t\\t\\t\\t\\t\\t\\tif ($spent > $row[\'joinsum\'] && !isset($groups[$row[\'id\']])) {\\n\\t\\t\\t\\t\\t\\t\\t\\t$user->joinGroup((integer) $row[\'id\'], 1);\\n\\t\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnBeforeAddToOrder\':\\n\\t\\t\\/** @var string $key *\\/\\n\\t\\tif ($key == \'coupon_code\' && !empty($value)) {\\n\\t\\t\\t$check = $msDiscount->checkCoupon($value);\\n\\t\\t\\tif ($check !== true) {\\n\\t\\t\\t\\t$modx->event->output($check);\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnGetOrderCost\':\\n\\t\\t\\/**@var msOrderInterface $order *\\/\\n\\t\\tif (!empty($with_cart) && !empty($cost)) {\\n\\t\\t\\tif ($data = $order->get()) {\\n\\t\\t\\t\\tif (!empty($data[\'coupon_code\']) && $msDiscount->checkCoupon($data[\'coupon_code\']) === true) {\\n\\t\\t\\t\\t\\tif ($discount = $msDiscount->getCouponDiscount($data[\'coupon_code\'], $cost)) {\\n\\t\\t\\t\\t\\t\\t$cost -= $discount;\\n\\t\\t\\t\\t\\t\\tif ($cost >= 0) {\\n\\t\\t\\t\\t\\t\\t\\t$modx->event->returnedValues[\'cost\'] = $cost;\\n\\t\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t\\t}\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'msOnCreateOrder\':\\n\\t\\t\\/**@var msOrderInterface $order *\\/\\n\\t\\tif ($data = $order->get()) {\\n\\t\\t\\t\\/**@var msdCoupon $coupon *\\/\\n\\t\\t\\tif (!empty($data[\'coupon_code\']) && $coupon = $modx->getObject(\'msdCoupon\', array(\'code\' => $data[\'coupon_code\']))) {\\n\\t\\t\\t\\t\\/**@var msOrder $msOrder *\\/\\n\\t\\t\\t\\t$coupon->fromArray(array(\\n\\t\\t\\t\\t\\t\'active\' => false,\\n\\t\\t\\t\\t\\t\'activatedon\' => date(\'Y-m-d H:i:s\'),\\n\\t\\t\\t\\t\\t\'order_id\' => $msOrder->get(\'id\'),\\n\\t\\t\\t\\t));\\n\\t\\t\\t\\t$coupon->save();\\n\\t\\t\\t\\t$properties = $msOrder->get(\'properties\');\\n\\t\\t\\t\\tif (!is_array($properties)) {\\n\\t\\t\\t\\t\\t$properties = array();\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\t$properties[\'coupon_code\'] = $coupon->get(\'code\');\\n\\t\\t\\t\\tif ($group = $coupon->getOne(\'Group\')) {\\n\\t\\t\\t\\t\\t$properties[\'coupon_discount\'] = $group->get(\'discount\');\\n\\t\\t\\t\\t}\\n\\t\\t\\t\\t$msOrder->set(\'properties\', $properties);\\n\\t\\t\\t\\t$msOrder->save();\\n\\t\\t\\t}\\n\\t\\t}\\n\\t\\tbreak;\\n\\n\\tcase \'OnWebLogin\':\\n\\tcase \'OnWebLogout\':\\n\\t\\t\\/** Set flag for cart reload *\\/\\n\\t\\t$_SESSION[\'minishop2\'][\'cart_reload\'] = true;\\n\\t\\tbreak;\\n\\n\\tcase \'OnLoadWebDocument\':\\n\\t\\t\\/**\\n\\t\\t * Recalculate cart of user if flag is set\\n\\t\\t * @var miniShop2 $miniShop2\\n\\t\\t *\\/\\n\\t\\tif (empty($_SESSION[\'minishop2\'][\'cart_reload\'])) {return;}\\n\\n\\t\\t$miniShop2 = $modx->getService(\'miniShop2\');\\n\\t\\t$miniShop2->initialize($modx->context->key);\\n\\n\\t\\t$cart = $miniShop2->cart->get();\\n\\t\\tif (!empty($cart)) {\\n\\t\\t\\tforeach ($cart as $key => $item) {\\n\\t\\t\\t\\t\\/** @var msProduct $product *\\/\\n\\t\\t\\t\\tif ($product = $modx->getObject(\'msProductData\', $item[\'id\'])) {\\n\\t\\t\\t\\t\\t$cart[$key][\'price\'] = $product->getPrice();\\n\\t\\t\\t\\t}\\n\\t\\t\\t}\\n\\t\\t\\t$miniShop2->cart->set($cart);\\n\\t\\t}\\n\\t\\tunset($_SESSION[\'minishop2\'][\'cart_reload\']);\\n\\t\\tbreak;\\n}"}',
+        'guid' => '9900d726764196772e903a37d148ac2c',
+        'native_key' => NULL,
+        'signature' => 'e4f6c0aa0be661d0c0443b5efb6344d7',
+        'related_objects' => 
+        array (
+          'PluginEvents' => 
+          array (
+            '4537cee747fc8caea34029873186ebaf' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"msOnGetProductPrice","priority":0,"propertyset":0}',
+              'guid' => 'f1420b365d90785b4f9d614389413fa9',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'msOnGetProductPrice',
+              ),
+              'signature' => '3de97f9c059f353509fe13abd36fdf1e',
+            ),
+            'dc59974026e4b75244175b45ae630944' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"msOnChangeOrderStatus","priority":10,"propertyset":0}',
+              'guid' => '9028b333e9190a2e8bdf7cc7180f36bc',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'msOnChangeOrderStatus',
+              ),
+              'signature' => 'd4b0d22773d0b2d2d3dbee3b19c671e6',
+            ),
+            '5b62358d5888e7ef38c8c3ef812063e1' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"msOnBeforeAddToOrder","priority":0,"propertyset":0}',
+              'guid' => '4fa151a848f203ed2cabf7c5cb8bee0e',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'msOnBeforeAddToOrder',
+              ),
+              'signature' => 'edf9c3d47252279d93e52e6340873588',
+            ),
+            'd81089519359ab721f1d8c825a939372' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"msOnGetOrderCost","priority":10,"propertyset":0}',
+              'guid' => 'b0daeb31451f577dc6478feb75ba2966',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'msOnGetOrderCost',
+              ),
+              'signature' => '7bc4178bcfbd50223e4e53255c37732a',
+            ),
+            'e3b44179b68f6a5ca3c2460eb9c7f6b4' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"msOnCreateOrder","priority":0,"propertyset":0}',
+              'guid' => '174a8ab110fd89d4d4e934f3e809feb9',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'msOnCreateOrder',
+              ),
+              'signature' => 'bdf8211e39035b5b8c513197a1222977',
+            ),
+            'f195c8dc163037bdfb40749e5e9decb2' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebLogin","priority":0,"propertyset":0}',
+              'guid' => 'fd177fab116601ef4a47e531d48aa7cd',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebLogin',
+              ),
+              'signature' => '4d8704f1deabf5e64e105be112b82bb9',
+            ),
+            'ba62bf598a62cc8127d0d3c382663973' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnWebLogout","priority":0,"propertyset":0}',
+              'guid' => 'fc5bb877a8348361cf604ad1136494ee',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnWebLogout',
+              ),
+              'signature' => 'd77b0dfaa846fc2f9e43d592cfc2fad7',
+            ),
+            '0d47ba663bda6e8afd0b83fb51d6c266' => 
+            array (
+              'preserve_keys' => true,
+              'update_object' => true,
+              'unique_key' => 
+              array (
+                0 => 'pluginid',
+                1 => 'event',
+              ),
+              'class' => 'modPluginEvent',
+              'object' => '{"pluginid":0,"event":"OnLoadWebDocument","priority":0,"propertyset":0}',
+              'guid' => '4590d0ef35bf970ae0ab976f1686761a',
+              'native_key' => 
+              array (
+                0 => 0,
+                1 => 'OnLoadWebDocument',
+              ),
+              'signature' => 'd0500dac920582447a204235a5658d6c',
+            ),
+          ),
+        ),
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Snippets' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'Chunks' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 'name',
+    ),
+    'Plugins' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 'name',
+    ),
+    'PluginEvents' => 
+    array (
+      'preserve_keys' => true,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'pluginid',
+        1 => 'event',
+      ),
+    ),
+  ),
+  'namespace' => 'msdiscount',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msdiscount-1.1.6-pl\\/modCategory\\/fdb4fc23aa9e5a2d802ae1f5fa3d3800\\/0\\/","target":"return MODX_ASSETS_PATH . \'components\\/\';","name":"msdiscount"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"msdiscount-1.1.6-pl\\/modCategory\\/fdb4fc23aa9e5a2d802ae1f5fa3d3800\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"msdiscount"}',
+    ),
+    2 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msdiscount-1.1.6-pl\\/modCategory\\/fdb4fc23aa9e5a2d802ae1f5fa3d3800.resolve.tables.resolver","type":"php","name":"resolve.tables"}',
+    ),
+    3 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msdiscount-1.1.6-pl\\/modCategory\\/fdb4fc23aa9e5a2d802ae1f5fa3d3800.resolve.extension.resolver","type":"php","name":"resolve.extension"}',
+    ),
+    4 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msdiscount-1.1.6-pl\\/modCategory\\/fdb4fc23aa9e5a2d802ae1f5fa3d3800.resolve.policy.resolver","type":"php","name":"resolve.policy"}',
+    ),
+    5 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"msdiscount-1.1.6-pl\\/modCategory\\/fdb4fc23aa9e5a2d802ae1f5fa3d3800.resolve.setup.resolver","type":"php","name":"resolve.setup"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8b5d0450f312111021d7a6a1dfe80640',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'fdb4fc23aa9e5a2d802ae1f5fa3d3800',
+  'native_key' => NULL,
+  'object' => '{"id":null,"parent":0,"category":"msDiscount","rank":0}',
+);

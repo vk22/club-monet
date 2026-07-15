@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'cronmanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '402d026eb1926b31699c253054f5205b',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '72302f95b4ba20db46641f928c19375b',
+  'native_key' => 'cronmanager.debug',
+  'object' => '{"key":"cronmanager.debug","value":"0","xtype":"combo-boolean","namespace":"cronmanager","area":"system","editedon":null}',
+);

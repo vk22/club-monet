@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'mspyookassa',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ebe563bbaddfad744ee5d54d2a2c5fd1',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '7497244ec256ecb170de8975612e501a',
+  'native_key' => 'mspYooKassaOnCreatePayment',
+  'object' => '{"name":"mspYooKassaOnCreatePayment","service":6,"groupname":"mspYooKassa"}',
+);

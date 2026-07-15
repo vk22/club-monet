@@ -1,0 +1,16 @@
+<?php return array (
+  'class' => 'xPDOScriptVehicle',
+  'object' => 
+  array (
+    'source' => 'msdiscount-1.3.13-pl/xPDOScriptVehicle/b2c3f2587e38deff90eb6697de234db6.resolve.encryption.script',
+  ),
+  'vehicle_class' => 'xPDOScriptVehicle',
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '6aa9c13cf15120d5a2ce83419e2659b0',
+  'package' => '',
+  'signature' => 'b2c3f2587e38deff90eb6697de234db6',
+  'native_key' => '6aa9c13cf15120d5a2ce83419e2659b0',
+);

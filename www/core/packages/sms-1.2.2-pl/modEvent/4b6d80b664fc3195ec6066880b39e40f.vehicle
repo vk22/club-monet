@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f065047e058bf705f8252a25527aad49',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '4b6d80b664fc3195ec6066880b39e40f',
+  'native_key' => 'SMSCodeActivate',
+  'object' => '{"name":"SMSCodeActivate","service":6,"groupname":"SMS"}',
+);

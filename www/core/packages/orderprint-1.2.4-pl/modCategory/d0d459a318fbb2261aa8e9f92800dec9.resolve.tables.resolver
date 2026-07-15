@@ -1,0 +1,141 @@
+<?php
+
+if ($object->xpdo) {
+	/* @var modX $modx */
+	$modx =& $object->xpdo;
+
+	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+		case xPDOTransport::ACTION_INSTALL:
+                        $default_docs = array(
+                            array(
+                                'name' => 'Счет-фактура',
+                                'description' => 'Счет-фактура',
+                                'chunk1' => 'orderPrint.paylistOuter',
+                                'chunk2' => 'orderPrint.paylistRow',
+                                'available_for_front' => '1',
+                                'orientation' => '1',
+                                'margins' => '10,10,10,10'
+                            ),
+                            array(
+                                'name' => 'Cчет',
+                                'description' => 'Cчет',
+                                'chunk1' => 'orderPrint.orderOuter',
+                                'chunk2' => 'orderPrint.orderRow',
+                                'available_for_front' => '1',
+                                'orientation' => '1',
+                                'margins' => '0,10,10,20'
+                            ),
+                            array(
+                                'name' => 'Заявка на склад',
+                                'description' => 'Заявка на склад',
+                                'chunk1' => 'orderPrint.warehouseOuter',
+                                'chunk2' => 'orderPrint.warehouseRow',
+                                'available_for_front' => '0',
+                                'orientation' => '0',
+                                'margins' => '10,10,10,10'
+                            ),
+                            array(
+                                'name' => 'Наряд курьеру',
+                                'description' => 'Наряд курьеру',
+                                'chunk1' => 'orderPrint.courierOuter',
+                                'chunk2' => 'orderPrint.courierRow',
+                                'available_for_front' => '0',
+                                'orientation' => '0',
+                                'margins' => '10,20,10,20'
+                            )
+                        );
+                        $default_options = array(
+                            array(
+                                'name' => 'logo',
+                                'description' => 'Логотип на документах',
+                                'value' => '/assets/',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'company',
+                                'description' => 'Название компании',
+                                'value' => 'TEST inc.',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'address',
+                                'description' => 'Адрес компании',
+                                'value' => 'г.Москва, ул.Ленина д.1 оф.1',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'phone',
+                                'description' => 'Телефон',
+                                'value' => '+1(111)111-11-11',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'fax',
+                                'description' => 'Номер факса',
+                                'value' => '+7(111)111-11-11',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'email',
+                                'description' => 'Емейл',
+                                'value' => 'shop@example.ru',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'inn',
+                                'description' => 'ИНН',
+                                'value' => '121212121',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'kpp',
+                                'description' => 'КПП',
+                                'value' => '232323232',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'director',
+                                'description' => 'Руководитель',
+                                'value' => 'Сидоров И.П.',
+                                'undeletable' => '1'
+                            ),
+                            array(
+                                'name' => 'booker',
+                                'description' => 'Главный бухгалтер',
+                                'value' => 'Петрова И.С.',
+                                'undeletable' => '1'
+                            )
+                        );
+			$modelPath = $modx->getOption('orderprint_core_path',null,$modx->getOption('core_path').'components/orderprint/').'model/';
+			$modx->addPackage('orderprint', $modelPath);
+
+			$manager = $modx->getManager();
+			$manager->createObjectContainer('OprDocuments');
+			$manager->createObjectContainer('OprSettings');
+                        
+                        $old_docs = $modx->getCollection('OprDocuments');
+                        if(!$old_docs){
+                            foreach($default_docs as $default_doc){
+                                $n_doc = $modx->newObject('OprDocuments');
+                                $n_doc->fromArray($default_doc);
+                                $n_doc->save();
+                            }
+                        }
+                        $old_options = $modx->getCollection('OprSettings');
+                        if(!$old_options){
+                            foreach($default_options as $default_option){
+                                $n_opt = $modx->newObject('OprSettings');
+                                $n_opt->fromArray($default_option);
+                                $n_opt->save();
+                            }
+                        }
+			break;
+
+		case xPDOTransport::ACTION_UPGRADE:
+			break;
+
+		case xPDOTransport::ACTION_UNINSTALL:
+			break;
+	}
+}
+return true;

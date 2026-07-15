@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '76d4ff84b3dbe9ab660d37ca1af335b4',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '6b1ba12619c67cda30aef0eb079312d2',
+  'native_key' => 'sms_sandbox',
+  'object' => '{"key":"sms_sandbox","value":"0","xtype":"combo-boolean","namespace":"sms","area":"sms_main","editedon":null}',
+);

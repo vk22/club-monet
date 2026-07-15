@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'minishop2',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f70ff9e07a1349a127ad5a81c2dcca54',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => 'ae28c6123df10a43312f0115af31ed1d',
+  'native_key' => 'msOnBeforeGetOrderCost',
+  'object' => '{"name":"msOnBeforeGetOrderCost","service":6,"groupname":"miniShop2"}',
+);

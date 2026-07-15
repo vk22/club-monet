@@ -1,0 +1,31 @@
+<?php return array (
+  'vehicle_class' => 'encryptedVehicle',
+  'abort_install_on_vehicle_fail' => true,
+  'preserve_keys' => true,
+  'update_object' => false,
+  'unique_key' => 'text',
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => false,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '2b3714e575bfaa50c289dd3979059ed2',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '55daa141f3aa7e71b373928c1c9622ce',
+  'native_key' => 'msdiscount',
+  'object_encrypted' => 'Dj68H+R+iGhsd1+Qy+KlAjBghDyM/fplgoNc4HgfcF2jKDn1+B2dE4U4bxywidGVG1KXRTzyiqWcx6V0NiEbxYrtjZkoiTQw3RkCYXVCpx9foHdbJ+TTS8wrPbarpiNVVtWW4plQhW0pHdImhUNIKtt8b3Zvn9WhQSJsNPvYrDKVM8pBzl95ppeyDlrQ0KvDq+3UmlmZVthr6MF99NUSR9L5ByB1noD65iYUGPagwUKgJckmgaurrNHpHFrOFBl05cI9dKNspukHUTUSki8x3ASwL22QFPQ7NAw8R3q/ywj8S6J2Rp4964bDFSxGmGSX',
+  'related_objects_encrypted' => '0hJ1L5i9z/DxKm+0S3jRJRzRV4zGfTvavXscymElkR0WUL6lMnRh+YNa4QtUAo4Dwx/abQ76HSWwVxEnza7tljBuyVZwgoz8W/Sz1+VcHpm/EVoYQgdO2BGdA7A+hs5qFALqYiL4mHZvwV2iFFbzEuOU1oOJ5lrMeYVdZEQyil4bqh/u7wO/nCMSp83L+yCuKTAH5MWCFoIU1TDl4GgoUaW2fsN5dMEo4el8tQ/qRFrIyhE+BvO4LMI6E+2k5b6sqaCnZamMZNjUU62ushVq9089kp/Iv/OocZ0PmT7P7f4isGWxVXK+wtrjzY1S8NYzUqSYYVkvOeGkSJ0a/VTDspC8gusz88SH7TCDsRiiJNVWKuza5JdG0zf2pFt57uswPavdYkXuxrLPNnXdrEUVxzVRerDkv5+w1M7rMHLVhdqdIjdlHBZNgtbkkgSfcb1IXO6f1n9alGhBFnWXGnVMfJ4P+MBFOSd2lTtWb6dtvXW/f4rj3BS+TQbrM3qsVQBRGbCQn6zjBk3oIbCLnVy8avFljYflv3dCnZGGvN3lTdrieXxSXxCAhm2iv0JTG/P4i46wcKh1k9Bjjs1ze6Ehxt301vrddKmXFLVjomvPfM+VfpeJ6iSXlSDxguC86sEcnnTE6v2FWQxVpS1FOXkFGMy2xB05ncfsIkB1+qTb3HBzuO0yrdwKWkEj8Knz5pni',
+);

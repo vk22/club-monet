@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '2d6c56e387c5c19889018e9b7f670e74',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '44dde81ef11ad460ffea89eddae210b1',
+  'native_key' => 'SMSBeforeCodeCheck',
+  'object' => '{"name":"SMSBeforeCodeCheck","service":6,"groupname":"SMS"}',
+);

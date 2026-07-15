@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspsberbank',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '0a5e8ca90da940f29bf88e6ce55a45db',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '581a2edbe657151ebbc5a738738d9632',
+  'native_key' => 'ms2_payment_sbrbnk_currency',
+  'object' => '{"key":"ms2_payment_sbrbnk_currency","value":"643","xtype":"textfield","namespace":"mspsberbank","area":"","editedon":null}',
+);

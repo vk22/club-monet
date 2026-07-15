@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '671c64db4d2adb0e6783b0ddeef7c260',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'b7974a76bda3bc23edb44b7e47fd74ad',
+  'native_key' => 'office_controllers_paths',
+  'object' => '{"key":"office_controllers_paths","value":"{}","xtype":"textfield","namespace":"office","area":"office_main","editedon":null}',
+);

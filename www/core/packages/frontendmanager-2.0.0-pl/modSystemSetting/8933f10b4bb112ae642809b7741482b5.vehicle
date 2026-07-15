@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'frontendmanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ce551c6d3b5e90ebb7d060413a4aa76f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '8933f10b4bb112ae642809b7741482b5',
+  'native_key' => 'frontendmanager_active_groups',
+  'object' => '{"key":"frontendmanager_active_groups","value":"Administrator","xtype":"textfield","namespace":"frontendmanager","area":"frontendmanager_manager","editedon":null}',
+);

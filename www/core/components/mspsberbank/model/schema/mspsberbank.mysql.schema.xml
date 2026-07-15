@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model package="mspsberbank" baseClass="xPDOObject" platform="mysql" defaultEngine="InnoDB" phpdoc-package="mspsberbank"
+       version="1.1">
+
+    <object class="mspSberbankLink" table="mspsberbank_links" extends="xPDOSimpleObject">
+        <field key="order" dbtype="int" precision="10" phptype="integer" attributes="unsigned" null="false" default="0"/>
+        <field key="link" dbtype="varchar" precision="255" phptype="string" null="false" default=""/>
+        
+        <index alias="order" name="order" primary="false" unique="true" type="BTREE">
+            <column key="order" length="" collation="A" null="false"/>
+        </index>
+    </object>
+
+</model>

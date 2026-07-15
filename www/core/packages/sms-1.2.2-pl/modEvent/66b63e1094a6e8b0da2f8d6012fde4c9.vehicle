@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'name',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '80376db116736a80a8ba879a57f02afe',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '66b63e1094a6e8b0da2f8d6012fde4c9',
+  'native_key' => 'SMSAfterCodeSend',
+  'object' => '{"name":"SMSAfterCodeSend","service":6,"groupname":"SMS"}',
+);

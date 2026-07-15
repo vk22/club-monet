@@ -1,0 +1,30 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'cronmanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'dffd0ae525a9955d2dd20068f30e8afd',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => 'b39bca12428f9283f02f9c4831cea8c2',
+  'native_key' => 'cronmanager.menu',
+  'object' => '{"text":"cronmanager.menu","parent":"components","action":"home","description":"cronmanager.menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"cronmanager"}',
+);

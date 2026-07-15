@@ -1,0 +1,17 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'related_objects' => false,
+  'namespace' => 'mspyookassa',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '8e977ba40e0f524b9f5ab9dcc487b280',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '94c19e2b44cf74abd494b3d2e21dace5',
+  'native_key' => 'mspyookassa_payment_shop_currency',
+  'object' => '{"key":"mspyookassa_payment_shop_currency","value":"RUB","xtype":"textfield","namespace":"mspyookassa","area":"mspyookassa_main","editedon":null}',
+);

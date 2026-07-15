@@ -1,0 +1,17 @@
+<?php return array (
+  'vehicle_class' => 'encryptedVehicle',
+  'abort_install_on_vehicle_fail' => true,
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'msdiscount',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'guid' => '446e409781db3a227d03e9e97320d8d3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'a1a76ba5d2a27cd6f009b624222e3a6c',
+  'native_key' => 'msd_coupon_only_products',
+  'object_encrypted' => 'fegbIwos2nHDGYkjWK9Z5fA3WUeM9qtLfCgwABuvnXRHNfkvbl5yRfS+a4Y9E1uZPh3GVXpqMA0uEfo993uM4HqnlPHDOV6sPUDxv7Ai77Hdirjq8LTGnozGQqu/5tyHhwEy5JfIsHMjoxNRZ4iTwcKsM3ReemiJz+DWdg/czDM7CdkKL26noiAdcLj6XGadPCf0bh83LfsBvhP6A/y45w==',
+);

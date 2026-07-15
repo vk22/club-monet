@@ -1,0 +1,92 @@
+<?php
+
+/** @var xPDOTransport $transport */
+/** @var array $options */
+/** @var modX $modx */
+if ($transport->xpdo) {
+    $modx =& $transport->xpdo;
+    switch ($options[xPDOTransport::PACKAGE_ACTION]) {
+        case xPDOTransport::ACTION_INSTALL:
+        case xPDOTransport::ACTION_UPGRADE:
+
+            //core/components/msexportusersexcel/export
+            $tmp = explode('/', MODX_ASSETS_URL);
+            $assets = $tmp[count($tmp) - 2];
+
+            $properties = array(
+                'name' => 'msExportUsersExcel',
+                'description' => 'Default source for files of msExportUsersExcel',
+                'class_key' => 'sources.modFileMediaSource',
+                'properties' => array(
+                    'basePath' => array(
+                        'name' => 'basePath',
+                        'desc' => 'prop_file.basePath_desc',
+                        'type' => 'textfield',
+                        'lexicon' => 'core:source',
+                        'value' => 'core/cache/default/msexportusersexcel/export/',
+                    ),
+                    'baseUrl' => array(
+                        'name' => 'baseUrl',
+                        'desc' => 'prop_file.baseUrl_desc',
+                        'type' => 'textfield',
+                        'lexicon' => 'core:source',
+                        'value' => 'assets/components/msexportusersexcel/download.php',
+                    ),
+                    'allowedFileTypes' => array(
+                        'name' => 'allowedFileTypes',
+                        'desc' => 'prop_file.allowedFileTypes_desc',
+                        'type' => 'textfield',
+                        'lexicon' => 'core:source',
+                        'value' => 'xls,xlsx,json,csv',
+                    ),
+                    'upload_files' => array(
+                        'name' => 'upload_files',
+                        'desc' => 'prop_file.upload_files_desc',
+                        'type' => 'textfield',
+                        'lexicon' => 'core:source',
+                        'value' => 'xls,xlsx,json,csv',
+                    ),
+                    'imageExtensions' => array(
+                        'name' => 'imageExtensions',
+                        'desc' => 'prop_file.imageExtensions_desc',
+                        'type' => 'textfield',
+                        'lexicon' => 'core:source',
+                        'value' => '',
+                    ),
+                    'skipFiles' => array(
+                        'name' => 'skipFiles',
+                        'desc' => 'prop_file.skipFiles_desc',
+                        'type' => 'textfield',
+                        'lexicon' => 'core:source',
+                        'value' => '.placeholder,.svn,.git,_notes,nbproject,.idea,.DS_Store',
+                    ),
+                ),
+                'is_stream' => 1,
+            );
+            /** @var $source modMediaSource */
+            if (!$source = $modx->getObject('sources.modMediaSource', array('name' => $properties['name']))) {
+                $source = $modx->newObject('sources.modMediaSource', $properties);
+            } else {
+                $default = $source->get('properties');
+                foreach ($properties['properties'] as $k => $v) {
+                    if (!array_key_exists($k, $default)) {
+                        $default[$k] = $v;
+                    }
+                }
+                $source->set('properties', $default);
+            }
+            $source->save();
+
+            if ($setting = $modx->getObject('modSystemSetting', array('key' => 'msexportusersexcel_source_default'))) {
+                if (!$setting->get('value')) {
+                    $setting->set('value', $source->get('id'));
+                    $setting->save();
+                }
+            }
+
+            break;
+        case xPDOTransport::ACTION_UNINSTALL:
+            break;
+    }
+}
+return true;

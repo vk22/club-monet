@@ -1,0 +1,48 @@
+Changelog file for orderPrint component.
+
+orderPrint 1.0.0
+====================================
+Initial Version
+
+
+
+orderPrint 1.1.1
+====================================
+Fixed a bug with the display address fields (indicated by the buyer in the form of reservation)
+
+
+
+orderPrint 1.1.2
+====================================
+Add Shopkeeper's field address from order contacts. Placeholders [[+contacts.address]] from string or [[+contacts.address.address_field]] from array
+
+
+
+orderPrint 1.1.3
+====================================
+Fix display information about the products removed from the system in MiniShop2
+
+
+
+orderPrint 1.1.4
+====================================
+Added displaying the number of items in the cart and the order value in words
+
+
+
+orderPrint 1.1.5
+====================================
+Added policies for access rights settings to printing documents in different groups of users
+
+
+
+orderPrint 1.1.6
+====================================
+Fixed bug with rights to manage settings
+Added placeholder with timestamp of order created time for both stores
+
+
+
+orderPrint 1.1.7
+====================================
+Corrected conversion of the date of createdon order in miniShop2 to timestamp

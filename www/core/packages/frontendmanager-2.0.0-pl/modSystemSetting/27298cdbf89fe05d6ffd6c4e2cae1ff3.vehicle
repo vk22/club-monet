@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'frontendmanager',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '086003e8b85f50a6d461c334903ea44e',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '27298cdbf89fe05d6ffd6c4e2cae1ff3',
+  'native_key' => 'frontendmanager_manager_js',
+  'object' => '{"key":"frontendmanager_manager_js","value":"manager.js","xtype":"textfield","namespace":"frontendmanager","area":"frontendmanager_manager","editedon":null}',
+);

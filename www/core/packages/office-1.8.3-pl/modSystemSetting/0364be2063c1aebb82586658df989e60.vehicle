@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'office',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'fe2b4365ef43e319688f9441958d8568',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '0364be2063c1aebb82586658df989e60',
+  'native_key' => 'office_ms2_order_address_fields',
+  'object' => '{"key":"office_ms2_order_address_fields","value":"receiver,phone,index,country,region,city,metro,street,building,room,comment","xtype":"textarea","namespace":"office","area":"office_ms2","editedon":null}',
+);

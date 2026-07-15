@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'login',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '98e4bf9e989598a8daee032837d82c3f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '4faae944a3809e031882b5f4b058cd88',
+  'native_key' => 'recaptcha.private_key',
+  'object' => '{"key":"recaptcha.private_key","value":"","xtype":"textfield","namespace":"login","area":"recaptcha","editedon":null}',
+);

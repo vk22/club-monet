@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'sms',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '4f9ae62f09d94db91cd0e41772ae37d7',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '279cddd8bb65cdfff6b46a4aef80299e',
+  'native_key' => 'sms_code_message_tpl',
+  'object' => '{"key":"sms_code_message_tpl","value":"sms_code","xtype":"textfield","namespace":"sms","area":"sms_main","editedon":null}',
+);

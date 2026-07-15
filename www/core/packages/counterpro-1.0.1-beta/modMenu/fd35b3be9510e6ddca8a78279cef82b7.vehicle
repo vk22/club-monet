@@ -1,0 +1,17 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => true,
+  'namespace' => 'counterpro',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'af28ccac2cfe15cf062fd197c7b975b7',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => 'fd35b3be9510e6ddca8a78279cef82b7',
+  'native_key' => 'counterpro',
+  'object' => '{"text":"counterpro","parent":"components","action":"home","description":"counterpro_menu_desc","icon":"","menuindex":0,"params":"","handler":"","permissions":"","namespace":"counterpro"}',
+);

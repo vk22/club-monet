@@ -1,0 +1,22 @@
+.item-prev-img img{
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: all .75s ease-in-out;
+    -moz-transition: all .75s ease-in-out;
+    -o-transition: all .75s ease-in-out;
+    transition: all .75s ease-in-out;
+}
+
+.item-prev-img img.lz-entered{
+    visibility: visible;
+    opacity: 1;
+}
+
+.carousel .item-prev-img img{
+    visibility: visible;
+    opacity: 1;
+}
+
+.fotorama__stage {
+    height: 402px;
+}
